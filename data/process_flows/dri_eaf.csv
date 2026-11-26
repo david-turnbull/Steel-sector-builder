@@ -1,5 +1,5 @@
-direction,flow_id,amount,unit,source_sheet,source_cell,notes
-in,dri,1.01,t,DRI-EAF,B4,Source workbook cached value; check heterogeneous units before physical interpretation
-in,elc,2.5127999999999999,GJ,DRI-EAF,B5,Source workbook cached value; check heterogeneous units before physical interpretation
-out,steel,1,t,DRI-EAF,B9,Source workbook cached value; check heterogeneous units before physical interpretation
-out,slag,0.011643296952026549,t,DRI-EAF,B10,Source workbook cached value; check heterogeneous units before physical interpretation
+direction,flow_id,amount,unit,notes
+in,dri,1.01,t,Editable steel process-flow assumption; mixed units need scientific review
+in,elc,2.5127999999999999,GJ,Editable steel process-flow assumption; mixed units need scientific review
+out,steel,1,t,Editable steel process-flow assumption; mixed units need scientific review
+out,slag,0.011643296952026549,t,Editable steel process-flow assumption; mixed units need scientific review

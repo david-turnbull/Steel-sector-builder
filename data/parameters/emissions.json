@@ -1,0 +1,25 @@
+{
+  "description": "Editable CO2 emissions coefficient values (not calculated from process flows). Review individual emission rules before changing a factor shared by multiple technologies or sources.",
+  "parameters": {
+    "emission__captured_co2_credit": {
+      "value": "-1.0",
+      "description": "Emission-activity coefficient (captured co2 credit) shared across matching technology and vintage rules. Inspect data/inputs/emissions.json for associated units and source references."
+    },
+    "emission__blast_furnace": {
+      "value": "412.579184",
+      "description": "Emission-activity coefficient (blast furnace) shared across matching technology and vintage rules. Inspect data/inputs/emissions.json for associated units and source references."
+    },
+    "emission__coke_oven": {
+      "value": "438.9110864",
+      "description": "Emission-activity coefficient (coke oven) shared across matching technology and vintage rules. Inspect data/inputs/emissions.json for associated units and source references."
+    },
+    "emission__electric_arc_furnace": {
+      "value": "258.0006905",
+      "description": "Emission-activity coefficient (electric arc furnace) shared across matching technology and vintage rules. Inspect data/inputs/emissions.json for associated units and source references."
+    },
+    "emission__on_site_powerplant": {
+      "value": "654.3934177",
+      "description": "Emission-activity coefficient (on site powerplant) shared across matching technology and vintage rules. Inspect data/inputs/emissions.json for associated units and source references."
+    }
+  }
+}

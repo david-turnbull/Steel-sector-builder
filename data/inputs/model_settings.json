@@ -1,0 +1,645 @@
+{
+  "description": "TEMOA metadata, source citations, data quality labels, and model period configuration.",
+  "tables": {
+    "metadata": {
+      "defaults": {},
+      "rules": [
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {},
+          "values": {
+            "element": "DB_MAJOR",
+            "value": "4",
+            "notes": "DB major version number"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {},
+          "values": {
+            "element": "DB_MINOR",
+            "value": "0",
+            "notes": "DB minor version number"
+          }
+        }
+      ]
+    },
+    "metadata_real": {
+      "defaults": {
+        "value": "0.03"
+      },
+      "rules": [
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {},
+          "values": {
+            "element": "default_loan_rate",
+            "notes": "Default Loan Rate if not specified in loan_rate table"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {},
+          "values": {
+            "element": "global_discount_rate",
+            "notes": "Discount Rate for future costs"
+          }
+        }
+      ]
+    },
+    "data_set": {
+      "defaults": {
+        "data_id": "${SCENARIO_DATA_ID}",
+        "version": "v1.0.0",
+        "description": "Contains high resolution steel sector for all of Canada",
+        "status": "active",
+        "author": "David Turnbull - david.turnbull1@ucalgary.ca",
+        "date": "2026-10-08",
+        "notes": null
+      },
+      "rules": [
+        {
+          "scenarios": "all",
+          "axes": {},
+          "values": {
+            "label": "Steel High resolution - Contains info for all scenarios",
+            "parent_id": "STEELBASEHR001",
+            "changelog": "inital release"
+          }
+        },
+        {
+          "scenarios": "basecase",
+          "axes": {},
+          "values": {
+            "label": "Steel High resolution - Base case ",
+            "parent_id": null,
+            "changelog": "inital release"
+          }
+        },
+        {
+          "scenarios": "ccs",
+          "axes": {},
+          "values": {
+            "label": "Steel High resolution - CCS scenario",
+            "parent_id": "STEELBASEHR001",
+            "changelog": "Adds in CCS"
+          }
+        },
+        {
+          "scenarios": "eaf",
+          "axes": {},
+          "values": {
+            "label": "Steel High resolution - High electric arc furnace scenario",
+            "parent_id": "STEELBASEHR001",
+            "changelog": "Increased electric arc furnace"
+          }
+        }
+      ]
+    },
+    "data_source": {
+      "defaults": {},
+      "rules": [
+        {
+          "scenarios": "all",
+          "axes": {},
+          "values": {
+            "source_id": "S10",
+            "source": "Hughes, S., Zoelle, A., Woods, M., Henry, S., Homsy, S., Pidaparti, S., Kuehn, N., Hoffman, H., Forrest, K., Sheriff, A., Fout, T., Summers, W. M., & Herron, S. (2022). Cost of capturing CO₂ from industrial sources (Report No. DOE/NETL-2022/3319). National Energy Technology Laboratory, U.S. Department of Energy. https://www.netl.doe.gov/projects/files/CostofCapturingCO2fromIndustrialSources_071522.pdf",
+            "notes": "Corresponds to CCS use",
+            "data_id": "${SCENARIO_DATA_ID}"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|all",
+          "axes": {},
+          "values": {
+            "source_id": "S1",
+            "source": "IEAGHG. Iron and Steel CCS Study (Techno-Economics Integrated Steel Mill), 2013.",
+            "notes": "Corresponds to Coke oven information",
+            "data_id": "${SCENARIO_DATA_ID}"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|all",
+          "axes": {},
+          "values": {
+            "source_id": "S2",
+            "source": "Azimi, A., & van der Spek, M. (2025). Prospective life cycle assessment suggests direct reduced iron is the most sustainable pathway to net-zero steelmaking. Industrial & Engineering Chemistry Research, 64(7), 3871–3885. https://doi.org/10.1021/acs.iecr.4c03321, Nurdiawati, A.; Zaini, I. N.; Wei, W.; Gyllenram, R.; Yang, W.; Samuelsson, P. Towards Fossil-Free Steel: Life Cycle Assessment of Biosyngas-Based Direct Reduced Iron (DRI) Production Process. J. Cleaner Prod. 2023, 393, 136262. , IEAGHG. Iron and Steel CCS Study (Techno-Economics Integrated Steel Mill), 2013.",
+            "notes": "Corresponds to DRI-NG, DRI-H2 and DRIEAF technologies",
+            "data_id": "${SCENARIO_DATA_ID}"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|all",
+          "axes": {},
+          "values": {
+            "source_id": "S3",
+            "source": "Burchart-Korol, D. (2013). Life cycle assessment of steel production in Poland: A case study. Journal of Cleaner Production, 54, 235–243. https://doi.org/10.1016/j.jclepro.2013.04.031,Van Wortswinkel, L., & Nijs, W. (2010). Iron and steel (Technology Brief I02). International Energy Agency – Energy Technology Systems Analysis Programme (IEA-ETSAP). https://iea-etsap.org/E-TechDS/PDF/I02-Iron&Steel-GS-AD-gct.pdf",
+            "notes": "Corresponds to scrap EAF",
+            "data_id": "${SCENARIO_DATA_ID}"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|all",
+          "axes": {},
+          "values": {
+            "source_id": "S4",
+            "source": "World Steel Association. (2026). World steel in figures 2026. https://worldsteel.org/data/world-steel-in-figures/world-steel-in-figures-2026/",
+            "notes": "Using this data, we visualized and projected steel production from the past 15 years",
+            "data_id": "${SCENARIO_DATA_ID}"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|all",
+          "axes": {},
+          "values": {
+            "source_id": "S5",
+            "source": "Global Energy Monitor. (2026). Global Iron and Steel Tracker (September 2026, Version 1) [Data set]. https://globalenergymonitor.org/projects/global-iron-steel-tracker/",
+            "notes": "Used for help finding existing capacities, non specified units were extrapolated from what we knew based on mass balance",
+            "data_id": "${SCENARIO_DATA_ID}"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|all",
+          "axes": {},
+          "values": {
+            "source_id": "S6",
+            "source": "Rechberger, K., Spanlang, A., Sasiain Conde, A., Wolfmeir, H. and Harris, C. (2020), Green Hydrogen-Based Direct Reduction for Low-Carbon Steelmaking. steel research int., 91: 2000110. https://doi.org/10.1002/srin.202000110",
+            "notes": "Corresponds to powerplants on steel sites",
+            "data_id": "${SCENARIO_DATA_ID}"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|all",
+          "axes": {},
+          "values": {
+            "source_id": "S7",
+            "source": "Generated from work internal to the Sleep group, will be updated with publication when released.",
+            "notes": "Corresponds to electrolyzers for steel plants",
+            "data_id": "${SCENARIO_DATA_ID}"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|all",
+          "axes": {},
+          "values": {
+            "source_id": "S8",
+            "source": "Azimi, A., & van der Spek, M. (2025). Prospective life cycle assessment suggests direct reduced iron is the most sustainable pathway to net-zero steelmaking. Industrial & Engineering Chemistry Research, 64(7), 3871–3885. https://doi.org/10.1021/acs.iecr.4c03321, Nurdiawati, A.; Zaini, I. N.; Wei, W.; Gyllenram, R.; Yang, W.; Samuelsson, P. Towards Fossil-Free Steel: Life Cycle Assessment of Biosyngas-Based Direct Reduced Iron (DRI) Production Process. J. Cleaner Prod. 2023, 393, 136262. , IEAGHG. Iron and Steel CCS Study (Techno-Economics Integrated Steel Mill), 2013.",
+            "notes": "Corresponds to BF, BOF and Postprocessing",
+            "data_id": "${SCENARIO_DATA_ID}"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|all",
+          "axes": {},
+          "values": {
+            "source_id": "S9",
+            "source": "Van Wortswinkel, L., & Nijs, W. (2010). Iron and steel (Technology Brief I02). International Energy Agency – Energy Technology Systems Analysis Programme (IEA-ETSAP). https://iea-etsap.org/E-TechDS/PDF/I02-Iron&Steel-GS-AD-gct.pdf",
+            "notes": "Corresponds to costs for various technologies",
+            "data_id": "${SCENARIO_DATA_ID}"
+          }
+        },
+        {
+          "scenarios": "ccs",
+          "axes": {},
+          "values": {
+            "source_id": "S1",
+            "source": "IEAGHG. Iron and Steel CCS Study (Techno-Economics Integrated Steel Mill), 2013.",
+            "notes": "Corresponds to Coke oven information",
+            "data_id": "STEELBASEHR001"
+          }
+        },
+        {
+          "scenarios": "ccs",
+          "axes": {},
+          "values": {
+            "source_id": "S10",
+            "source": "Hughes, S., Zoelle, A., Woods, M., Henry, S., Homsy, S., Pidaparti, S., Kuehn, N., Hoffman, H., Forrest, K., Sheriff, A., Fout, T., Summers, W. M., & Herron, S. (2022). Cost of capturing CO₂ from industrial sources (Report No. DOE/NETL-2022/3319). National Energy Technology Laboratory, U.S. Department of Energy. https://www.netl.doe.gov/projects/files/CostofCapturingCO2fromIndustrialSources_071522.pdf",
+            "notes": "Corresponds to CCS usage",
+            "data_id": null
+          }
+        },
+        {
+          "scenarios": "ccs",
+          "axes": {},
+          "values": {
+            "source_id": "S2",
+            "source": "Azimi, A., & van der Spek, M. (2025). Prospective life cycle assessment suggests direct reduced iron is the most sustainable pathway to net-zero steelmaking. Industrial & Engineering Chemistry Research, 64(7), 3871–3885. https://doi.org/10.1021/acs.iecr.4c03321, Nurdiawati, A.; Zaini, I. N.; Wei, W.; Gyllenram, R.; Yang, W.; Samuelsson, P. Towards Fossil-Free Steel: Life Cycle Assessment of Biosyngas-Based Direct Reduced Iron (DRI) Production Process. J. Cleaner Prod. 2023, 393, 136262. , IEAGHG. Iron and Steel CCS Study (Techno-Economics Integrated Steel Mill), 2013.",
+            "notes": "Corresponds to DRI-NG, DRI-H2 and DRIEAF technologies",
+            "data_id": "STEELBASEHR001"
+          }
+        },
+        {
+          "scenarios": "ccs",
+          "axes": {},
+          "values": {
+            "source_id": "S3",
+            "source": "Burchart-Korol, D. (2013). Life cycle assessment of steel production in Poland: A case study. Journal of Cleaner Production, 54, 235–243. https://doi.org/10.1016/j.jclepro.2013.04.031,Van Wortswinkel, L., & Nijs, W. (2010). Iron and steel (Technology Brief I02). International Energy Agency – Energy Technology Systems Analysis Programme (IEA-ETSAP). https://iea-etsap.org/E-TechDS/PDF/I02-Iron&Steel-GS-AD-gct.pdf",
+            "notes": "Corresponds to scrap EAF",
+            "data_id": "STEELBASEHR001"
+          }
+        },
+        {
+          "scenarios": "ccs",
+          "axes": {},
+          "values": {
+            "source_id": "S4",
+            "source": "World Steel Association. (2026). World steel in figures 2026. https://worldsteel.org/data/world-steel-in-figures/world-steel-in-figures-2026/",
+            "notes": "Using this data, we visualized and projected steel production from the past 15 years",
+            "data_id": "STEELBASEHR001"
+          }
+        },
+        {
+          "scenarios": "ccs",
+          "axes": {},
+          "values": {
+            "source_id": "S5",
+            "source": "Global Energy Monitor. (2026). Global Iron and Steel Tracker (September 2026, Version 1) [Data set]. https://globalenergymonitor.org/projects/global-iron-steel-tracker/",
+            "notes": "Used for help finding existing capacities, non specified units were extrapolated from what we knew based on mass balance",
+            "data_id": "STEELBASEHR001"
+          }
+        },
+        {
+          "scenarios": "ccs",
+          "axes": {},
+          "values": {
+            "source_id": "S6",
+            "source": "Rechberger, K., Spanlang, A., Sasiain Conde, A., Wolfmeir, H. and Harris, C. (2020), Green Hydrogen-Based Direct Reduction for Low-Carbon Steelmaking. steel research int., 91: 2000110. https://doi.org/10.1002/srin.202000110",
+            "notes": "Corresponds to powerplants on steel sites",
+            "data_id": "STEELBASEHR001"
+          }
+        },
+        {
+          "scenarios": "ccs",
+          "axes": {},
+          "values": {
+            "source_id": "S7",
+            "source": "Generated from work internal to the Sleep group, will be updated with publication when released.",
+            "notes": "Corresponds to electrolyzers for steel plants",
+            "data_id": "STEELBASEHR001"
+          }
+        },
+        {
+          "scenarios": "ccs",
+          "axes": {},
+          "values": {
+            "source_id": "S8",
+            "source": "Azimi, A., & van der Spek, M. (2025). Prospective life cycle assessment suggests direct reduced iron is the most sustainable pathway to net-zero steelmaking. Industrial & Engineering Chemistry Research, 64(7), 3871–3885. https://doi.org/10.1021/acs.iecr.4c03321, Nurdiawati, A.; Zaini, I. N.; Wei, W.; Gyllenram, R.; Yang, W.; Samuelsson, P. Towards Fossil-Free Steel: Life Cycle Assessment of Biosyngas-Based Direct Reduced Iron (DRI) Production Process. J. Cleaner Prod. 2023, 393, 136262. , IEAGHG. Iron and Steel CCS Study (Techno-Economics Integrated Steel Mill), 2013.",
+            "notes": "Corresponds to BF, BOF and Postprocessing",
+            "data_id": "STEELBASEHR001"
+          }
+        },
+        {
+          "scenarios": "ccs",
+          "axes": {},
+          "values": {
+            "source_id": "S9",
+            "source": "Van Wortswinkel, L., & Nijs, W. (2010). Iron and steel (Technology Brief I02). International Energy Agency – Energy Technology Systems Analysis Programme (IEA-ETSAP). https://iea-etsap.org/E-TechDS/PDF/I02-Iron&Steel-GS-AD-gct.pdf",
+            "notes": "Corresponds to costs for various technologies",
+            "data_id": "STEELBASEHR001"
+          }
+        }
+      ]
+    },
+    "data_source_label": {
+      "defaults": {
+        "notes": null
+      },
+      "rules": [
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {},
+          "values": {
+            "source_id": "S1"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {},
+          "values": {
+            "source_id": "S2"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {},
+          "values": {
+            "source_id": "S3"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {},
+          "values": {
+            "source_id": "S4"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {},
+          "values": {
+            "source_id": "S5"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {},
+          "values": {
+            "source_id": "S6"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {},
+          "values": {
+            "source_id": "S7"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {},
+          "values": {
+            "source_id": "S8"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {},
+          "values": {
+            "source_id": "S9"
+          }
+        },
+        {
+          "scenarios": "ccs|all",
+          "axes": {},
+          "values": {
+            "source_id": "S10"
+          }
+        }
+      ]
+    },
+    "time_period": {
+      "defaults": {
+        "sequence": null,
+        "flag": "e"
+      },
+      "rules": [
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "period": [
+              "2020"
+            ]
+          },
+          "values": {}
+        }
+      ]
+    },
+    "time_period_type": {
+      "defaults": {},
+      "rules": [
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {},
+          "values": {
+            "label": "e",
+            "description": "existing vintages"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {},
+          "values": {
+            "label": "f",
+            "description": "future"
+          }
+        }
+      ]
+    },
+    "data_quality_credibility": {
+      "defaults": {},
+      "rules": [
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {},
+          "values": {
+            "dq_cred": "1",
+            "description": "Excellent - A trustworthy source backed by strong analysis or direct measurements."
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {},
+          "values": {
+            "dq_cred": "2",
+            "description": "Good - Trustworthy source. Partly based on assumptions or imperfect analysis."
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {},
+          "values": {
+            "dq_cred": "3",
+            "description": "Acceptable - Acceptable source. May rely on many assumptions, shallow analysis, or rough measurement."
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {},
+          "values": {
+            "dq_cred": "4",
+            "description": "Lacking - Questionable or unverified source. Poorly measured or weak analysis."
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {},
+          "values": {
+            "dq_cred": "5",
+            "description": "Unacceptable - No or untrustworthy source. Unsupported assumption."
+          }
+        }
+      ]
+    },
+    "data_quality_geography": {
+      "defaults": {},
+      "rules": [
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {},
+          "values": {
+            "dq_geog": "1",
+            "description": "Excellent - From this region and at the correct aggregation level or a directly-applicable generic value."
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {},
+          "values": {
+            "dq_geog": "2",
+            "description": "Good - From an analogous region or the modelled region at incorrect aggregation level."
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {},
+          "values": {
+            "dq_geog": "3",
+            "description": "Acceptable - From a relevant but non-analogous region or highly aggregated."
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {},
+          "values": {
+            "dq_geog": "4",
+            "description": "Lacking - From a non-analogous region with limited relevance or a generic global value."
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {},
+          "values": {
+            "dq_geog": "5",
+            "description": "Unacceptable - From a region that is highly dissimilar to the modelled region, or from an unknown region."
+          }
+        }
+      ]
+    },
+    "data_quality_structure": {
+      "defaults": {},
+      "rules": [
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {},
+          "values": {
+            "dq_struc": "1",
+            "description": "Excellent - Excellent representation of the system, as good or better than other models."
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {},
+          "values": {
+            "dq_struc": "2",
+            "description": "Good - Well modelled, in line with what others are doing."
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {},
+          "values": {
+            "dq_struc": "3",
+            "description": "Acceptable - Room for improved representation but works for now."
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {},
+          "values": {
+            "dq_struc": "4",
+            "description": "Lacking - Poorly represented, overly simplified."
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {},
+          "values": {
+            "dq_struc": "5",
+            "description": "Unacceptable - Placeholder or dummy representation. Essentially not represented."
+          }
+        }
+      ]
+    },
+    "data_quality_technology": {
+      "defaults": {},
+      "rules": [
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {},
+          "values": {
+            "dq_tech": "1",
+            "description": "Excellent - For the modelled technology as represented. Directly applicable."
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {},
+          "values": {
+            "dq_tech": "2",
+            "description": "Good - For the same general technology but not perfectly representative."
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {},
+          "values": {
+            "dq_tech": "3",
+            "description": "Acceptable - For an analogous technology. Possibly a subset or general class. Roughly applicable."
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {},
+          "values": {
+            "dq_tech": "4",
+            "description": "Lacking - Loosely representative. A niche subset or overbroad general class of the technology."
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {},
+          "values": {
+            "dq_tech": "5",
+            "description": "Unacceptable - For a dissimilar or unknown technology. Unknown or poor applicability."
+          }
+        }
+      ]
+    },
+    "data_quality_time": {
+      "defaults": {},
+      "rules": [
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {},
+          "values": {
+            "dq_time": "1",
+            "description": "Excellent - From or directly applicable to the modelled time."
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {},
+          "values": {
+            "dq_time": "2",
+            "description": "Good - From a different but similar time or only slightly out of date. Still highly relevant."
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {},
+          "values": {
+            "dq_time": "3",
+            "description": "Acceptable - From a somewhat similar time or several years out of date but still relevant."
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {},
+          "values": {
+            "dq_time": "4",
+            "description": "Lacking - From a time with different conditions or significantly out of date. Questionable relevance."
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {},
+          "values": {
+            "dq_time": "5",
+            "description": "Unacceptable - From an irrelevant time or badly out of date."
+          }
+        }
+      ]
+    }
+  }
+}

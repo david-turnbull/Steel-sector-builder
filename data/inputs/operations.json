@@ -1,0 +1,2293 @@
+{
+  "description": "Demand, capacity, activity conversion, and operational constraints.",
+  "tables": {
+    "existing_capacity": {
+      "defaults": {
+        "notes": null,
+        "data_source": null,
+        "dq_cred": null,
+        "dq_geog": null,
+        "dq_struc": null,
+        "dq_tech": null,
+        "dq_time": null,
+        "data_id": "${SCENARIO_DATA_ID}"
+      },
+      "rules": [
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_ALG_BF"
+            ],
+            "vintage": [
+              "2020"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "capacity": "3.154517965",
+            "units": "MT"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_ALG_BOF"
+            ],
+            "vintage": [
+              "2020"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "capacity": "3.501907177",
+            "units": "MT"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_ALG_CO"
+            ],
+            "vintage": [
+              "2020"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "capacity": "1.119222967",
+            "units": "MT"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_ALG_PP"
+            ],
+            "vintage": [
+              "2020"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "capacity": "3.2",
+            "units": "MT"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_ALG_PPLANT"
+            ],
+            "vintage": [
+              "2020"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "capacity": "0.112778905",
+            "units": "GW"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_AMM_DRI"
+            ],
+            "vintage": [
+              "2020"
+            ]
+          },
+          "values": {
+            "region": "QC",
+            "capacity": "5.305389502",
+            "units": "MT"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_AMM_EAF"
+            ],
+            "vintage": [
+              "2020"
+            ]
+          },
+          "values": {
+            "region": "QC",
+            "capacity": "2.626427552",
+            "units": "MT"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_AMM_PP"
+            ],
+            "vintage": [
+              "2020"
+            ]
+          },
+          "values": {
+            "region": "QC",
+            "capacity": "2.4",
+            "units": "MT"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_DOF_BF"
+            ],
+            "vintage": [
+              "2020"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "capacity": "2.447574219",
+            "units": "MT"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_DOF_BOF"
+            ],
+            "vintage": [
+              "2020"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "capacity": "2.717111749",
+            "units": "MT"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_DOF_CO"
+            ],
+            "vintage": [
+              "2020"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "capacity": "0.86839933",
+            "units": "MT"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_DOF_EAF_PP"
+            ],
+            "vintage": [
+              "2020"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "capacity": "1.35",
+            "units": "MT"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_DOF_PP"
+            ],
+            "vintage": [
+              "2020"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "capacity": "2.7",
+            "units": "MT"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_DOF_PPLANT"
+            ],
+            "vintage": [
+              "2020"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "capacity": "0.132162779",
+            "units": "GW"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_DOF_S_EAF"
+            ],
+            "vintage": [
+              "2020"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "capacity": "1.329950063",
+            "units": "MT"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_EVRAZ_EAF"
+            ],
+            "vintage": [
+              "2020"
+            ]
+          },
+          "values": {
+            "region": "SK",
+            "capacity": "1.259485055",
+            "units": "MT"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_EVRAZ_PP"
+            ],
+            "vintage": [
+              "2020"
+            ]
+          },
+          "values": {
+            "region": "SK",
+            "capacity": "1.2",
+            "units": "MT"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_GERDAU_EAF"
+            ],
+            "vintage": [
+              "2020"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "capacity": "1.154527992",
+            "units": "MT"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_GERDAU_PP"
+            ],
+            "vintage": [
+              "2020"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "capacity": "1.1",
+            "units": "MT"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_IVACO_EAF"
+            ],
+            "vintage": [
+              "2020"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "capacity": "0.682214948",
+            "units": "MT"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_IVACO_PP"
+            ],
+            "vintage": [
+              "2020"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "capacity": "0.65",
+            "units": "MT"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_STELCO_BF"
+            ],
+            "vintage": [
+              "2020"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "capacity": "2.464465609",
+            "units": "MT"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_STELCO_BOF"
+            ],
+            "vintage": [
+              "2020"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "capacity": "2.735862371",
+            "units": "MT"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_STELCO_CO"
+            ],
+            "vintage": [
+              "2020"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "capacity": "0.874391967",
+            "units": "MT"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_STELCO_PP"
+            ],
+            "vintage": [
+              "2020"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "capacity": "2.5",
+            "units": "MT"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_STELCO_PPLANT"
+            ],
+            "vintage": [
+              "2020"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "capacity": "0.088108419",
+            "units": "GW"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_TINTO_BF"
+            ],
+            "vintage": [
+              "2020"
+            ]
+          },
+          "values": {
+            "region": "QC",
+            "capacity": "0.591472047",
+            "units": "MT"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_TINTO_BOF"
+            ],
+            "vintage": [
+              "2020"
+            ]
+          },
+          "values": {
+            "region": "QC",
+            "capacity": "0.656607602",
+            "units": "MT"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_TINTO_CO"
+            ],
+            "vintage": [
+              "2020"
+            ]
+          },
+          "values": {
+            "region": "QC",
+            "capacity": "0.209854283",
+            "units": "MT"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_TINTO_PP"
+            ],
+            "vintage": [
+              "2020"
+            ]
+          },
+          "values": {
+            "region": "QC",
+            "capacity": "0.6",
+            "units": "MT"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_TINTO_PPLANT"
+            ],
+            "vintage": [
+              "2020"
+            ]
+          },
+          "values": {
+            "region": "QC",
+            "capacity": "0.021146045",
+            "units": "GW"
+          }
+        }
+      ]
+    },
+    "capacity_to_activity": {
+      "defaults": {
+        "units": null,
+        "data_source": null,
+        "dq_cred": null,
+        "dq_geog": null,
+        "dq_struc": null,
+        "dq_tech": null,
+        "dq_time": null
+      },
+      "rules": [
+        {
+          "scenarios": "all",
+          "axes": {
+            "tech": [
+              "I_ALG_D_EAF",
+              "I_GERDAU_D_EAF",
+              "I_IVACO_D_EAF",
+              "I_STELCO_D_EAF"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "c2a": "1.011643297",
+            "notes": "Scaled to amount of output based on 1 MT of desired output",
+            "data_id": "${SCENARIO_DATA_ID}"
+          }
+        },
+        {
+          "scenarios": "all",
+          "axes": {
+            "tech": [
+              "I_AMM_S_EAF",
+              "I_TINTO_S_EAF"
+            ]
+          },
+          "values": {
+            "region": "QC",
+            "c2a": "1.2348",
+            "notes": "Scaled to amount of output based on 1 MT of desired output",
+            "data_id": "${SCENARIO_DATA_ID}"
+          }
+        },
+        {
+          "scenarios": "all",
+          "axes": {
+            "tech": [
+              "I_EVRAZ_D_EAF"
+            ]
+          },
+          "values": {
+            "region": "SK",
+            "c2a": "1.011643297",
+            "notes": "Scaled to amount of output based on 1 MT of desired output",
+            "data_id": "${SCENARIO_DATA_ID}"
+          }
+        },
+        {
+          "scenarios": "all",
+          "axes": {
+            "tech": [
+              "I_STELCO_S_EAF"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "c2a": "1.2348",
+            "notes": "Scaled to amount of output based on 1 MT of desired output",
+            "data_id": "${SCENARIO_DATA_ID}"
+          }
+        },
+        {
+          "scenarios": "all",
+          "axes": {
+            "tech": [
+              "I_TINTO_D_EAF"
+            ]
+          },
+          "values": {
+            "region": "QC",
+            "c2a": "1.011643297",
+            "notes": "Scaled to amount of output based on 1 MT of desired output",
+            "data_id": "${SCENARIO_DATA_ID}"
+          }
+        },
+        {
+          "scenarios": "basecase|ccs|all",
+          "axes": {
+            "tech": [
+              "I_ALG_BF",
+              "I_DOF_BF",
+              "I_STELCO_BF"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "c2a": "3.602",
+            "notes": "Scaled to amount of output based on 1 MT of desired output",
+            "data_id": "${SCENARIO_DATA_ID}"
+          }
+        },
+        {
+          "scenarios": "basecase|ccs|all",
+          "axes": {
+            "tech": [
+              "I_ALG_BOF",
+              "I_DOF_BOF",
+              "I_STELCO_BOF"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "c2a": "1.2088",
+            "notes": "Scaled to amount of output based on 1 MT of desired output",
+            "data_id": "${SCENARIO_DATA_ID}"
+          }
+        },
+        {
+          "scenarios": "basecase|ccs|all",
+          "axes": {
+            "tech": [
+              "I_ALG_CO",
+              "I_DOF_CO",
+              "I_STELCO_CO"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "c2a": "1.181",
+            "notes": "Scaled to amount of output based on 1 MT of desired output",
+            "data_id": "${SCENARIO_DATA_ID}"
+          }
+        },
+        {
+          "scenarios": "basecase|ccs|all",
+          "axes": {
+            "tech": [
+              "I_ALG_EAF",
+              "I_DOF_S_EAF",
+              "I_GERDAU_EAF",
+              "I_IVACO_EAF"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "c2a": "1.2348",
+            "notes": "Scaled to amount of output based on 1 MT of desired output",
+            "data_id": "${SCENARIO_DATA_ID}"
+          }
+        },
+        {
+          "scenarios": "basecase|ccs|all",
+          "axes": {
+            "tech": [
+              "I_ALG_EAF_PP",
+              "I_ALG_PP",
+              "I_DOF_EAF_PP",
+              "I_DOF_PP",
+              "I_GERDAU_PP",
+              "I_IVACO_PP",
+              "I_STELCO_PP"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "c2a": "1.06925708",
+            "notes": "Scaled to amount of output based on 1 MT of desired output",
+            "data_id": "${SCENARIO_DATA_ID}"
+          }
+        },
+        {
+          "scenarios": "basecase|ccs|all",
+          "axes": {
+            "tech": [
+              "I_ALG_PPLANT",
+              "I_DOF_PPLANT",
+              "I_STELCO_PPLANT"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "c2a": "31.536",
+            "notes": "PJ/GWy",
+            "data_id": "${SCENARIO_DATA_ID}"
+          }
+        },
+        {
+          "scenarios": "basecase|ccs|all",
+          "axes": {
+            "tech": [
+              "I_AMM_EAF"
+            ]
+          },
+          "values": {
+            "region": "QC",
+            "c2a": "1.011643297",
+            "notes": "Scaled to amount of output based on 1 MT of desired output",
+            "data_id": "${SCENARIO_DATA_ID}"
+          }
+        },
+        {
+          "scenarios": "basecase|ccs|all",
+          "axes": {
+            "tech": [
+              "I_AMM_PP",
+              "I_TINTO_PP"
+            ]
+          },
+          "values": {
+            "region": "QC",
+            "c2a": "1.06925708",
+            "notes": "Scaled to amount of output based on 1 MT of desired output",
+            "data_id": "${SCENARIO_DATA_ID}"
+          }
+        },
+        {
+          "scenarios": "basecase|ccs|all",
+          "axes": {
+            "tech": [
+              "I_DOF_D_EAF"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "c2a": "1.011643297",
+            "notes": "Scaled to amount of output based on 1 MT of desired output",
+            "data_id": "${SCENARIO_DATA_ID}"
+          }
+        },
+        {
+          "scenarios": "basecase|ccs|all",
+          "axes": {
+            "tech": [
+              "I_EVRAZ_EAF"
+            ]
+          },
+          "values": {
+            "region": "SK",
+            "c2a": "1.2348",
+            "notes": "Scaled to amount of output based on 1 MT of desired output",
+            "data_id": "${SCENARIO_DATA_ID}"
+          }
+        },
+        {
+          "scenarios": "basecase|ccs|all",
+          "axes": {
+            "tech": [
+              "I_EVRAZ_PP"
+            ]
+          },
+          "values": {
+            "region": "SK",
+            "c2a": "1.06925708",
+            "notes": "Scaled to amount of output based on 1 MT of desired output",
+            "data_id": "${SCENARIO_DATA_ID}"
+          }
+        },
+        {
+          "scenarios": "basecase|ccs|all",
+          "axes": {
+            "tech": [
+              "I_TINTO_BF"
+            ]
+          },
+          "values": {
+            "region": "QC",
+            "c2a": "3.602",
+            "notes": "Scaled to amount of output based on 1 MT of desired output",
+            "data_id": "${SCENARIO_DATA_ID}"
+          }
+        },
+        {
+          "scenarios": "basecase|ccs|all",
+          "axes": {
+            "tech": [
+              "I_TINTO_BOF"
+            ]
+          },
+          "values": {
+            "region": "QC",
+            "c2a": "1.2088",
+            "notes": "Scaled to amount of output based on 1 MT of desired output",
+            "data_id": "${SCENARIO_DATA_ID}"
+          }
+        },
+        {
+          "scenarios": "basecase|ccs|all",
+          "axes": {
+            "tech": [
+              "I_TINTO_CO"
+            ]
+          },
+          "values": {
+            "region": "QC",
+            "c2a": "1.181",
+            "notes": "Scaled to amount of output based on 1 MT of desired output",
+            "data_id": "${SCENARIO_DATA_ID}"
+          }
+        },
+        {
+          "scenarios": "basecase|ccs|all",
+          "axes": {
+            "tech": [
+              "I_TINTO_PPLANT"
+            ]
+          },
+          "values": {
+            "region": "QC",
+            "c2a": "31.536",
+            "notes": "PJ/GWy",
+            "data_id": "${SCENARIO_DATA_ID}"
+          }
+        },
+        {
+          "scenarios": "eaf",
+          "axes": {
+            "tech": [
+              "I_ALG_BF",
+              "I_DOF_BF",
+              "I_STELCO_BF"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "c2a": "3.602",
+            "notes": "Scaled to amount of output based on 1 MT of desired output",
+            "data_id": "STEELBASEHR001"
+          }
+        },
+        {
+          "scenarios": "eaf",
+          "axes": {
+            "tech": [
+              "I_ALG_BOF",
+              "I_DOF_BOF",
+              "I_STELCO_BOF"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "c2a": "1.2088",
+            "notes": "Scaled to amount of output based on 1 MT of desired output",
+            "data_id": "STEELBASEHR001"
+          }
+        },
+        {
+          "scenarios": "eaf",
+          "axes": {
+            "tech": [
+              "I_ALG_CO",
+              "I_DOF_CO",
+              "I_STELCO_CO"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "c2a": "1.181",
+            "notes": "Scaled to amount of output based on 1 MT of desired output",
+            "data_id": "STEELBASEHR001"
+          }
+        },
+        {
+          "scenarios": "eaf",
+          "axes": {
+            "tech": [
+              "I_ALG_D_EAF",
+              "I_DOF_D_EAF",
+              "I_GERDAU_D_EAF",
+              "I_IVACO_D_EAF",
+              "I_STELCO_D_EAF"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "c2a": "1.011643297",
+            "notes": "Scaled to amount of output based on 1 MT of desired output",
+            "data_id": "STEELBASEHR001"
+          }
+        },
+        {
+          "scenarios": "eaf",
+          "axes": {
+            "tech": [
+              "I_ALG_EAF",
+              "I_DOF_S_EAF",
+              "I_GERDAU_EAF",
+              "I_IVACO_EAF",
+              "I_STELCO_S_EAF"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "c2a": "1.2348",
+            "notes": "Scaled to amount of output based on 1 MT of desired output",
+            "data_id": "STEELBASEHR001"
+          }
+        },
+        {
+          "scenarios": "eaf",
+          "axes": {
+            "tech": [
+              "I_ALG_EAF_PP",
+              "I_ALG_PP",
+              "I_DOF_EAF_PP",
+              "I_DOF_PP",
+              "I_GERDAU_PP",
+              "I_IVACO_PP",
+              "I_STELCO_PP"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "c2a": "1.06925708",
+            "notes": "Scaled to amount of output based on 1 MT of desired output",
+            "data_id": "STEELBASEHR001"
+          }
+        },
+        {
+          "scenarios": "eaf",
+          "axes": {
+            "tech": [
+              "I_ALG_PPLANT",
+              "I_DOF_PPLANT",
+              "I_STELCO_PPLANT"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "c2a": "31.536",
+            "notes": "PJ/GWy",
+            "data_id": "STEELBASEHR001"
+          }
+        },
+        {
+          "scenarios": "eaf",
+          "axes": {
+            "tech": [
+              "I_AMM_EAF",
+              "I_TINTO_D_EAF"
+            ]
+          },
+          "values": {
+            "region": "QC",
+            "c2a": "1.011643297",
+            "notes": "Scaled to amount of output based on 1 MT of desired output",
+            "data_id": "STEELBASEHR001"
+          }
+        },
+        {
+          "scenarios": "eaf",
+          "axes": {
+            "tech": [
+              "I_AMM_PP",
+              "I_TINTO_PP"
+            ]
+          },
+          "values": {
+            "region": "QC",
+            "c2a": "1.06925708",
+            "notes": "Scaled to amount of output based on 1 MT of desired output",
+            "data_id": "STEELBASEHR001"
+          }
+        },
+        {
+          "scenarios": "eaf",
+          "axes": {
+            "tech": [
+              "I_AMM_S_EAF",
+              "I_TINTO_S_EAF"
+            ]
+          },
+          "values": {
+            "region": "QC",
+            "c2a": "1.2348",
+            "notes": "Scaled to amount of output based on 1 MT of desired output",
+            "data_id": "STEELBASEHR001"
+          }
+        },
+        {
+          "scenarios": "eaf",
+          "axes": {
+            "tech": [
+              "I_EVRAZ_D_EAF"
+            ]
+          },
+          "values": {
+            "region": "SK",
+            "c2a": "1.011643297",
+            "notes": "Scaled to amount of output based on 1 MT of desired output",
+            "data_id": "STEELBASEHR001"
+          }
+        },
+        {
+          "scenarios": "eaf",
+          "axes": {
+            "tech": [
+              "I_EVRAZ_EAF"
+            ]
+          },
+          "values": {
+            "region": "SK",
+            "c2a": "1.2348",
+            "notes": "Scaled to amount of output based on 1 MT of desired output",
+            "data_id": "STEELBASEHR001"
+          }
+        },
+        {
+          "scenarios": "eaf",
+          "axes": {
+            "tech": [
+              "I_EVRAZ_PP"
+            ]
+          },
+          "values": {
+            "region": "SK",
+            "c2a": "1.06925708",
+            "notes": "Scaled to amount of output based on 1 MT of desired output",
+            "data_id": "STEELBASEHR001"
+          }
+        },
+        {
+          "scenarios": "eaf",
+          "axes": {
+            "tech": [
+              "I_TINTO_BF"
+            ]
+          },
+          "values": {
+            "region": "QC",
+            "c2a": "3.602",
+            "notes": "Scaled to amount of output based on 1 MT of desired output",
+            "data_id": "STEELBASEHR001"
+          }
+        },
+        {
+          "scenarios": "eaf",
+          "axes": {
+            "tech": [
+              "I_TINTO_BOF"
+            ]
+          },
+          "values": {
+            "region": "QC",
+            "c2a": "1.2088",
+            "notes": "Scaled to amount of output based on 1 MT of desired output",
+            "data_id": "STEELBASEHR001"
+          }
+        },
+        {
+          "scenarios": "eaf",
+          "axes": {
+            "tech": [
+              "I_TINTO_CO"
+            ]
+          },
+          "values": {
+            "region": "QC",
+            "c2a": "1.181",
+            "notes": "Scaled to amount of output based on 1 MT of desired output",
+            "data_id": "STEELBASEHR001"
+          }
+        },
+        {
+          "scenarios": "eaf",
+          "axes": {
+            "tech": [
+              "I_TINTO_PPLANT"
+            ]
+          },
+          "values": {
+            "region": "QC",
+            "c2a": "31.536",
+            "notes": "PJ/GWy",
+            "data_id": "STEELBASEHR001"
+          }
+        }
+      ]
+    },
+    "demand": {
+      "defaults": {
+        "units": "MT",
+        "notes": "Took the average of the last 10 years of Steel production and split provincially by amount of capacity",
+        "data_source": "https://tradingeconomics.com/canada/steel-production",
+        "data_id": "${SCENARIO_DATA_ID}"
+      },
+      "rules": [
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "commodity": [
+              "I_rolled_steel"
+            ],
+            "period": [
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "demand": "9.499992923",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "commodity": [
+              "I_rolled_steel"
+            ],
+            "period": [
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "QC",
+            "demand": "2.478259023",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "commodity": [
+              "I_rolled_steel"
+            ],
+            "period": [
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "SK",
+            "demand": "0.991303609",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null
+          }
+        }
+      ]
+    },
+    "limit_activity": {
+      "defaults": {
+        "units": null,
+        "notes": null,
+        "data_source": null,
+        "dq_cred": null,
+        "dq_geog": null,
+        "dq_struc": null,
+        "dq_tech": null,
+        "dq_time": null,
+        "data_id": "${SCENARIO_DATA_ID}"
+      },
+      "rules": [
+        {
+          "scenarios": "basecase",
+          "axes": {
+            "tech_or_group": [
+              "I_ALG_EAF_PP"
+            ],
+            "period": [
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "operator": "ge",
+            "activity": "2.737298125"
+          }
+        },
+        {
+          "scenarios": "basecase",
+          "axes": {
+            "tech_or_group": [
+              "I_ALG_EAF_PP"
+            ],
+            "period": [
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "operator": "le",
+            "activity": "2.908379258"
+          }
+        },
+        {
+          "scenarios": "basecase",
+          "axes": {
+            "tech_or_group": [
+              "I_AMM_PP"
+            ],
+            "period": [
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "QC",
+            "operator": "ge",
+            "activity": "2.052973594"
+          }
+        },
+        {
+          "scenarios": "basecase",
+          "axes": {
+            "tech_or_group": [
+              "I_AMM_PP"
+            ],
+            "period": [
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "QC",
+            "operator": "le",
+            "activity": "2.181284443"
+          }
+        },
+        {
+          "scenarios": "basecase",
+          "axes": {
+            "tech_or_group": [
+              "I_DOF_EAF_PP"
+            ],
+            "period": [
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "operator": "ge",
+            "activity": "3.20777124"
+          }
+        },
+        {
+          "scenarios": "basecase",
+          "axes": {
+            "tech_or_group": [
+              "I_DOF_EAF_PP"
+            ],
+            "period": [
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "operator": "le",
+            "activity": "3.408256943"
+          }
+        },
+        {
+          "scenarios": "basecase",
+          "axes": {
+            "tech_or_group": [
+              "I_EVRAZ_PP"
+            ],
+            "period": [
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "SK",
+            "operator": "ge",
+            "activity": "1.026486797"
+          }
+        },
+        {
+          "scenarios": "basecase",
+          "axes": {
+            "tech_or_group": [
+              "I_EVRAZ_PP"
+            ],
+            "period": [
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "SK",
+            "operator": "le",
+            "activity": "1.090642222"
+          }
+        },
+        {
+          "scenarios": "basecase",
+          "axes": {
+            "tech_or_group": [
+              "I_GERDAU_PP"
+            ],
+            "period": [
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "operator": "ge",
+            "activity": "0.94094623"
+          }
+        },
+        {
+          "scenarios": "basecase",
+          "axes": {
+            "tech_or_group": [
+              "I_GERDAU_PP"
+            ],
+            "period": [
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "operator": "le",
+            "activity": "0.99975537"
+          }
+        },
+        {
+          "scenarios": "basecase",
+          "axes": {
+            "tech_or_group": [
+              "I_IVACO_PP"
+            ],
+            "period": [
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "operator": "ge",
+            "activity": "0.556013682"
+          }
+        },
+        {
+          "scenarios": "basecase",
+          "axes": {
+            "tech_or_group": [
+              "I_IVACO_PP"
+            ],
+            "period": [
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "operator": "le",
+            "activity": "0.590764537"
+          }
+        },
+        {
+          "scenarios": "basecase",
+          "axes": {
+            "tech_or_group": [
+              "I_STELCO_PP"
+            ],
+            "period": [
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "operator": "ge",
+            "activity": "2.13851416"
+          }
+        },
+        {
+          "scenarios": "basecase",
+          "axes": {
+            "tech_or_group": [
+              "I_STELCO_PP"
+            ],
+            "period": [
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "operator": "le",
+            "activity": "2.272171295"
+          }
+        },
+        {
+          "scenarios": "basecase",
+          "axes": {
+            "tech_or_group": [
+              "I_TINTO_PP"
+            ],
+            "period": [
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "QC",
+            "operator": "ge",
+            "activity": "0.513243398"
+          }
+        },
+        {
+          "scenarios": "basecase",
+          "axes": {
+            "tech_or_group": [
+              "I_TINTO_PP"
+            ],
+            "period": [
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "QC",
+            "operator": "le",
+            "activity": "0.545321111"
+          }
+        }
+      ]
+    },
+    "limit_activity_share": {
+      "defaults": {
+        "region": "ON",
+        "super_group": "I_DOF_PROCESS",
+        "notes": null,
+        "data_source": null,
+        "dq_cred": null,
+        "dq_geog": null,
+        "dq_struc": null,
+        "dq_tech": null,
+        "dq_time": null,
+        "data_id": "${SCENARIO_DATA_ID}"
+      },
+      "rules": [
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "period": [
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "sub_group": "I_DOF_BOF",
+            "operator": "le",
+            "share": "0.0"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "period": [
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "sub_group": "I_DOF_D_EAF",
+            "operator": "ge",
+            "share": "0.64"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "period": [
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "sub_group": "I_DOF_S_EAF",
+            "operator": "ge",
+            "share": "0.36"
+          }
+        }
+      ]
+    },
+    "limit_capacity": {
+      "defaults": {
+        "data_id": "${SCENARIO_DATA_ID}"
+      },
+      "rules": [
+        {
+          "scenarios": "basecase",
+          "axes": {
+            "tech_or_group": [
+              "I_ALG_BF",
+              "I_ALG_BOF",
+              "I_ALG_CO",
+              "I_ALG_PP",
+              "I_ALG_PPLANT",
+              "I_DOF_BF",
+              "I_DOF_BOF",
+              "I_DOF_CO",
+              "I_DOF_PP",
+              "I_DOF_PPLANT"
+            ],
+            "period": [
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "operator": "le",
+            "capacity": "0.0",
+            "units": null,
+            "notes": null,
+            "data_source": null,
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null
+          }
+        },
+        {
+          "scenarios": "basecase",
+          "axes": {
+            "tech_or_group": [
+              "I_ALG_EAF_PP"
+            ],
+            "period": [
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "operator": "e",
+            "capacity": "3.7",
+            "units": null,
+            "notes": null,
+            "data_source": null,
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null
+          }
+        },
+        {
+          "scenarios": "basecase",
+          "axes": {
+            "tech_or_group": [
+              "I_AMM_PP"
+            ],
+            "period": [
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "QC",
+            "operator": "e",
+            "capacity": "2.4",
+            "units": null,
+            "notes": null,
+            "data_source": null,
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null
+          }
+        },
+        {
+          "scenarios": "basecase",
+          "axes": {
+            "tech_or_group": [
+              "I_DOF_EAF_PP"
+            ],
+            "period": [
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "operator": "e",
+            "capacity": "3.75",
+            "units": null,
+            "notes": null,
+            "data_source": null,
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null
+          }
+        },
+        {
+          "scenarios": "basecase",
+          "axes": {
+            "tech_or_group": [
+              "I_EVRAZ_PP"
+            ],
+            "period": [
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "SK",
+            "operator": "e",
+            "capacity": "1.2",
+            "units": null,
+            "notes": null,
+            "data_source": null,
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null
+          }
+        },
+        {
+          "scenarios": "basecase",
+          "axes": {
+            "tech_or_group": [
+              "I_GERDAU_PP"
+            ],
+            "period": [
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "operator": "e",
+            "capacity": "1.1",
+            "units": null,
+            "notes": null,
+            "data_source": null,
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null
+          }
+        },
+        {
+          "scenarios": "basecase",
+          "axes": {
+            "tech_or_group": [
+              "I_IVACO_PP"
+            ],
+            "period": [
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "operator": "e",
+            "capacity": "0.65",
+            "units": null,
+            "notes": null,
+            "data_source": null,
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null
+          }
+        },
+        {
+          "scenarios": "basecase",
+          "axes": {
+            "tech_or_group": [
+              "I_STELCO_PP"
+            ],
+            "period": [
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "operator": "e",
+            "capacity": "2.5",
+            "units": null,
+            "notes": null,
+            "data_source": null,
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null
+          }
+        },
+        {
+          "scenarios": "basecase",
+          "axes": {
+            "tech_or_group": [
+              "I_TINTO_PP"
+            ],
+            "period": [
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "QC",
+            "operator": "e",
+            "capacity": "0.6",
+            "units": null,
+            "notes": null,
+            "data_source": null,
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null
+          }
+        },
+        {
+          "scenarios": "ccs",
+          "axes": {
+            "tech_or_group": [
+              "I_ALGOMA"
+            ],
+            "period": [
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "operator": "le",
+            "capacity": "2.72",
+            "units": "",
+            "notes": "",
+            "data_source": "",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null
+          }
+        },
+        {
+          "scenarios": "ccs",
+          "axes": {
+            "tech_or_group": [
+              "I_AMM"
+            ],
+            "period": [
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "QC",
+            "operator": "le",
+            "capacity": "2.04",
+            "units": "",
+            "notes": "",
+            "data_source": "",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null
+          }
+        },
+        {
+          "scenarios": "ccs",
+          "axes": {
+            "tech_or_group": [
+              "I_DOFASCO"
+            ],
+            "period": [
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "operator": "le",
+            "capacity": "3.1875",
+            "units": "",
+            "notes": "",
+            "data_source": "",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null
+          }
+        },
+        {
+          "scenarios": "ccs",
+          "axes": {
+            "tech_or_group": [
+              "I_EVRAZ"
+            ],
+            "period": [
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "SK",
+            "operator": "le",
+            "capacity": "1.02",
+            "units": "",
+            "notes": "",
+            "data_source": "",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null
+          }
+        },
+        {
+          "scenarios": "ccs",
+          "axes": {
+            "tech_or_group": [
+              "I_GERDAU"
+            ],
+            "period": [
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "operator": "le",
+            "capacity": "0.935",
+            "units": "",
+            "notes": "",
+            "data_source": "",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null
+          }
+        },
+        {
+          "scenarios": "ccs",
+          "axes": {
+            "tech_or_group": [
+              "I_IVACO"
+            ],
+            "period": [
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "operator": "le",
+            "capacity": "0.5525",
+            "units": "",
+            "notes": "",
+            "data_source": "",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null
+          }
+        },
+        {
+          "scenarios": "ccs",
+          "axes": {
+            "tech_or_group": [
+              "I_STELCO"
+            ],
+            "period": [
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "operator": "le",
+            "capacity": "2.125",
+            "units": "",
+            "notes": "",
+            "data_source": "",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null
+          }
+        },
+        {
+          "scenarios": "ccs",
+          "axes": {
+            "tech_or_group": [
+              "I_TINTO"
+            ],
+            "period": [
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "QC",
+            "operator": "le",
+            "capacity": "0.51",
+            "units": "",
+            "notes": "",
+            "data_source": "",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null
+          }
+        },
+        {
+          "scenarios": "eaf|all",
+          "axes": {
+            "tech_or_group": [
+              "I_ALGOMA"
+            ],
+            "period": [
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "operator": "le",
+            "capacity": "2.72",
+            "units": null,
+            "notes": null,
+            "data_source": null,
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null
+          }
+        },
+        {
+          "scenarios": "eaf|all",
+          "axes": {
+            "tech_or_group": [
+              "I_AMM"
+            ],
+            "period": [
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "QC",
+            "operator": "le",
+            "capacity": "2.04",
+            "units": null,
+            "notes": null,
+            "data_source": null,
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null
+          }
+        },
+        {
+          "scenarios": "eaf|all",
+          "axes": {
+            "tech_or_group": [
+              "I_DOFASCO"
+            ],
+            "period": [
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "operator": "le",
+            "capacity": "3.1875",
+            "units": null,
+            "notes": null,
+            "data_source": null,
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null
+          }
+        },
+        {
+          "scenarios": "eaf|all",
+          "axes": {
+            "tech_or_group": [
+              "I_EVRAZ"
+            ],
+            "period": [
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "SK",
+            "operator": "le",
+            "capacity": "1.02",
+            "units": null,
+            "notes": null,
+            "data_source": null,
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null
+          }
+        },
+        {
+          "scenarios": "eaf|all",
+          "axes": {
+            "tech_or_group": [
+              "I_GERDAU"
+            ],
+            "period": [
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "operator": "le",
+            "capacity": "0.935",
+            "units": null,
+            "notes": null,
+            "data_source": null,
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null
+          }
+        },
+        {
+          "scenarios": "eaf|all",
+          "axes": {
+            "tech_or_group": [
+              "I_IVACO"
+            ],
+            "period": [
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "operator": "le",
+            "capacity": "0.5525",
+            "units": null,
+            "notes": null,
+            "data_source": null,
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null
+          }
+        },
+        {
+          "scenarios": "eaf|all",
+          "axes": {
+            "tech_or_group": [
+              "I_STELCO"
+            ],
+            "period": [
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "operator": "le",
+            "capacity": "2.125",
+            "units": null,
+            "notes": null,
+            "data_source": null,
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null
+          }
+        },
+        {
+          "scenarios": "eaf|all",
+          "axes": {
+            "tech_or_group": [
+              "I_TINTO"
+            ],
+            "period": [
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "QC",
+            "operator": "le",
+            "capacity": "0.51",
+            "units": null,
+            "notes": null,
+            "data_source": null,
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null
+          }
+        }
+      ]
+    }
+  }
+}

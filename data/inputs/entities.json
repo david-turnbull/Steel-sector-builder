@@ -1,0 +1,3859 @@
+{
+  "description": "Technology and commodity definitions, including human-readable labels.",
+  "tables": {
+    "technology": {
+      "defaults": {
+        "flag": "p",
+        "sector": "Steel",
+        "annual": "1",
+        "reserve": "0",
+        "curtail": "0",
+        "flex": "0",
+        "exchange": "0",
+        "seas_stor": "0",
+        "data_id": "${SCENARIO_DATA_ID}"
+      },
+      "rules": [
+        {
+          "scenarios": "all",
+          "axes": {
+            "tech": [
+              "I_ALG_CCS_90",
+              "I_ALG_CCS_99",
+              "I_AMM_CCS_90",
+              "I_AMM_CCS_99",
+              "I_DOF_CCS_90",
+              "I_DOF_CCS_99",
+              "I_EVRAZ_CCS_90",
+              "I_EVRAZ_CCS_99",
+              "I_GERDAU_CCS_90",
+              "I_GERDAU_CCS_99",
+              "I_IVACO_CCS_90",
+              "I_IVACO_CCS_99",
+              "I_STELCO_CCS_90",
+              "I_STELCO_CCS_99",
+              "I_TINTO_CCS_90",
+              "I_TINTO_CCS_99"
+            ]
+          },
+          "values": {
+            "category": "",
+            "sub_category": "",
+            "unlim_cap": "0",
+            "retire": "1",
+            "description": ""
+          }
+        },
+        {
+          "scenarios": "all",
+          "axes": {
+            "tech": [
+              "I_IMP_MET_COAL"
+            ]
+          },
+          "values": {
+            "category": null,
+            "sub_category": null,
+            "unlim_cap": "1",
+            "retire": "0",
+            "description": "Import Metallurgical coal"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf",
+          "axes": {
+            "tech": [
+              "I_IMP_MET_COAL"
+            ]
+          },
+          "values": {
+            "category": null,
+            "sub_category": null,
+            "unlim_cap": "1",
+            "retire": "0",
+            "description": "Import metallurgical coal"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "F_IMP_IRONORE"
+            ]
+          },
+          "values": {
+            "category": null,
+            "sub_category": null,
+            "unlim_cap": "1",
+            "retire": "0",
+            "description": "Ironore import into fuel sector"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "F_IMP_IRONPELLET"
+            ]
+          },
+          "values": {
+            "category": null,
+            "sub_category": null,
+            "unlim_cap": "1",
+            "retire": "0",
+            "description": "Import of iron pellets into fuel sector"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "F_IMP_SCRAP"
+            ]
+          },
+          "values": {
+            "category": null,
+            "sub_category": null,
+            "unlim_cap": "1",
+            "retire": "0",
+            "description": "Import for Merchant scrap into fuel sector"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "F_I_EVRAZ_SCRAP"
+            ]
+          },
+          "values": {
+            "category": null,
+            "sub_category": null,
+            "unlim_cap": "1",
+            "retire": "0",
+            "description": "Import technology for Merchant scrap for Evraz"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "F_I_GERDAU_SCRAP"
+            ]
+          },
+          "values": {
+            "category": null,
+            "sub_category": null,
+            "unlim_cap": "1",
+            "retire": "0",
+            "description": "Import technology for merchant scrap for Gerdau"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "F_I_IRONORE"
+            ]
+          },
+          "values": {
+            "category": null,
+            "sub_category": null,
+            "unlim_cap": "1",
+            "retire": "0",
+            "description": "Distribution technology for ironore into the industrial sector"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "F_I_IRONPELLET"
+            ]
+          },
+          "values": {
+            "category": null,
+            "sub_category": null,
+            "unlim_cap": "1",
+            "retire": "0",
+            "description": "Distribution technology for iron pellets into the industrial sector"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "F_I_IVACO_SCRAP"
+            ]
+          },
+          "values": {
+            "category": null,
+            "sub_category": null,
+            "unlim_cap": "1",
+            "retire": "0",
+            "description": "Import technology for merchant scrap for Ivaco site"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "F_I_SCRAP"
+            ]
+          },
+          "values": {
+            "category": null,
+            "sub_category": null,
+            "unlim_cap": "1",
+            "retire": "0",
+            "description": "Distribution technology for merchant scrap into the industrial sector"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_ALG_BF"
+            ]
+          },
+          "values": {
+            "category": null,
+            "sub_category": null,
+            "unlim_cap": "0",
+            "retire": "1",
+            "description": "Algoma site blast furnace"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_ALG_BOF"
+            ]
+          },
+          "values": {
+            "category": null,
+            "sub_category": null,
+            "unlim_cap": "0",
+            "retire": "1",
+            "description": "Algoma site basic oxygen furnace"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_ALG_CO"
+            ]
+          },
+          "values": {
+            "category": null,
+            "sub_category": null,
+            "unlim_cap": "0",
+            "retire": "1",
+            "description": "Algoma site Coke Oven"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_ALG_EAF"
+            ]
+          },
+          "values": {
+            "category": null,
+            "sub_category": null,
+            "unlim_cap": "0",
+            "retire": "1",
+            "description": "Algoma site scrap electric arc furnace"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_ALG_EAF_PP"
+            ]
+          },
+          "values": {
+            "category": null,
+            "sub_category": null,
+            "unlim_cap": "0",
+            "retire": "1",
+            "description": "Algoma site post processing for electric arc furnace route"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_ALG_PP"
+            ]
+          },
+          "values": {
+            "category": null,
+            "sub_category": null,
+            "unlim_cap": "0",
+            "retire": "1",
+            "description": "Algoma site post processing for basic oxygen furnace route"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_ALG_PPLANT"
+            ]
+          },
+          "values": {
+            "category": null,
+            "sub_category": null,
+            "unlim_cap": "0",
+            "retire": "1",
+            "description": "Algoma site powerplant"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_AMM_DRI"
+            ]
+          },
+          "values": {
+            "category": null,
+            "sub_category": null,
+            "unlim_cap": "0",
+            "retire": "1",
+            "description": "Direct reduced iron process at AM Montreal"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_AMM_EAF"
+            ]
+          },
+          "values": {
+            "category": null,
+            "sub_category": null,
+            "unlim_cap": "0",
+            "retire": "1",
+            "description": "Electric arc furnace at AM Montreal"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_AMM_PP"
+            ]
+          },
+          "values": {
+            "category": null,
+            "sub_category": null,
+            "unlim_cap": "0",
+            "retire": "1",
+            "description": "Post-processing at AM Montreal"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_DOF_BF"
+            ]
+          },
+          "values": {
+            "category": null,
+            "sub_category": null,
+            "unlim_cap": "0",
+            "retire": "1",
+            "description": "AM Dofasco site blast furnace"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_DOF_BOF"
+            ]
+          },
+          "values": {
+            "category": null,
+            "sub_category": null,
+            "unlim_cap": "0",
+            "retire": "1",
+            "description": "AM Dofasco site basic oxygen furnace"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_DOF_CO"
+            ]
+          },
+          "values": {
+            "category": null,
+            "sub_category": null,
+            "unlim_cap": "0",
+            "retire": "1",
+            "description": "AM Dofasco site coke oven"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_DOF_D_EAF"
+            ]
+          },
+          "values": {
+            "category": null,
+            "sub_category": null,
+            "unlim_cap": "0",
+            "retire": "1",
+            "description": "AM Dofasco site DRI electric arc furnace"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_DOF_EAF_PP"
+            ]
+          },
+          "values": {
+            "category": null,
+            "sub_category": null,
+            "unlim_cap": "0",
+            "retire": "1",
+            "description": "AM Dofasco site post processing for electric arc furnace route"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_DOF_NG_DRI"
+            ]
+          },
+          "values": {
+            "category": null,
+            "sub_category": null,
+            "unlim_cap": "0",
+            "retire": "1",
+            "description": "AM Dofasco Direct reduced iron process using natural gas (MIDREX)"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_DOF_PP"
+            ]
+          },
+          "values": {
+            "category": null,
+            "sub_category": null,
+            "unlim_cap": "0",
+            "retire": "1",
+            "description": "AM Dofasco site post processing for basic oxygen furnace route"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_DOF_PPLANT"
+            ]
+          },
+          "values": {
+            "category": null,
+            "sub_category": null,
+            "unlim_cap": "0",
+            "retire": "1",
+            "description": "AM Dofasco site powerplant"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_DOF_S_EAF"
+            ]
+          },
+          "values": {
+            "category": null,
+            "sub_category": null,
+            "unlim_cap": "0",
+            "retire": "1",
+            "description": "AM Dofasco site scrap electric arc furnace"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_EVRAZ_EAF"
+            ]
+          },
+          "values": {
+            "category": null,
+            "sub_category": null,
+            "unlim_cap": "0",
+            "retire": "1",
+            "description": "Evraz site electric arc furnace"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_EVRAZ_PP"
+            ]
+          },
+          "values": {
+            "category": null,
+            "sub_category": null,
+            "unlim_cap": "0",
+            "retire": "1",
+            "description": "Evraz site post processing"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_GERDAU_EAF"
+            ]
+          },
+          "values": {
+            "category": null,
+            "sub_category": null,
+            "unlim_cap": "0",
+            "retire": "1",
+            "description": "Gerdau site electric arc furnace"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_GERDAU_PP"
+            ]
+          },
+          "values": {
+            "category": null,
+            "sub_category": null,
+            "unlim_cap": "0",
+            "retire": "1",
+            "description": "Gerdau site post processing"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_IMP_ALG_BFGAS"
+            ]
+          },
+          "values": {
+            "category": null,
+            "sub_category": null,
+            "unlim_cap": "1",
+            "retire": "0",
+            "description": "Import technology for Algoma Blast Furnace gas"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_IMP_ALG_BOF_GAS"
+            ]
+          },
+          "values": {
+            "category": null,
+            "sub_category": null,
+            "unlim_cap": "1",
+            "retire": "0",
+            "description": "Import technology for Algoma basic oxygen furnace gas"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_IMP_ALG_COGAS"
+            ]
+          },
+          "values": {
+            "category": null,
+            "sub_category": null,
+            "unlim_cap": "1",
+            "retire": "0",
+            "description": "Import technology for Algoma Coke Oven gas"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_IMP_ALG_HS"
+            ]
+          },
+          "values": {
+            "category": null,
+            "sub_category": null,
+            "unlim_cap": "1",
+            "retire": "0",
+            "description": "Import technology for Algoma Home scrap"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_IMP_DOF_BFGAS"
+            ]
+          },
+          "values": {
+            "category": null,
+            "sub_category": null,
+            "unlim_cap": "1",
+            "retire": "0",
+            "description": "Import technology for Dofasco blast furnace gas"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_IMP_DOF_BOF_GAS"
+            ]
+          },
+          "values": {
+            "category": null,
+            "sub_category": null,
+            "unlim_cap": "1",
+            "retire": "0",
+            "description": "Import technology for Dofasco basic oxygen furnace gas"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_IMP_DOF_COGAS"
+            ]
+          },
+          "values": {
+            "category": null,
+            "sub_category": null,
+            "unlim_cap": "1",
+            "retire": "0",
+            "description": "Import technology for Dofasco coke oven gas"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_IMP_DOF_HS"
+            ]
+          },
+          "values": {
+            "category": null,
+            "sub_category": null,
+            "unlim_cap": "1",
+            "retire": "0",
+            "description": "Import technology for Dofasco home scrap"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_IMP_STELCO_BFGAS"
+            ]
+          },
+          "values": {
+            "category": null,
+            "sub_category": null,
+            "unlim_cap": "1",
+            "retire": "0",
+            "description": "Import technology for blast furnace gas to Stelco"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_IMP_STELCO_BOF_GAS"
+            ]
+          },
+          "values": {
+            "category": null,
+            "sub_category": null,
+            "unlim_cap": "1",
+            "retire": "0",
+            "description": "Import technology for basic oxygen furnace gas to Stelco"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_IMP_STELCO_COGAS"
+            ]
+          },
+          "values": {
+            "category": null,
+            "sub_category": null,
+            "unlim_cap": "1",
+            "retire": "0",
+            "description": "Import technology for Stelco coke oven gas"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_IMP_STELCO_HS"
+            ]
+          },
+          "values": {
+            "category": null,
+            "sub_category": null,
+            "unlim_cap": "1",
+            "retire": "0",
+            "description": "Import technology for homescrap to Stelco"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_IMP_TINTO_BFGAS"
+            ]
+          },
+          "values": {
+            "category": null,
+            "sub_category": null,
+            "unlim_cap": "1",
+            "retire": "0",
+            "description": "Import technology for blast furnace gas to Rio Tinto"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_IMP_TINTO_BOF_GAS"
+            ]
+          },
+          "values": {
+            "category": null,
+            "sub_category": null,
+            "unlim_cap": "1",
+            "retire": "0",
+            "description": "Import technology for basic oxygen furnace gas to Rio Tinto"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_IMP_TINTO_COGAS"
+            ]
+          },
+          "values": {
+            "category": null,
+            "sub_category": null,
+            "unlim_cap": "1",
+            "retire": "0",
+            "description": "Import technology for coke oven gas to Rio Tinto"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_IMP_TINTO_HS"
+            ]
+          },
+          "values": {
+            "category": null,
+            "sub_category": null,
+            "unlim_cap": "1",
+            "retire": "0",
+            "description": "Import technology for home scrap to Rio Tinto"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_IVACO_EAF"
+            ]
+          },
+          "values": {
+            "category": null,
+            "sub_category": null,
+            "unlim_cap": "0",
+            "retire": "1",
+            "description": "Ivaco site electric arc furnace"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_IVACO_PP"
+            ]
+          },
+          "values": {
+            "category": null,
+            "sub_category": null,
+            "unlim_cap": "0",
+            "retire": "1",
+            "description": "Ivaco site post processing"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_STELCO_BF"
+            ]
+          },
+          "values": {
+            "category": null,
+            "sub_category": null,
+            "unlim_cap": "0",
+            "retire": "1",
+            "description": "Stelco site blast furnace"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_STELCO_BOF"
+            ]
+          },
+          "values": {
+            "category": null,
+            "sub_category": null,
+            "unlim_cap": "0",
+            "retire": "1",
+            "description": "Stelco site basic oxygen furnace "
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_STELCO_CO"
+            ]
+          },
+          "values": {
+            "category": null,
+            "sub_category": null,
+            "unlim_cap": "0",
+            "retire": "1",
+            "description": "Stelco site coke oven"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_STELCO_PP"
+            ]
+          },
+          "values": {
+            "category": null,
+            "sub_category": null,
+            "unlim_cap": "0",
+            "retire": "1",
+            "description": "Stelco site post processing"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_STELCO_PPLANT"
+            ]
+          },
+          "values": {
+            "category": null,
+            "sub_category": null,
+            "unlim_cap": "0",
+            "retire": "1",
+            "description": "Stelco site powerplant"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_TINTO_BF"
+            ]
+          },
+          "values": {
+            "category": null,
+            "sub_category": null,
+            "unlim_cap": "0",
+            "retire": "1",
+            "description": "Rio Tinto site blast furnace"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_TINTO_BOF"
+            ]
+          },
+          "values": {
+            "category": null,
+            "sub_category": null,
+            "unlim_cap": "0",
+            "retire": "1",
+            "description": "Rio Tinto site basic oxygen furnace"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_TINTO_CO"
+            ]
+          },
+          "values": {
+            "category": null,
+            "sub_category": null,
+            "unlim_cap": "0",
+            "retire": "1",
+            "description": "Rio Tinto site coke oven"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_TINTO_PP"
+            ]
+          },
+          "values": {
+            "category": null,
+            "sub_category": null,
+            "unlim_cap": "0",
+            "retire": "1",
+            "description": "Rio Tinto site post-processing"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_TINTO_PPLANT"
+            ]
+          },
+          "values": {
+            "category": null,
+            "sub_category": null,
+            "unlim_cap": "0",
+            "retire": "1",
+            "description": "Rio Tinto site powerplant"
+          }
+        },
+        {
+          "scenarios": "ccs",
+          "axes": {
+            "tech": [
+              "I_ALG_CCS_90",
+              "I_ALG_CCS_99",
+              "I_AMM_CCS_90",
+              "I_AMM_CCS_99",
+              "I_DOF_CCS_90",
+              "I_DOF_CCS_99",
+              "I_EVRAZ_CCS_90",
+              "I_EVRAZ_CCS_99",
+              "I_GERDAU_CCS_90",
+              "I_GERDAU_CCS_99",
+              "I_IVACO_CCS_90",
+              "I_IVACO_CCS_99",
+              "I_STELCO_CCS_90",
+              "I_STELCO_CCS_99",
+              "I_TINTO_CCS_90",
+              "I_TINTO_CCS_99"
+            ]
+          },
+          "values": {
+            "category": null,
+            "sub_category": null,
+            "unlim_cap": "0",
+            "retire": "1",
+            "description": null
+          }
+        },
+        {
+          "scenarios": "ccs",
+          "axes": {
+            "tech": [
+              "I_IMP_MET_COAL"
+            ]
+          },
+          "values": {
+            "category": null,
+            "sub_category": null,
+            "unlim_cap": "1",
+            "retire": "0",
+            "description": "Import Metallurgical Coal"
+          }
+        },
+        {
+          "scenarios": "eaf",
+          "axes": {
+            "tech": [
+              "F_IMP_NG",
+              "F_I_NG",
+              "I_IMP_ELC"
+            ]
+          },
+          "values": {
+            "category": null,
+            "sub_category": null,
+            "unlim_cap": "1",
+            "retire": "0",
+            "description": null
+          }
+        },
+        {
+          "scenarios": "eaf|all",
+          "axes": {
+            "tech": [
+              "F_I_AMM_SCRAP"
+            ]
+          },
+          "values": {
+            "category": null,
+            "sub_category": null,
+            "unlim_cap": "1",
+            "retire": "0",
+            "description": "Import technology for AM Montreal merchant scrap"
+          }
+        },
+        {
+          "scenarios": "eaf|all",
+          "axes": {
+            "tech": [
+              "I_ALG_D_EAF"
+            ]
+          },
+          "values": {
+            "category": null,
+            "sub_category": null,
+            "unlim_cap": "0",
+            "retire": "1",
+            "description": "Algoma site DRI EAF"
+          }
+        },
+        {
+          "scenarios": "eaf|all",
+          "axes": {
+            "tech": [
+              "I_ALG_H2_DRI"
+            ]
+          },
+          "values": {
+            "category": null,
+            "sub_category": null,
+            "unlim_cap": "0",
+            "retire": "1",
+            "description": "Algoma site hydrogen DRI"
+          }
+        },
+        {
+          "scenarios": "eaf|all",
+          "axes": {
+            "tech": [
+              "I_ALG_H2_ELEC"
+            ]
+          },
+          "values": {
+            "category": null,
+            "sub_category": null,
+            "unlim_cap": "0",
+            "retire": "1",
+            "description": "Algoma site Hydrogen electolyzer"
+          }
+        },
+        {
+          "scenarios": "eaf|all",
+          "axes": {
+            "tech": [
+              "I_ALG_NG_DRI"
+            ]
+          },
+          "values": {
+            "category": null,
+            "sub_category": null,
+            "unlim_cap": "0",
+            "retire": "1",
+            "description": "Algoma site natural gas DRI"
+          }
+        },
+        {
+          "scenarios": "eaf|all",
+          "axes": {
+            "tech": [
+              "I_AMM_H2_DRI"
+            ]
+          },
+          "values": {
+            "category": null,
+            "sub_category": null,
+            "unlim_cap": "0",
+            "retire": "1",
+            "description": "AM Montreal site hydrogen DRI"
+          }
+        },
+        {
+          "scenarios": "eaf|all",
+          "axes": {
+            "tech": [
+              "I_AMM_H2_ELEC"
+            ]
+          },
+          "values": {
+            "category": null,
+            "sub_category": null,
+            "unlim_cap": "0",
+            "retire": "1",
+            "description": "AM Montreal site Hydrogen electolyzer"
+          }
+        },
+        {
+          "scenarios": "eaf|all",
+          "axes": {
+            "tech": [
+              "I_AMM_S_EAF"
+            ]
+          },
+          "values": {
+            "category": null,
+            "sub_category": null,
+            "unlim_cap": "0",
+            "retire": "1",
+            "description": "AM Montreal site scrap EAF"
+          }
+        },
+        {
+          "scenarios": "eaf|all",
+          "axes": {
+            "tech": [
+              "I_DOF_H2_DRI"
+            ]
+          },
+          "values": {
+            "category": null,
+            "sub_category": null,
+            "unlim_cap": "0",
+            "retire": "1",
+            "description": "Dofasco site hydrogen DRI"
+          }
+        },
+        {
+          "scenarios": "eaf|all",
+          "axes": {
+            "tech": [
+              "I_DOF_H2_ELEC"
+            ]
+          },
+          "values": {
+            "category": null,
+            "sub_category": null,
+            "unlim_cap": "0",
+            "retire": "1",
+            "description": "Dofasco site Hydrogen electolyzer"
+          }
+        },
+        {
+          "scenarios": "eaf|all",
+          "axes": {
+            "tech": [
+              "I_EVRAZ_D_EAF"
+            ]
+          },
+          "values": {
+            "category": null,
+            "sub_category": null,
+            "unlim_cap": "0",
+            "retire": "1",
+            "description": "Evraz site DRI EAF"
+          }
+        },
+        {
+          "scenarios": "eaf|all",
+          "axes": {
+            "tech": [
+              "I_EVRAZ_H2_DRI"
+            ]
+          },
+          "values": {
+            "category": null,
+            "sub_category": null,
+            "unlim_cap": "0",
+            "retire": "1",
+            "description": "Evraz site hydrogen based DRI"
+          }
+        },
+        {
+          "scenarios": "eaf|all",
+          "axes": {
+            "tech": [
+              "I_EVRAZ_H2_ELEC"
+            ]
+          },
+          "values": {
+            "category": null,
+            "sub_category": null,
+            "unlim_cap": "0",
+            "retire": "1",
+            "description": "Evraz site Hydrogen electolyzer"
+          }
+        },
+        {
+          "scenarios": "eaf|all",
+          "axes": {
+            "tech": [
+              "I_EVRAZ_NG_DRI"
+            ]
+          },
+          "values": {
+            "category": null,
+            "sub_category": null,
+            "unlim_cap": "0",
+            "retire": "1",
+            "description": "Evraz site natural gas based DRI"
+          }
+        },
+        {
+          "scenarios": "eaf|all",
+          "axes": {
+            "tech": [
+              "I_GERDAU_D_EAF"
+            ]
+          },
+          "values": {
+            "category": null,
+            "sub_category": null,
+            "unlim_cap": "0",
+            "retire": "1",
+            "description": "Gerdau site DRI EAF"
+          }
+        },
+        {
+          "scenarios": "eaf|all",
+          "axes": {
+            "tech": [
+              "I_GERDAU_H2_DRI"
+            ]
+          },
+          "values": {
+            "category": null,
+            "sub_category": null,
+            "unlim_cap": "0",
+            "retire": "1",
+            "description": "Gerdau site hydrogen based DRI"
+          }
+        },
+        {
+          "scenarios": "eaf|all",
+          "axes": {
+            "tech": [
+              "I_GERDAU_H2_ELEC"
+            ]
+          },
+          "values": {
+            "category": null,
+            "sub_category": null,
+            "unlim_cap": "0",
+            "retire": "1",
+            "description": "Gerdau site Hydrogen electolyzer"
+          }
+        },
+        {
+          "scenarios": "eaf|all",
+          "axes": {
+            "tech": [
+              "I_GERDAU_NG_DRI"
+            ]
+          },
+          "values": {
+            "category": null,
+            "sub_category": null,
+            "unlim_cap": "0",
+            "retire": "1",
+            "description": "Gerdau site natural gas based DRI"
+          }
+        },
+        {
+          "scenarios": "eaf|all",
+          "axes": {
+            "tech": [
+              "I_IVACO_D_EAF"
+            ]
+          },
+          "values": {
+            "category": null,
+            "sub_category": null,
+            "unlim_cap": "0",
+            "retire": "1",
+            "description": "Ivaco site DRI EAF"
+          }
+        },
+        {
+          "scenarios": "eaf|all",
+          "axes": {
+            "tech": [
+              "I_IVACO_H2_DRI"
+            ]
+          },
+          "values": {
+            "category": null,
+            "sub_category": null,
+            "unlim_cap": "0",
+            "retire": "1",
+            "description": "Ivaco site Hydrogen based DRI"
+          }
+        },
+        {
+          "scenarios": "eaf|all",
+          "axes": {
+            "tech": [
+              "I_IVACO_H2_ELEC"
+            ]
+          },
+          "values": {
+            "category": null,
+            "sub_category": null,
+            "unlim_cap": "0",
+            "retire": "1",
+            "description": "Ivaco site Hydrogen electolyzer"
+          }
+        },
+        {
+          "scenarios": "eaf|all",
+          "axes": {
+            "tech": [
+              "I_IVACO_NG_DRI"
+            ]
+          },
+          "values": {
+            "category": null,
+            "sub_category": null,
+            "unlim_cap": "0",
+            "retire": "1",
+            "description": "Ivaco site Natural gas based DRI"
+          }
+        },
+        {
+          "scenarios": "eaf|all",
+          "axes": {
+            "tech": [
+              "I_STELCO_D_EAF"
+            ]
+          },
+          "values": {
+            "category": null,
+            "sub_category": null,
+            "unlim_cap": "0",
+            "retire": "1",
+            "description": "Stelco site DRI electric arc furnace"
+          }
+        },
+        {
+          "scenarios": "eaf|all",
+          "axes": {
+            "tech": [
+              "I_STELCO_EAF_PP"
+            ]
+          },
+          "values": {
+            "category": null,
+            "sub_category": null,
+            "unlim_cap": "0",
+            "retire": "1",
+            "description": "Stelco site Post processing for EAF route"
+          }
+        },
+        {
+          "scenarios": "eaf|all",
+          "axes": {
+            "tech": [
+              "I_STELCO_H2_DRI"
+            ]
+          },
+          "values": {
+            "category": null,
+            "sub_category": null,
+            "unlim_cap": "0",
+            "retire": "1",
+            "description": "Stelco site hydrogen based DRI generation"
+          }
+        },
+        {
+          "scenarios": "eaf|all",
+          "axes": {
+            "tech": [
+              "I_STELCO_H2_ELEC"
+            ]
+          },
+          "values": {
+            "category": null,
+            "sub_category": null,
+            "unlim_cap": "0",
+            "retire": "1",
+            "description": "Stelco site Hydrogen electolyzer"
+          }
+        },
+        {
+          "scenarios": "eaf|all",
+          "axes": {
+            "tech": [
+              "I_STELCO_NG_DRI"
+            ]
+          },
+          "values": {
+            "category": null,
+            "sub_category": null,
+            "unlim_cap": "0",
+            "retire": "1",
+            "description": "Stelco site natural gas based DRi generation"
+          }
+        },
+        {
+          "scenarios": "eaf|all",
+          "axes": {
+            "tech": [
+              "I_STELCO_S_EAF"
+            ]
+          },
+          "values": {
+            "category": null,
+            "sub_category": null,
+            "unlim_cap": "0",
+            "retire": "1",
+            "description": "Stelco site scrap electric arc furnace"
+          }
+        },
+        {
+          "scenarios": "eaf|all",
+          "axes": {
+            "tech": [
+              "I_TINTO_D_EAF"
+            ]
+          },
+          "values": {
+            "category": null,
+            "sub_category": null,
+            "unlim_cap": "0",
+            "retire": "1",
+            "description": "Rio Tinto DRI Electric arc furnace"
+          }
+        },
+        {
+          "scenarios": "eaf|all",
+          "axes": {
+            "tech": [
+              "I_TINTO_EAF_PP"
+            ]
+          },
+          "values": {
+            "category": null,
+            "sub_category": null,
+            "unlim_cap": "0",
+            "retire": "1",
+            "description": "Rio Tinto site Post processing for EAF route"
+          }
+        },
+        {
+          "scenarios": "eaf|all",
+          "axes": {
+            "tech": [
+              "I_TINTO_H2_DRI"
+            ]
+          },
+          "values": {
+            "category": null,
+            "sub_category": null,
+            "unlim_cap": "0",
+            "retire": "1",
+            "description": "Rio Tinto site hydrogen based DRI"
+          }
+        },
+        {
+          "scenarios": "eaf|all",
+          "axes": {
+            "tech": [
+              "I_TINTO_H2_ELEC"
+            ]
+          },
+          "values": {
+            "category": null,
+            "sub_category": null,
+            "unlim_cap": "0",
+            "retire": "1",
+            "description": "Rio Tinto site Hydrogen electolyzer"
+          }
+        },
+        {
+          "scenarios": "eaf|all",
+          "axes": {
+            "tech": [
+              "I_TINTO_NG_DRI"
+            ]
+          },
+          "values": {
+            "category": null,
+            "sub_category": null,
+            "unlim_cap": "0",
+            "retire": "1",
+            "description": "Rio Tinto site Natural Gas based DRI"
+          }
+        },
+        {
+          "scenarios": "eaf|all",
+          "axes": {
+            "tech": [
+              "I_TINTO_S_EAF"
+            ]
+          },
+          "values": {
+            "category": null,
+            "sub_category": null,
+            "unlim_cap": "0",
+            "retire": "1",
+            "description": "Rio Tinto site scrap electric arc furnace"
+          }
+        }
+      ]
+    },
+    "technology_label": {
+      "defaults": {
+        "notes": null
+      },
+      "rules": [
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "F_IMP_IRONORE",
+              "F_IMP_IRONPELLET",
+              "F_IMP_NG",
+              "F_IMP_SCRAP",
+              "F_I_EVRAZ_SCRAP",
+              "F_I_GERDAU_SCRAP",
+              "F_I_IRONORE",
+              "F_I_IRONPELLET",
+              "F_I_IVACO_SCRAP",
+              "F_I_NG",
+              "F_I_SCRAP",
+              "I_ALG_BF",
+              "I_ALG_BOF",
+              "I_ALG_CO",
+              "I_ALG_EAF",
+              "I_ALG_EAF_PP",
+              "I_ALG_PP",
+              "I_ALG_PPLANT",
+              "I_AMM_DRI",
+              "I_AMM_EAF",
+              "I_AMM_PP",
+              "I_DOF_BF",
+              "I_DOF_BOF",
+              "I_DOF_CO",
+              "I_DOF_D_EAF",
+              "I_DOF_EAF_PP",
+              "I_DOF_NG_DRI",
+              "I_DOF_PP",
+              "I_DOF_PPLANT",
+              "I_DOF_S_EAF",
+              "I_EVRAZ_EAF",
+              "I_EVRAZ_PP",
+              "I_GERDAU_EAF",
+              "I_GERDAU_PP",
+              "I_IMP_ALG_BFGAS",
+              "I_IMP_ALG_BOF_GAS",
+              "I_IMP_ALG_COGAS",
+              "I_IMP_ALG_HS",
+              "I_IMP_DOF_BFGAS",
+              "I_IMP_DOF_BOF_GAS",
+              "I_IMP_DOF_COGAS",
+              "I_IMP_DOF_HS",
+              "I_IMP_ELC",
+              "I_IMP_MET_COAL",
+              "I_IMP_STELCO_BFGAS",
+              "I_IMP_STELCO_BOF_GAS",
+              "I_IMP_STELCO_COGAS",
+              "I_IMP_STELCO_HS",
+              "I_IMP_TINTO_BFGAS",
+              "I_IMP_TINTO_BOF_GAS",
+              "I_IMP_TINTO_COGAS",
+              "I_IMP_TINTO_HS",
+              "I_IVACO_EAF",
+              "I_IVACO_PP",
+              "I_STELCO_BF",
+              "I_STELCO_BOF",
+              "I_STELCO_CO",
+              "I_STELCO_PP",
+              "I_STELCO_PPLANT",
+              "I_TINTO_BF",
+              "I_TINTO_BOF",
+              "I_TINTO_CO",
+              "I_TINTO_PP",
+              "I_TINTO_PPLANT"
+            ]
+          },
+          "values": {}
+        },
+        {
+          "scenarios": "ccs|all",
+          "axes": {
+            "tech": [
+              "I_ALG_CCS_90",
+              "I_ALG_CCS_99",
+              "I_AMM_CCS_90",
+              "I_AMM_CCS_99",
+              "I_DOF_CCS_90",
+              "I_DOF_CCS_99",
+              "I_EVRAZ_CCS_90",
+              "I_EVRAZ_CCS_99",
+              "I_GERDAU_CCS_90",
+              "I_GERDAU_CCS_99",
+              "I_IVACO_CCS_90",
+              "I_IVACO_CCS_99",
+              "I_STELCO_CCS_90",
+              "I_STELCO_CCS_99",
+              "I_TINTO_CCS_90",
+              "I_TINTO_CCS_99"
+            ]
+          },
+          "values": {}
+        },
+        {
+          "scenarios": "eaf|all",
+          "axes": {
+            "tech": [
+              "F_I_AMM_SCRAP",
+              "I_ALG_D_EAF",
+              "I_ALG_H2_DRI",
+              "I_ALG_H2_ELEC",
+              "I_ALG_NG_DRI",
+              "I_AMM_H2_DRI",
+              "I_AMM_H2_ELEC",
+              "I_AMM_S_EAF",
+              "I_DOF_H2_DRI",
+              "I_DOF_H2_ELEC",
+              "I_EVRAZ_D_EAF",
+              "I_EVRAZ_H2_DRI",
+              "I_EVRAZ_H2_ELEC",
+              "I_EVRAZ_NG_DRI",
+              "I_GERDAU_D_EAF",
+              "I_GERDAU_H2_DRI",
+              "I_GERDAU_H2_ELEC",
+              "I_GERDAU_NG_DRI",
+              "I_IVACO_D_EAF",
+              "I_IVACO_H2_DRI",
+              "I_IVACO_H2_ELEC",
+              "I_IVACO_NG_DRI",
+              "I_STELCO_D_EAF",
+              "I_STELCO_EAF_PP",
+              "I_STELCO_H2_DRI",
+              "I_STELCO_H2_ELEC",
+              "I_STELCO_NG_DRI",
+              "I_STELCO_S_EAF",
+              "I_TINTO_D_EAF",
+              "I_TINTO_EAF_PP",
+              "I_TINTO_H2_DRI",
+              "I_TINTO_H2_ELEC",
+              "I_TINTO_NG_DRI",
+              "I_TINTO_S_EAF"
+            ]
+          },
+          "values": {}
+        }
+      ]
+    },
+    "technology_type": {
+      "defaults": {},
+      "rules": [
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {},
+          "values": {
+            "label": "p",
+            "description": "production technology"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {},
+          "values": {
+            "label": "pb",
+            "description": "baseload production technology"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {},
+          "values": {
+            "label": "ps",
+            "description": "storage production technology"
+          }
+        }
+      ]
+    },
+    "commodity": {
+      "defaults": {
+        "units": null,
+        "data_id": "${SCENARIO_DATA_ID}"
+      },
+      "rules": [
+        {
+          "scenarios": "all",
+          "axes": {
+            "name": [
+              "co2_ccs"
+            ]
+          },
+          "values": {
+            "flag": "w",
+            "description": "CO2 being captured"
+          }
+        },
+        {
+          "scenarios": "basecase",
+          "axes": {
+            "name": [
+              "I_met_coal"
+            ]
+          },
+          "values": {
+            "flag": "a",
+            "description": "Metallurgical coal"
+          }
+        },
+        {
+          "scenarios": "basecase|ccs",
+          "axes": {
+            "name": [
+              "I_amm_scrap"
+            ]
+          },
+          "values": {
+            "flag": "w",
+            "description": "Scrap being made within the AM Montreal site"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|all",
+          "axes": {
+            "name": [
+              "I_tinto_coke"
+            ]
+          },
+          "values": {
+            "flag": "a",
+            "description": "Coke generated at the Rio Tinto site"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "name": [
+              "F_iron_pellet"
+            ]
+          },
+          "values": {
+            "flag": "a",
+            "description": "The fuel sector representation of iron pellets"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "name": [
+              "F_ironore"
+            ]
+          },
+          "values": {
+            "flag": "a",
+            "description": "Fuel sector representation of iron ore"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "name": [
+              "F_scrap"
+            ]
+          },
+          "values": {
+            "flag": "a",
+            "description": "Fuel sector representation of merchant scrap"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "name": [
+              "I_alg_bfgas"
+            ]
+          },
+          "values": {
+            "flag": "wa",
+            "description": "Blast Furnace gas produced at the Algoma site"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "name": [
+              "I_alg_bof_gas"
+            ]
+          },
+          "values": {
+            "flag": "wa",
+            "description": "Basic oxygen furnace gas produced at the Algoma site"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "name": [
+              "I_alg_cogas"
+            ]
+          },
+          "values": {
+            "flag": "wa",
+            "description": "Coke oven gas generated at the Algoma site"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "name": [
+              "I_alg_coke"
+            ]
+          },
+          "values": {
+            "flag": "a",
+            "description": "Coke generated at the algoma site"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "name": [
+              "I_alg_crude_steel"
+            ]
+          },
+          "values": {
+            "flag": "wa",
+            "description": "Crude steel generated through a BOF furnace at the Algoma site"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "name": [
+              "I_alg_eaf_crude_steel"
+            ]
+          },
+          "values": {
+            "flag": "a",
+            "description": "Crude steel produced through electric arc furnace at the algoma site"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "name": [
+              "I_alg_elc"
+            ]
+          },
+          "values": {
+            "flag": "a",
+            "description": "Electricity produced at the Algoma site"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "name": [
+              "I_alg_homescrap"
+            ]
+          },
+          "values": {
+            "flag": "wa",
+            "description": "Scrap produced on site at the Algoma site"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "name": [
+              "I_alg_pigiron"
+            ]
+          },
+          "values": {
+            "flag": "wa",
+            "description": "Pigiron generated at the Algoma site"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "name": [
+              "I_alg_scrap"
+            ]
+          },
+          "values": {
+            "flag": "a",
+            "description": "Merchant scrap being used by the Algoma site"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "name": [
+              "I_alg_slag"
+            ]
+          },
+          "values": {
+            "flag": "w",
+            "description": "Slag to be exported produced at the Algoma site"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "name": [
+              "I_alg_wasteslag"
+            ]
+          },
+          "values": {
+            "flag": "w",
+            "description": "Slag to be sent to waste processing from Algoma site"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "name": [
+              "I_amm_crude_steel"
+            ]
+          },
+          "values": {
+            "flag": "a",
+            "description": "Crude steel made on the AM Montreal site"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "name": [
+              "I_amm_dri"
+            ]
+          },
+          "values": {
+            "flag": "a",
+            "description": "Direct reduced iron (DRI) that was produced on the AM Montreal site"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "name": [
+              "I_amm_slag"
+            ]
+          },
+          "values": {
+            "flag": "w",
+            "description": "Slag that was produced on the AM Montreal site"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "name": [
+              "I_dof_bfgas"
+            ]
+          },
+          "values": {
+            "flag": "wa",
+            "description": "Blast furnace gas generated at the AM Dofasco site"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "name": [
+              "I_dof_bof_gas"
+            ]
+          },
+          "values": {
+            "flag": "wa",
+            "description": "Basic oxygen furnace gas generated at the AM Dofasco site"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "name": [
+              "I_dof_cogas"
+            ]
+          },
+          "values": {
+            "flag": "wa",
+            "description": "Coke Oven gas generated at the AM Dofasco site"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "name": [
+              "I_dof_coke"
+            ]
+          },
+          "values": {
+            "flag": "a",
+            "description": "Coke generated at the AM Dofasco site"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "name": [
+              "I_dof_crude_steel"
+            ]
+          },
+          "values": {
+            "flag": "wa",
+            "description": "Crude steel from a basic oxygen furnace generated at the AM Dofasco site"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "name": [
+              "I_dof_dri"
+            ]
+          },
+          "values": {
+            "flag": "a",
+            "description": "Direct reduced iron (DRI) generated at the AM Dofasco site"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "name": [
+              "I_dof_eaf_crude_steel"
+            ]
+          },
+          "values": {
+            "flag": "a",
+            "description": "Crude steel from an electric arc furnace generated at the AM Dofasco site"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "name": [
+              "I_dof_elc"
+            ]
+          },
+          "values": {
+            "flag": "a",
+            "description": "Electricity generated at the AM Dofasco site"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "name": [
+              "I_dof_homescrap"
+            ]
+          },
+          "values": {
+            "flag": "wa",
+            "description": "Homescrap generated at the AM Dofasco site"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "name": [
+              "I_dof_pigiron"
+            ]
+          },
+          "values": {
+            "flag": "wa",
+            "description": "Pigiron  generated at the AM Dofasco site"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "name": [
+              "I_dof_scrap"
+            ]
+          },
+          "values": {
+            "flag": "a",
+            "description": "Merchant scrap being used by the AM Dofasco site"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "name": [
+              "I_dof_slag"
+            ]
+          },
+          "values": {
+            "flag": "w",
+            "description": "Slag to be exported generated at the AM Dofasco site"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "name": [
+              "I_dof_wasteslag"
+            ]
+          },
+          "values": {
+            "flag": "w",
+            "description": "Slag to be sent to waste generated at the AM Dofasco site"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "name": [
+              "I_ethos"
+            ]
+          },
+          "values": {
+            "flag": "s",
+            "description": "Supply for industry specific commodities"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "name": [
+              "I_evraz_crude_steel"
+            ]
+          },
+          "values": {
+            "flag": "a",
+            "description": "Crude steel generated at the Evraz site"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "name": [
+              "I_evraz_scrap"
+            ]
+          },
+          "values": {
+            "flag": "a",
+            "description": "Merchant scrap at the Evraz site"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "name": [
+              "I_evraz_slag"
+            ]
+          },
+          "values": {
+            "flag": "w",
+            "description": "Slag that was generated at the Evraz site"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "name": [
+              "I_gerdau_crude_steel"
+            ]
+          },
+          "values": {
+            "flag": "a",
+            "description": "Crude steel generated at the Gerdau site"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "name": [
+              "I_gerdau_scrap"
+            ]
+          },
+          "values": {
+            "flag": "a",
+            "description": "Merchant scrap at the Gerdau site"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "name": [
+              "I_gerdau_slag"
+            ]
+          },
+          "values": {
+            "flag": "w",
+            "description": "Slag that was generated at the Gerdau site"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "name": [
+              "I_iron_pellet"
+            ]
+          },
+          "values": {
+            "flag": "a",
+            "description": "Commercial grade iron pellets (assumed same quality for DRI and BF >60% iron content)"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "name": [
+              "I_ironore"
+            ]
+          },
+          "values": {
+            "flag": "a",
+            "description": "Ironore used by Blast Furnaces, assumed to be a lower quality than iron pellets"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "name": [
+              "I_ivaco_crude_steel"
+            ]
+          },
+          "values": {
+            "flag": "a",
+            "description": "Crude steel generated at the Ivaco site"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "name": [
+              "I_ivaco_scrap"
+            ]
+          },
+          "values": {
+            "flag": "a",
+            "description": "Merchant scrap at the Ivaco site"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "name": [
+              "I_ivaco_slag"
+            ]
+          },
+          "values": {
+            "flag": "w",
+            "description": "Slag generated at the Ivaco site"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "name": [
+              "I_rolled_steel"
+            ]
+          },
+          "values": {
+            "flag": "d",
+            "description": "End demand of rolled steel "
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "name": [
+              "I_stelco_bfgas"
+            ]
+          },
+          "values": {
+            "flag": "wa",
+            "description": "Blast furnace gas generated at the Stelco site"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "name": [
+              "I_stelco_bof_gas"
+            ]
+          },
+          "values": {
+            "flag": "wa",
+            "description": "Basic oxygen furnace gas generated at the Stelco site"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "name": [
+              "I_stelco_cogas"
+            ]
+          },
+          "values": {
+            "flag": "wa",
+            "description": "Coke oven gas generated at the Stelco site"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "name": [
+              "I_stelco_coke"
+            ]
+          },
+          "values": {
+            "flag": "a",
+            "description": "Coke generated at the Stelco site"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "name": [
+              "I_stelco_crude_steel"
+            ]
+          },
+          "values": {
+            "flag": "wa",
+            "description": "Crude steel generated at the Stelco site"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "name": [
+              "I_stelco_elc"
+            ]
+          },
+          "values": {
+            "flag": "a",
+            "description": "Electricity generated at the Stelco site"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "name": [
+              "I_stelco_homescrap"
+            ]
+          },
+          "values": {
+            "flag": "wa",
+            "description": "Home scrap generated at the Stelco site"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "name": [
+              "I_stelco_pigiron"
+            ]
+          },
+          "values": {
+            "flag": "wa",
+            "description": "Pigiron generated at the Stelco site"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "name": [
+              "I_stelco_scrap"
+            ]
+          },
+          "values": {
+            "flag": "a",
+            "description": "Merchant scrap being used at the Stelco site"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "name": [
+              "I_stelco_slag"
+            ]
+          },
+          "values": {
+            "flag": "w",
+            "description": "Slag to be exported generated at the Stelco site"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "name": [
+              "I_stelco_wasteslag"
+            ]
+          },
+          "values": {
+            "flag": "w",
+            "description": "Slag to be sent to waste generated at the Stelco site"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "name": [
+              "I_tinto_bfgas"
+            ]
+          },
+          "values": {
+            "flag": "wa",
+            "description": "Blast Furnace gas generated at the Rio Tinto site"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "name": [
+              "I_tinto_bof_gas"
+            ]
+          },
+          "values": {
+            "flag": "wa",
+            "description": "Basic oxygen furnace gas generated at the Rio Tinto site"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "name": [
+              "I_tinto_cogas"
+            ]
+          },
+          "values": {
+            "flag": "wa",
+            "description": "Coke oven gas generated at the Rio Tinto site"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "name": [
+              "I_tinto_crude_steel"
+            ]
+          },
+          "values": {
+            "flag": "wa",
+            "description": "Crude steel generated at the Rio Tinto site"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "name": [
+              "I_tinto_elc"
+            ]
+          },
+          "values": {
+            "flag": "a",
+            "description": "Electricity generated at the Rio Tinto site"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "name": [
+              "I_tinto_homescrap"
+            ]
+          },
+          "values": {
+            "flag": "wa",
+            "description": "Home scrap generated at the Rio Tinto site"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "name": [
+              "I_tinto_pigiron"
+            ]
+          },
+          "values": {
+            "flag": "wa",
+            "description": "Pigiron generated at the Rio Tinto site"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "name": [
+              "I_tinto_scrap"
+            ]
+          },
+          "values": {
+            "flag": "a",
+            "description": "Merchant scrap used at the Rio Tinto site"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "name": [
+              "I_tinto_slag"
+            ]
+          },
+          "values": {
+            "flag": "w",
+            "description": "Slag to be exported generated at the Rio Tinto site"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "name": [
+              "I_tinto_wasteslag"
+            ]
+          },
+          "values": {
+            "flag": "w",
+            "description": "Slag to be sent to waste generated at the Rio Tinto site"
+          }
+        },
+        {
+          "scenarios": "ccs",
+          "axes": {
+            "name": [
+              "I_tinto_coke"
+            ]
+          },
+          "values": {
+            "flag": "wa",
+            "description": "Coke generated at the Rio Tinto site"
+          }
+        },
+        {
+          "scenarios": "ccs",
+          "axes": {
+            "name": [
+              "co2_ccs"
+            ]
+          },
+          "values": {
+            "flag": "w",
+            "description": "CO2 for capture"
+          }
+        },
+        {
+          "scenarios": "eaf|all",
+          "axes": {
+            "name": [
+              "I_alg_dri"
+            ]
+          },
+          "values": {
+            "flag": "a",
+            "description": "Direct reduced iron (DRI)  that was produced on the Algoma site"
+          }
+        },
+        {
+          "scenarios": "eaf|all",
+          "axes": {
+            "name": [
+              "I_alg_h2"
+            ]
+          },
+          "values": {
+            "flag": "a",
+            "description": "Hydrogen produced on the Algoma site"
+          }
+        },
+        {
+          "scenarios": "eaf|all",
+          "axes": {
+            "name": [
+              "I_amm_h2"
+            ]
+          },
+          "values": {
+            "flag": "a",
+            "description": "Hydrogen produced on the  AM Montreal site"
+          }
+        },
+        {
+          "scenarios": "eaf|all",
+          "axes": {
+            "name": [
+              "I_amm_scrap"
+            ]
+          },
+          "values": {
+            "flag": "wa",
+            "description": "Scrap being made within the AM Montreal site"
+          }
+        },
+        {
+          "scenarios": "eaf|all",
+          "axes": {
+            "name": [
+              "I_dof_h2"
+            ]
+          },
+          "values": {
+            "flag": "a",
+            "description": "Hydrogen produced on the Dofasco site"
+          }
+        },
+        {
+          "scenarios": "eaf|all",
+          "axes": {
+            "name": [
+              "I_evraz_dri"
+            ]
+          },
+          "values": {
+            "flag": "a",
+            "description": "Direct reduced iron (DRI)  that was produced on the Evraz site"
+          }
+        },
+        {
+          "scenarios": "eaf|all",
+          "axes": {
+            "name": [
+              "I_evraz_h2"
+            ]
+          },
+          "values": {
+            "flag": "a",
+            "description": "Hydrogen produced on the Evraz site"
+          }
+        },
+        {
+          "scenarios": "eaf|all",
+          "axes": {
+            "name": [
+              "I_gerdau_dri"
+            ]
+          },
+          "values": {
+            "flag": "a",
+            "description": "Direct reduced iron (DRI)  that was produced on the Gerdau site"
+          }
+        },
+        {
+          "scenarios": "eaf|all",
+          "axes": {
+            "name": [
+              "I_gerdau_h2"
+            ]
+          },
+          "values": {
+            "flag": "a",
+            "description": "Hydrogen produced on the Gerdau site"
+          }
+        },
+        {
+          "scenarios": "eaf|all",
+          "axes": {
+            "name": [
+              "I_ivaco_dri"
+            ]
+          },
+          "values": {
+            "flag": "a",
+            "description": "Direct reduced iron (DRI) that was produced on the Ivaco site"
+          }
+        },
+        {
+          "scenarios": "eaf|all",
+          "axes": {
+            "name": [
+              "I_ivaco_h2"
+            ]
+          },
+          "values": {
+            "flag": "a",
+            "description": "Hydrogen produced on the Ivaco site"
+          }
+        },
+        {
+          "scenarios": "eaf|all",
+          "axes": {
+            "name": [
+              "I_stelco_dri"
+            ]
+          },
+          "values": {
+            "flag": "a",
+            "description": "Direct reduced iron (DRI)  that was produced on the Stelco Site"
+          }
+        },
+        {
+          "scenarios": "eaf|all",
+          "axes": {
+            "name": [
+              "I_stelco_eaf_crude_steel"
+            ]
+          },
+          "values": {
+            "flag": "a",
+            "description": "Crude steel from the EAF route produced at the Stelco site"
+          }
+        },
+        {
+          "scenarios": "eaf|all",
+          "axes": {
+            "name": [
+              "I_stelco_h2"
+            ]
+          },
+          "values": {
+            "flag": "a",
+            "description": "Hydrogen produced on the Stelco site"
+          }
+        },
+        {
+          "scenarios": "eaf|all",
+          "axes": {
+            "name": [
+              "I_tinto_dri"
+            ]
+          },
+          "values": {
+            "flag": "a",
+            "description": "Direct reduced iron (DRI)  that was produced on the Rio Tinto site"
+          }
+        },
+        {
+          "scenarios": "eaf|all",
+          "axes": {
+            "name": [
+              "I_tinto_eaf_crude_steel"
+            ]
+          },
+          "values": {
+            "flag": "a",
+            "description": "Crude steel from the EAF route produced at the Rio Tinto Site"
+          }
+        },
+        {
+          "scenarios": "eaf|all",
+          "axes": {
+            "name": [
+              "I_tinto_h2"
+            ]
+          },
+          "values": {
+            "flag": "a",
+            "description": "Hydrogen produced on the Rio Tinto Site"
+          }
+        },
+        {
+          "scenarios": "eaf|ccs|all",
+          "axes": {
+            "name": [
+              "I_met_coal"
+            ]
+          },
+          "values": {
+            "flag": "a",
+            "description": "Metallurgical Coal"
+          }
+        }
+      ]
+    },
+    "commodity_label": {
+      "defaults": {
+        "notes": null
+      },
+      "rules": [
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {},
+          "values": {
+            "commodity": "F_ethos"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {},
+          "values": {
+            "commodity": "F_iron_pellet"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {},
+          "values": {
+            "commodity": "F_ironore"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {},
+          "values": {
+            "commodity": "F_ng"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {},
+          "values": {
+            "commodity": "F_scrap"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {},
+          "values": {
+            "commodity": "I_alg_bfgas"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {},
+          "values": {
+            "commodity": "I_alg_bof_gas"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {},
+          "values": {
+            "commodity": "I_alg_cogas"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {},
+          "values": {
+            "commodity": "I_alg_coke"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {},
+          "values": {
+            "commodity": "I_alg_crude_steel"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {},
+          "values": {
+            "commodity": "I_alg_eaf_crude_steel"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {},
+          "values": {
+            "commodity": "I_alg_elc"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {},
+          "values": {
+            "commodity": "I_alg_homescrap"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {},
+          "values": {
+            "commodity": "I_alg_pigiron"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {},
+          "values": {
+            "commodity": "I_alg_scrap"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {},
+          "values": {
+            "commodity": "I_alg_slag"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {},
+          "values": {
+            "commodity": "I_alg_wasteslag"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {},
+          "values": {
+            "commodity": "I_amm_crude_steel"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {},
+          "values": {
+            "commodity": "I_amm_dri"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {},
+          "values": {
+            "commodity": "I_amm_scrap"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {},
+          "values": {
+            "commodity": "I_amm_slag"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {},
+          "values": {
+            "commodity": "I_dof_bfgas"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {},
+          "values": {
+            "commodity": "I_dof_bof_gas"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {},
+          "values": {
+            "commodity": "I_dof_cogas"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {},
+          "values": {
+            "commodity": "I_dof_coke"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {},
+          "values": {
+            "commodity": "I_dof_crude_steel"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {},
+          "values": {
+            "commodity": "I_dof_dri"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {},
+          "values": {
+            "commodity": "I_dof_eaf_crude_steel"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {},
+          "values": {
+            "commodity": "I_dof_elc"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {},
+          "values": {
+            "commodity": "I_dof_homescrap"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {},
+          "values": {
+            "commodity": "I_dof_pigiron"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {},
+          "values": {
+            "commodity": "I_dof_scrap"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {},
+          "values": {
+            "commodity": "I_dof_slag"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {},
+          "values": {
+            "commodity": "I_dof_wasteslag"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {},
+          "values": {
+            "commodity": "I_elc"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {},
+          "values": {
+            "commodity": "I_ethos"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {},
+          "values": {
+            "commodity": "I_evraz_crude_steel"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {},
+          "values": {
+            "commodity": "I_evraz_scrap"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {},
+          "values": {
+            "commodity": "I_evraz_slag"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {},
+          "values": {
+            "commodity": "I_gerdau_crude_steel"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {},
+          "values": {
+            "commodity": "I_gerdau_scrap"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {},
+          "values": {
+            "commodity": "I_gerdau_slag"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {},
+          "values": {
+            "commodity": "I_iron_pellet"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {},
+          "values": {
+            "commodity": "I_ironore"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {},
+          "values": {
+            "commodity": "I_ivaco_crude_steel"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {},
+          "values": {
+            "commodity": "I_ivaco_scrap"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {},
+          "values": {
+            "commodity": "I_ivaco_slag"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {},
+          "values": {
+            "commodity": "I_met_coal"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {},
+          "values": {
+            "commodity": "I_ng"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {},
+          "values": {
+            "commodity": "I_rolled_steel"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {},
+          "values": {
+            "commodity": "I_stelco_bfgas"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {},
+          "values": {
+            "commodity": "I_stelco_bof_gas"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {},
+          "values": {
+            "commodity": "I_stelco_cogas"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {},
+          "values": {
+            "commodity": "I_stelco_coke"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {},
+          "values": {
+            "commodity": "I_stelco_crude_steel"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {},
+          "values": {
+            "commodity": "I_stelco_elc"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {},
+          "values": {
+            "commodity": "I_stelco_homescrap"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {},
+          "values": {
+            "commodity": "I_stelco_pigiron"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {},
+          "values": {
+            "commodity": "I_stelco_scrap"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {},
+          "values": {
+            "commodity": "I_stelco_slag"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {},
+          "values": {
+            "commodity": "I_stelco_wasteslag"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {},
+          "values": {
+            "commodity": "I_tinto_bfgas"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {},
+          "values": {
+            "commodity": "I_tinto_bof_gas"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {},
+          "values": {
+            "commodity": "I_tinto_cogas"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {},
+          "values": {
+            "commodity": "I_tinto_coke"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {},
+          "values": {
+            "commodity": "I_tinto_crude_steel"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {},
+          "values": {
+            "commodity": "I_tinto_elc"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {},
+          "values": {
+            "commodity": "I_tinto_homescrap"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {},
+          "values": {
+            "commodity": "I_tinto_pigiron"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {},
+          "values": {
+            "commodity": "I_tinto_scrap"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {},
+          "values": {
+            "commodity": "I_tinto_slag"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {},
+          "values": {
+            "commodity": "I_tinto_wasteslag"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {},
+          "values": {
+            "commodity": "co2"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {},
+          "values": {
+            "commodity": "co2e"
+          }
+        },
+        {
+          "scenarios": "ccs|all",
+          "axes": {},
+          "values": {
+            "commodity": "co2_ccs"
+          }
+        },
+        {
+          "scenarios": "eaf|all",
+          "axes": {},
+          "values": {
+            "commodity": "I_alg_dri"
+          }
+        },
+        {
+          "scenarios": "eaf|all",
+          "axes": {},
+          "values": {
+            "commodity": "I_alg_h2"
+          }
+        },
+        {
+          "scenarios": "eaf|all",
+          "axes": {},
+          "values": {
+            "commodity": "I_amm_h2"
+          }
+        },
+        {
+          "scenarios": "eaf|all",
+          "axes": {},
+          "values": {
+            "commodity": "I_dof_h2"
+          }
+        },
+        {
+          "scenarios": "eaf|all",
+          "axes": {},
+          "values": {
+            "commodity": "I_evraz_dri"
+          }
+        },
+        {
+          "scenarios": "eaf|all",
+          "axes": {},
+          "values": {
+            "commodity": "I_evraz_h2"
+          }
+        },
+        {
+          "scenarios": "eaf|all",
+          "axes": {},
+          "values": {
+            "commodity": "I_gerdau_dri"
+          }
+        },
+        {
+          "scenarios": "eaf|all",
+          "axes": {},
+          "values": {
+            "commodity": "I_gerdau_h2"
+          }
+        },
+        {
+          "scenarios": "eaf|all",
+          "axes": {},
+          "values": {
+            "commodity": "I_ivaco_dri"
+          }
+        },
+        {
+          "scenarios": "eaf|all",
+          "axes": {},
+          "values": {
+            "commodity": "I_ivaco_h2"
+          }
+        },
+        {
+          "scenarios": "eaf|all",
+          "axes": {},
+          "values": {
+            "commodity": "I_stelco_dri"
+          }
+        },
+        {
+          "scenarios": "eaf|all",
+          "axes": {},
+          "values": {
+            "commodity": "I_stelco_eaf_crude_steel"
+          }
+        },
+        {
+          "scenarios": "eaf|all",
+          "axes": {},
+          "values": {
+            "commodity": "I_stelco_h2"
+          }
+        },
+        {
+          "scenarios": "eaf|all",
+          "axes": {},
+          "values": {
+            "commodity": "I_tinto_dri"
+          }
+        },
+        {
+          "scenarios": "eaf|all",
+          "axes": {},
+          "values": {
+            "commodity": "I_tinto_eaf_crude_steel"
+          }
+        },
+        {
+          "scenarios": "eaf|all",
+          "axes": {},
+          "values": {
+            "commodity": "I_tinto_h2"
+          }
+        }
+      ]
+    },
+    "commodity_type": {
+      "defaults": {},
+      "rules": [
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {},
+          "values": {
+            "label": "a",
+            "description": "annual commodity"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {},
+          "values": {
+            "label": "d",
+            "description": "demand commodity"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {},
+          "values": {
+            "label": "e",
+            "description": "emissions commodity"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {},
+          "values": {
+            "label": "p",
+            "description": "physical commodity"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {},
+          "values": {
+            "label": "s",
+            "description": "source commodity"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {},
+          "values": {
+            "label": "w",
+            "description": "waste commodity"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {},
+          "values": {
+            "label": "wa",
+            "description": "waste annual commodity"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {},
+          "values": {
+            "label": "wp",
+            "description": "waste physical commodity"
+          }
+        }
+      ]
+    },
+    "tech_group": {
+      "defaults": {
+        "notes": null,
+        "data_id": "${SCENARIO_DATA_ID}"
+      },
+      "rules": [
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {},
+          "values": {
+            "group_name": "I_DOF_PROCESS"
+          }
+        },
+        {
+          "scenarios": "eaf|ccs|all",
+          "axes": {},
+          "values": {
+            "group_name": "I_ALGOMA"
+          }
+        },
+        {
+          "scenarios": "eaf|ccs|all",
+          "axes": {},
+          "values": {
+            "group_name": "I_AMM"
+          }
+        },
+        {
+          "scenarios": "eaf|ccs|all",
+          "axes": {},
+          "values": {
+            "group_name": "I_DOFASCO"
+          }
+        },
+        {
+          "scenarios": "eaf|ccs|all",
+          "axes": {},
+          "values": {
+            "group_name": "I_EVRAZ"
+          }
+        },
+        {
+          "scenarios": "eaf|ccs|all",
+          "axes": {},
+          "values": {
+            "group_name": "I_GERDAU"
+          }
+        },
+        {
+          "scenarios": "eaf|ccs|all",
+          "axes": {},
+          "values": {
+            "group_name": "I_IVACO"
+          }
+        },
+        {
+          "scenarios": "eaf|ccs|all",
+          "axes": {},
+          "values": {
+            "group_name": "I_STELCO"
+          }
+        },
+        {
+          "scenarios": "eaf|ccs|all",
+          "axes": {},
+          "values": {
+            "group_name": "I_TINTO"
+          }
+        }
+      ]
+    },
+    "tech_group_label": {
+      "defaults": {
+        "notes": null
+      },
+      "rules": [
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {},
+          "values": {
+            "group_name": "I_DOF_PROCESS"
+          }
+        },
+        {
+          "scenarios": "eaf|ccs|all",
+          "axes": {},
+          "values": {
+            "group_name": "I_ALGOMA"
+          }
+        },
+        {
+          "scenarios": "eaf|ccs|all",
+          "axes": {},
+          "values": {
+            "group_name": "I_AMM"
+          }
+        },
+        {
+          "scenarios": "eaf|ccs|all",
+          "axes": {},
+          "values": {
+            "group_name": "I_DOFASCO"
+          }
+        },
+        {
+          "scenarios": "eaf|ccs|all",
+          "axes": {},
+          "values": {
+            "group_name": "I_EVRAZ"
+          }
+        },
+        {
+          "scenarios": "eaf|ccs|all",
+          "axes": {},
+          "values": {
+            "group_name": "I_GERDAU"
+          }
+        },
+        {
+          "scenarios": "eaf|ccs|all",
+          "axes": {},
+          "values": {
+            "group_name": "I_IVACO"
+          }
+        },
+        {
+          "scenarios": "eaf|ccs|all",
+          "axes": {},
+          "values": {
+            "group_name": "I_STELCO"
+          }
+        },
+        {
+          "scenarios": "eaf|ccs|all",
+          "axes": {},
+          "values": {
+            "group_name": "I_TINTO"
+          }
+        }
+      ]
+    },
+    "tech_group_member": {
+      "defaults": {
+        "data_id": "${SCENARIO_DATA_ID}"
+      },
+      "rules": [
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_DOF_BOF",
+              "I_DOF_D_EAF",
+              "I_DOF_S_EAF"
+            ]
+          },
+          "values": {
+            "group_name": "I_DOF_PROCESS"
+          }
+        },
+        {
+          "scenarios": "eaf|all",
+          "axes": {
+            "tech": [
+              "I_STELCO_EAF_PP"
+            ]
+          },
+          "values": {
+            "group_name": "I_STELCO"
+          }
+        },
+        {
+          "scenarios": "eaf|all",
+          "axes": {
+            "tech": [
+              "I_TINTO_EAF_PP"
+            ]
+          },
+          "values": {
+            "group_name": "I_TINTO"
+          }
+        },
+        {
+          "scenarios": "eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_ALG_EAF_PP",
+              "I_ALG_PP"
+            ]
+          },
+          "values": {
+            "group_name": "I_ALGOMA"
+          }
+        },
+        {
+          "scenarios": "eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_AMM_PP"
+            ]
+          },
+          "values": {
+            "group_name": "I_AMM"
+          }
+        },
+        {
+          "scenarios": "eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_DOF_EAF_PP",
+              "I_DOF_PP"
+            ]
+          },
+          "values": {
+            "group_name": "I_DOFASCO"
+          }
+        },
+        {
+          "scenarios": "eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_EVRAZ_PP"
+            ]
+          },
+          "values": {
+            "group_name": "I_EVRAZ"
+          }
+        },
+        {
+          "scenarios": "eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_GERDAU_PP"
+            ]
+          },
+          "values": {
+            "group_name": "I_GERDAU"
+          }
+        },
+        {
+          "scenarios": "eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_IVACO_PP"
+            ]
+          },
+          "values": {
+            "group_name": "I_IVACO"
+          }
+        },
+        {
+          "scenarios": "eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_STELCO_PP"
+            ]
+          },
+          "values": {
+            "group_name": "I_STELCO"
+          }
+        },
+        {
+          "scenarios": "eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_TINTO_PP"
+            ]
+          },
+          "values": {
+            "group_name": "I_TINTO"
+          }
+        }
+      ]
+    },
+    "sector_label": {
+      "defaults": {
+        "sector": "Steel",
+        "notes": "Steel sector"
+      },
+      "rules": [
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {},
+          "values": {}
+        }
+      ]
+    },
+    "region": {
+      "defaults": {},
+      "rules": [
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {},
+          "values": {
+            "region": "ON",
+            "notes": null
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {},
+          "values": {
+            "region": "QC",
+            "notes": null
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {},
+          "values": {
+            "region": "SK",
+            "notes": ""
+          }
+        }
+      ]
+    },
+    "operator": {
+      "defaults": {},
+      "rules": [
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {},
+          "values": {
+            "operator": "e",
+            "notes": "equal to"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {},
+          "values": {
+            "operator": "ge",
+            "notes": "greater than or equal to"
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {},
+          "values": {
+            "operator": "le",
+            "notes": "less than or equal to"
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,6 +1,6 @@
-direction,flow_id,amount,unit,source_sheet,source_cell,notes
-in,iron_pellet,1.3899999999999999,t,DRI-H2,B4,Source workbook cached value; check heterogeneous units before physical interpretation
-in,ng,0.035000000000000003,t,DRI-H2,B5,Source workbook cached value; check heterogeneous units before physical interpretation
-in,elc,0.41399999999999998,GJ,DRI-H2,B6,Source workbook cached value; check heterogeneous units before physical interpretation
-in,h2,0.74099999999999999,thousands m3,DRI-H2,B7,Source workbook cached value; check heterogeneous units before physical interpretation
-out,dri,1,t,DRI-H2,B11,Source workbook cached value; check heterogeneous units before physical interpretation
+direction,flow_id,amount,unit,notes
+in,iron_pellet,1.3899999999999999,t,Editable steel process-flow assumption; mixed units need scientific review
+in,ng,0.035000000000000003,t,Editable steel process-flow assumption; mixed units need scientific review
+in,elc,0.41399999999999998,GJ,Editable steel process-flow assumption; mixed units need scientific review
+in,h2,0.74099999999999999,thousands m3,Editable steel process-flow assumption; mixed units need scientific review
+out,dri,1,t,Editable steel process-flow assumption; mixed units need scientific review

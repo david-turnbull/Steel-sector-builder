@@ -1,6 +1,0 @@
-dq_geog,description
-1,Excellent - From this region and at the correct aggregation level or a directly-applicable generic value.
-2,Good - From an analogous region or the modelled region at incorrect aggregation level.
-3,Acceptable - From a relevant but non-analogous region or highly aggregated.
-4,Lacking - From a non-analogous region with limited relevance or a generic global value.
-5,"Unacceptable - From a region that is highly dissimilar to the modelled region, or from an unknown region."

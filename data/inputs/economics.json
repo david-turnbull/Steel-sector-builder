@@ -1,0 +1,5497 @@
+{
+  "description": "Editable investment, fixed and variable cost assumptions. A single cost rule can apply to many technologies and years.",
+  "tables": {
+    "cost_invest": {
+      "defaults": {
+        "data_id": "${SCENARIO_DATA_ID}"
+      },
+      "rules": [
+        {
+          "scenarios": "all",
+          "axes": {
+            "tech": [
+              "I_ALG_CCS_90",
+              "I_DOF_CCS_90",
+              "I_GERDAU_CCS_90",
+              "I_IVACO_CCS_90",
+              "I_STELCO_CCS_90"
+            ],
+            "vintage": [
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "units": "M$/kTonne CO2 Cap",
+            "notes": "Assuming CCS for EAF and BOF routes have the same values",
+            "data_source": "S10",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "cost": {
+              "parameter": "invest__carbon_capture_90_percent"
+            }
+          }
+        },
+        {
+          "scenarios": "all",
+          "axes": {
+            "tech": [
+              "I_ALG_CCS_99",
+              "I_DOF_CCS_99",
+              "I_GERDAU_CCS_99",
+              "I_IVACO_CCS_99",
+              "I_STELCO_CCS_99"
+            ],
+            "vintage": [
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "units": "M$/kTonne CO2 Cap",
+            "notes": "Assuming CCS for EAF and BOF routes have the same values",
+            "data_source": "S10",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "cost": {
+              "parameter": "invest__carbon_capture_99_percent"
+            }
+          }
+        },
+        {
+          "scenarios": "all",
+          "axes": {
+            "tech": [
+              "I_AMM_CCS_90",
+              "I_TINTO_CCS_90"
+            ],
+            "vintage": [
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "QC",
+            "units": "M$/kTonne CO2 Cap",
+            "notes": "Assuming CCS for EAF and BOF routes have the same values",
+            "data_source": "S10",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "cost": {
+              "parameter": "invest__carbon_capture_90_percent"
+            }
+          }
+        },
+        {
+          "scenarios": "all",
+          "axes": {
+            "tech": [
+              "I_AMM_CCS_99",
+              "I_TINTO_CCS_99"
+            ],
+            "vintage": [
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "QC",
+            "units": "M$/kTonne CO2 Cap",
+            "notes": "Assuming CCS for EAF and BOF routes have the same values",
+            "data_source": "S10",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "cost": {
+              "parameter": "invest__carbon_capture_99_percent"
+            }
+          }
+        },
+        {
+          "scenarios": "all",
+          "axes": {
+            "tech": [
+              "I_EVRAZ_CCS_90"
+            ],
+            "vintage": [
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "SK",
+            "units": "M$/kTonne CO2 Cap",
+            "notes": "Assuming CCS for EAF and BOF routes have the same values",
+            "data_source": "S10",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "cost": {
+              "parameter": "invest__carbon_capture_90_percent"
+            }
+          }
+        },
+        {
+          "scenarios": "all",
+          "axes": {
+            "tech": [
+              "I_EVRAZ_CCS_99"
+            ],
+            "vintage": [
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "SK",
+            "units": "M$/kTonne CO2 Cap",
+            "notes": "Assuming CCS for EAF and BOF routes have the same values",
+            "data_source": "S10",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "cost": {
+              "parameter": "invest__carbon_capture_99_percent"
+            }
+          }
+        },
+        {
+          "scenarios": "basecase",
+          "axes": {
+            "tech": [
+              "I_ALG_BF"
+            ],
+            "vintage": [
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "units": "M$/MT pigiron",
+            "notes": "Scaled to per MT of desired output, adjusted from USD 2010 to CAD 2022",
+            "data_source": "S1",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "cost": {
+              "parameter": "invest__blast_furnace"
+            }
+          }
+        },
+        {
+          "scenarios": "basecase",
+          "axes": {
+            "tech": [
+              "I_ALG_BOF",
+              "I_DOF_BOF",
+              "I_STELCO_BOF"
+            ],
+            "vintage": [
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "units": "M$/MT crude steel",
+            "notes": "Scaled to per MT of desired output, adjusted from USD 2010 to CAD 2022",
+            "data_source": "S1",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "cost": {
+              "parameter": "invest__basic_oxygen_furnace_reference"
+            }
+          }
+        },
+        {
+          "scenarios": "basecase",
+          "axes": {
+            "tech": [
+              "I_ALG_EAF",
+              "I_DOF_D_EAF",
+              "I_DOF_S_EAF"
+            ],
+            "vintage": [
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "units": "M$/MT crude steel",
+            "notes": "Converted from M EUR / MT 2010 to M CAD$ / MT 2020",
+            "data_source": "S4",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "cost": {
+              "parameter": "invest__electric_arc_furnace"
+            }
+          }
+        },
+        {
+          "scenarios": "basecase",
+          "axes": {
+            "tech": [
+              "I_ALG_EAF_PP",
+              "I_DOF_EAF_PP",
+              "I_GERDAU_PP",
+              "I_IVACO_PP"
+            ],
+            "vintage": [
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "units": "M$/MT rolled steel",
+            "notes": "Scaled to per MT of desired output, adjusted from USD 2010 to CAD 2020",
+            "data_source": "S4",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "cost": {
+              "parameter": "invest__steel_postprocessing"
+            }
+          }
+        },
+        {
+          "scenarios": "basecase",
+          "axes": {
+            "tech": [
+              "I_ALG_PP",
+              "I_DOF_PP",
+              "I_STELCO_PP"
+            ],
+            "vintage": [
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "units": "M$/MT rolled steel",
+            "notes": "Scaled to per MT of desired output, adjusted from USD 2010 to CAD 2020",
+            "data_source": "S1",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "cost": {
+              "parameter": "invest__steel_postprocessing"
+            }
+          }
+        },
+        {
+          "scenarios": "basecase",
+          "axes": {
+            "tech": [
+              "I_ALG_PPLANT",
+              "I_DOF_PPLANT",
+              "I_STELCO_PPLANT"
+            ],
+            "vintage": [
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "units": "M$/GW",
+            "notes": "Scaled to per GW, adjusted from USD 2010 to CAD 2020",
+            "data_source": "S1",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "cost": {
+              "parameter": "invest__on_site_powerplant"
+            }
+          }
+        },
+        {
+          "scenarios": "basecase",
+          "axes": {
+            "tech": [
+              "I_AMM_DRI"
+            ],
+            "vintage": [
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "QC",
+            "units": "M$/MT DRI",
+            "notes": "Converted from M EUR / MT 2010 to M CAD$ / MT 2020",
+            "data_source": "S4",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "cost": {
+              "parameter": "invest__direct_reduced_iron"
+            }
+          }
+        },
+        {
+          "scenarios": "basecase",
+          "axes": {
+            "tech": [
+              "I_AMM_EAF"
+            ],
+            "vintage": [
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "QC",
+            "units": "M$/MT crude steel",
+            "notes": "Converted from M EUR / MT 2010 to M CAD$ / MT 2020",
+            "data_source": "S4",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "cost": {
+              "parameter": "invest__electric_arc_furnace"
+            }
+          }
+        },
+        {
+          "scenarios": "basecase",
+          "axes": {
+            "tech": [
+              "I_AMM_PP"
+            ],
+            "vintage": [
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "QC",
+            "units": "M$/MT rolled steel",
+            "notes": "Scaled to per MT of desired output, adjusted from USD 2010 to CAD 2020",
+            "data_source": "S4",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "cost": {
+              "parameter": "invest__steel_postprocessing"
+            }
+          }
+        },
+        {
+          "scenarios": "basecase",
+          "axes": {
+            "tech": [
+              "I_DOF_NG_DRI"
+            ],
+            "vintage": [
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "units": "M$/MT DRI",
+            "notes": "Converted from M EUR / MT 2010 to M CAD$ / MT 2020",
+            "data_source": "S4",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "cost": {
+              "parameter": "invest__direct_reduced_iron"
+            }
+          }
+        },
+        {
+          "scenarios": "basecase",
+          "axes": {
+            "tech": [
+              "I_EVRAZ_EAF"
+            ],
+            "vintage": [
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "SK",
+            "units": "M$ / MT crude steel",
+            "notes": "Converted from M EUR / MT 2010 to M CAD$ / MT 2020",
+            "data_source": "S4",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "cost": {
+              "parameter": "invest__electric_arc_furnace"
+            }
+          }
+        },
+        {
+          "scenarios": "basecase",
+          "axes": {
+            "tech": [
+              "I_EVRAZ_PP"
+            ],
+            "vintage": [
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "SK",
+            "units": "M$/MT rolled steel",
+            "notes": "Scaled to per MT of desired output, adjusted from USD 2010 to CAD 2020",
+            "data_source": "S4",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "cost": {
+              "parameter": "invest__steel_postprocessing"
+            }
+          }
+        },
+        {
+          "scenarios": "basecase",
+          "axes": {
+            "tech": [
+              "I_GERDAU_EAF",
+              "I_IVACO_EAF"
+            ],
+            "vintage": [
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "units": "M$ / MT crude steel",
+            "notes": "Converted from M EUR / MT 2010 to M CAD$ / MT 2020",
+            "data_source": "S4",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "cost": {
+              "parameter": "invest__electric_arc_furnace"
+            }
+          }
+        },
+        {
+          "scenarios": "basecase",
+          "axes": {
+            "tech": [
+              "I_TINTO_BOF"
+            ],
+            "vintage": [
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "QC",
+            "units": "M$/MT crude steel",
+            "notes": "Scaled to per MT of desired output, adjusted from USD 2010 to CAD 2022",
+            "data_source": "S1",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "cost": {
+              "parameter": "invest__basic_oxygen_furnace_reference"
+            }
+          }
+        },
+        {
+          "scenarios": "basecase",
+          "axes": {
+            "tech": [
+              "I_TINTO_PP"
+            ],
+            "vintage": [
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "QC",
+            "units": "M$/MT rolled steel",
+            "notes": "Scaled to per MT of desired output, adjusted from USD 2010 to CAD 2020",
+            "data_source": "S1",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "cost": {
+              "parameter": "invest__steel_postprocessing"
+            }
+          }
+        },
+        {
+          "scenarios": "basecase",
+          "axes": {
+            "tech": [
+              "I_TINTO_PPLANT"
+            ],
+            "vintage": [
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "QC",
+            "units": "M$/GW",
+            "notes": "Scaled to per GW, adjusted from USD 2010 to CAD 2020",
+            "data_source": "S1",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "cost": {
+              "parameter": "invest__on_site_powerplant"
+            }
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_ALG_CO",
+              "I_DOF_CO",
+              "I_STELCO_CO"
+            ],
+            "vintage": [
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "units": "M$/MT coke",
+            "notes": "Scaled to per MT of desired output, adjusted from USD 2010 to CAD 2022",
+            "data_source": "S1",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "cost": {
+              "parameter": "invest__coke_oven"
+            }
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_AMM_PP"
+            ],
+            "vintage": [
+              "2025",
+              "2030"
+            ]
+          },
+          "values": {
+            "region": "QC",
+            "units": "M$/MT rolled steel",
+            "notes": "Converted from M EUR / MT 2010 to M CAD$ / MT 2022",
+            "data_source": "S4",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "cost": {
+              "parameter": "invest__steel_postprocessing"
+            }
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_DOF_BF",
+              "I_STELCO_BF"
+            ],
+            "vintage": [
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "units": "M$/MT pigiron",
+            "notes": "Scaled to per MT of desired output, adjusted from USD 2010 to CAD 2022",
+            "data_source": "S1",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "cost": {
+              "parameter": "invest__blast_furnace"
+            }
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_TINTO_BF"
+            ],
+            "vintage": [
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "QC",
+            "units": "M$/MT pigiron",
+            "notes": "Scaled to per MT of desired output, adjusted from USD 2010 to CAD 2022",
+            "data_source": "S1",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "cost": {
+              "parameter": "invest__blast_furnace"
+            }
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_TINTO_CO"
+            ],
+            "vintage": [
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "QC",
+            "units": "M$/MT coke",
+            "notes": "Scaled to per MT of desired output, adjusted from USD 2010 to CAD 2022",
+            "data_source": "S1",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "cost": {
+              "parameter": "invest__coke_oven"
+            }
+          }
+        },
+        {
+          "scenarios": "ccs",
+          "axes": {
+            "tech": [
+              "I_ALG_CCS_90",
+              "I_DOF_CCS_90",
+              "I_GERDAU_CCS_90",
+              "I_IVACO_CCS_90",
+              "I_STELCO_CCS_90"
+            ],
+            "vintage": [
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "units": "M$/kTonne CO2 Cap",
+            "notes": "Assuming CCS for EAF and BOF routes have the same values",
+            "data_source": "S6",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "cost": {
+              "parameter": "invest__carbon_capture_90_percent"
+            }
+          }
+        },
+        {
+          "scenarios": "ccs",
+          "axes": {
+            "tech": [
+              "I_ALG_CCS_99",
+              "I_DOF_CCS_99",
+              "I_GERDAU_CCS_99",
+              "I_IVACO_CCS_99",
+              "I_STELCO_CCS_99"
+            ],
+            "vintage": [
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "units": "M$/kTonne CO2 Cap",
+            "notes": "Assuming CCS for EAF and BOF routes have the same values",
+            "data_source": "S6",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "cost": {
+              "parameter": "invest__carbon_capture_99_percent"
+            }
+          }
+        },
+        {
+          "scenarios": "ccs",
+          "axes": {
+            "tech": [
+              "I_AMM_CCS_90",
+              "I_TINTO_CCS_90"
+            ],
+            "vintage": [
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "QC",
+            "units": "M$/kTonne CO2 Cap",
+            "notes": "Assuming CCS for EAF and BOF routes have the same values",
+            "data_source": "S6",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "cost": {
+              "parameter": "invest__carbon_capture_90_percent"
+            }
+          }
+        },
+        {
+          "scenarios": "ccs",
+          "axes": {
+            "tech": [
+              "I_AMM_CCS_99",
+              "I_TINTO_CCS_99"
+            ],
+            "vintage": [
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "QC",
+            "units": "M$/kTonne CO2 Cap",
+            "notes": "Assuming CCS for EAF and BOF routes have the same values",
+            "data_source": "S6",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "cost": {
+              "parameter": "invest__carbon_capture_99_percent"
+            }
+          }
+        },
+        {
+          "scenarios": "ccs",
+          "axes": {
+            "tech": [
+              "I_EVRAZ_CCS_90"
+            ],
+            "vintage": [
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "SK",
+            "units": "M$/kTonne CO2 Cap",
+            "notes": "Assuming CCS for EAF and BOF routes have the same values",
+            "data_source": "S6",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "cost": {
+              "parameter": "invest__carbon_capture_90_percent"
+            }
+          }
+        },
+        {
+          "scenarios": "ccs",
+          "axes": {
+            "tech": [
+              "I_EVRAZ_CCS_99"
+            ],
+            "vintage": [
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "SK",
+            "units": "M$/kTonne CO2 Cap",
+            "notes": "Assuming CCS for EAF and BOF routes have the same values",
+            "data_source": "S6",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "cost": {
+              "parameter": "invest__carbon_capture_99_percent"
+            }
+          }
+        },
+        {
+          "scenarios": "eaf|all",
+          "axes": {
+            "tech": [
+              "I_ALG_D_EAF",
+              "I_GERDAU_D_EAF",
+              "I_IVACO_D_EAF",
+              "I_STELCO_D_EAF",
+              "I_STELCO_S_EAF"
+            ],
+            "vintage": [
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "units": "M$ / MT crude steel",
+            "notes": "Scaled to per MT of desired output, adjusted from USD 2010 to CAD 2022",
+            "data_source": "S4",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "cost": {
+              "parameter": "invest__electric_arc_furnace"
+            }
+          }
+        },
+        {
+          "scenarios": "eaf|all",
+          "axes": {
+            "tech": [
+              "I_ALG_H2_DRI",
+              "I_ALG_NG_DRI",
+              "I_DOF_H2_DRI",
+              "I_GERDAU_H2_DRI",
+              "I_GERDAU_NG_DRI",
+              "I_IVACO_H2_DRI",
+              "I_IVACO_NG_DRI",
+              "I_STELCO_H2_DRI",
+              "I_STELCO_NG_DRI"
+            ],
+            "vintage": [
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "units": "M$/MT DRI",
+            "notes": "Scaled to per MT of desired output, adjusted from USD 2010 to CAD 2022",
+            "data_source": "S4",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "cost": {
+              "parameter": "invest__direct_reduced_iron"
+            }
+          }
+        },
+        {
+          "scenarios": "eaf|all",
+          "axes": {
+            "tech": [
+              "I_ALG_H2_ELEC",
+              "I_DOF_H2_ELEC",
+              "I_GERDAU_H2_ELEC",
+              "I_IVACO_H2_ELEC",
+              "I_STELCO_H2_ELEC"
+            ],
+            "vintage": [
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "units": "M$/millions of m3 H2",
+            "notes": "Scaled to per MT of desired output, adjusted from USD 2010 to CAD 2022",
+            "data_source": null,
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "cost": {
+              "parameter": "invest__hydrogen_electrolyser"
+            }
+          }
+        },
+        {
+          "scenarios": "eaf|all",
+          "axes": {
+            "tech": [
+              "I_AMM_H2_DRI",
+              "I_TINTO_H2_DRI",
+              "I_TINTO_NG_DRI"
+            ],
+            "vintage": [
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "QC",
+            "units": "M$/MT DRI",
+            "notes": "Scaled to per MT of desired output, adjusted from USD 2010 to CAD 2022",
+            "data_source": "S4",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "cost": {
+              "parameter": "invest__direct_reduced_iron"
+            }
+          }
+        },
+        {
+          "scenarios": "eaf|all",
+          "axes": {
+            "tech": [
+              "I_AMM_H2_ELEC",
+              "I_TINTO_H2_ELEC"
+            ],
+            "vintage": [
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "QC",
+            "units": "M$/millions of m3 H2",
+            "notes": "Scaled to per MT of desired output, adjusted from USD 2010 to CAD 2022",
+            "data_source": null,
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "cost": {
+              "parameter": "invest__hydrogen_electrolyser"
+            }
+          }
+        },
+        {
+          "scenarios": "eaf|all",
+          "axes": {
+            "tech": [
+              "I_AMM_S_EAF",
+              "I_TINTO_D_EAF",
+              "I_TINTO_S_EAF"
+            ],
+            "vintage": [
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "QC",
+            "units": "M$ / MT crude steel",
+            "notes": "Scaled to per MT of desired output, adjusted from USD 2010 to CAD 2022",
+            "data_source": "S4",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "cost": {
+              "parameter": "invest__electric_arc_furnace"
+            }
+          }
+        },
+        {
+          "scenarios": "eaf|all",
+          "axes": {
+            "tech": [
+              "I_EVRAZ_D_EAF"
+            ],
+            "vintage": [
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "SK",
+            "units": "M$ / MT crude steel",
+            "notes": "Scaled to per MT of desired output, adjusted from USD 2010 to CAD 2022",
+            "data_source": "S4",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "cost": {
+              "parameter": "invest__electric_arc_furnace"
+            }
+          }
+        },
+        {
+          "scenarios": "eaf|all",
+          "axes": {
+            "tech": [
+              "I_EVRAZ_H2_DRI",
+              "I_EVRAZ_NG_DRI"
+            ],
+            "vintage": [
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "SK",
+            "units": "M$/MT DRI",
+            "notes": "Scaled to per MT of desired output, adjusted from USD 2010 to CAD 2022",
+            "data_source": "S4",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "cost": {
+              "parameter": "invest__direct_reduced_iron"
+            }
+          }
+        },
+        {
+          "scenarios": "eaf|all",
+          "axes": {
+            "tech": [
+              "I_EVRAZ_H2_ELEC"
+            ],
+            "vintage": [
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "SK",
+            "units": "M$/millions of m3 H2",
+            "notes": "Scaled to per MT of desired output, adjusted from USD 2010 to CAD 2022",
+            "data_source": null,
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "cost": {
+              "parameter": "invest__hydrogen_electrolyser"
+            }
+          }
+        },
+        {
+          "scenarios": "eaf|all",
+          "axes": {
+            "tech": [
+              "I_STELCO_EAF_PP"
+            ],
+            "vintage": [
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "units": "M$/MT rolled steel",
+            "notes": "Scaled to per MT of desired output, adjusted from USD 2010 to CAD 2022",
+            "data_source": "S1",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "cost": {
+              "parameter": "invest__steel_postprocessing"
+            }
+          }
+        },
+        {
+          "scenarios": "eaf|all",
+          "axes": {
+            "tech": [
+              "I_TINTO_EAF_PP"
+            ],
+            "vintage": [
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "QC",
+            "units": "M$/MT rolled steel",
+            "notes": "Scaled to per MT of desired output, adjusted from USD 2010 to CAD 2022",
+            "data_source": "S1",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "cost": {
+              "parameter": "invest__steel_postprocessing"
+            }
+          }
+        },
+        {
+          "scenarios": "eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_ALG_BF"
+            ],
+            "vintage": [
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "units": "M$/MT pigiron",
+            "notes": "Scaled to per MT of desired output, adjusted from USD 2010 to CAD 2022",
+            "data_source": "S1",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "cost": {
+              "parameter": "invest__blast_furnace_special"
+            }
+          }
+        },
+        {
+          "scenarios": "eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_ALG_BOF",
+              "I_DOF_BOF",
+              "I_STELCO_BOF"
+            ],
+            "vintage": [
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "units": "M$/MT crude steel",
+            "notes": "Scaled to per MT of desired output, adjusted from USD 2010 to CAD 2022",
+            "data_source": "S1",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "cost": {
+              "parameter": "invest__basic_oxygen_furnace_alt"
+            }
+          }
+        },
+        {
+          "scenarios": "eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_ALG_EAF",
+              "I_DOF_D_EAF",
+              "I_DOF_S_EAF"
+            ],
+            "vintage": [
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "units": "M$/MT crude steel",
+            "notes": "Converted from M EUR / MT 2010 to M CAD$ / MT 2022",
+            "data_source": "S4",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "cost": {
+              "parameter": "invest__electric_arc_furnace"
+            }
+          }
+        },
+        {
+          "scenarios": "eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_ALG_EAF_PP",
+              "I_DOF_EAF_PP",
+              "I_GERDAU_PP",
+              "I_IVACO_PP"
+            ],
+            "vintage": [
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "units": "M$/MT rolled steel",
+            "notes": "Converted from M EUR / MT 2010 to M CAD$ / MT 2022",
+            "data_source": "S4",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "cost": {
+              "parameter": "invest__steel_postprocessing"
+            }
+          }
+        },
+        {
+          "scenarios": "eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_ALG_PP",
+              "I_DOF_PP",
+              "I_STELCO_PP"
+            ],
+            "vintage": [
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "units": "M$/MT rolled steel",
+            "notes": "Scaled to per MT of desired output, adjusted from USD 2010 to CAD 2022",
+            "data_source": "S1",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "cost": {
+              "parameter": "invest__steel_postprocessing"
+            }
+          }
+        },
+        {
+          "scenarios": "eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_ALG_PPLANT",
+              "I_DOF_PPLANT",
+              "I_STELCO_PPLANT"
+            ],
+            "vintage": [
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "units": "M$/GW",
+            "notes": "Scaled to per MT of desired output, adjusted from USD 2010 to CAD 2022",
+            "data_source": "S1",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "cost": {
+              "parameter": "invest__on_site_powerplant"
+            }
+          }
+        },
+        {
+          "scenarios": "eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_AMM_DRI"
+            ],
+            "vintage": [
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "QC",
+            "units": "M$/MT DRI",
+            "notes": "Converted from M EUR / MT 2010 to M CAD$ / MT 2022",
+            "data_source": "S4",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "cost": {
+              "parameter": "invest__direct_reduced_iron"
+            }
+          }
+        },
+        {
+          "scenarios": "eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_AMM_EAF"
+            ],
+            "vintage": [
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "QC",
+            "units": "M$/MT crude steel",
+            "notes": "Converted from M EUR / MT 2010 to M CAD$ / MT 2022",
+            "data_source": "S4",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "cost": {
+              "parameter": "invest__electric_arc_furnace"
+            }
+          }
+        },
+        {
+          "scenarios": "eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_AMM_PP"
+            ],
+            "vintage": [
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "QC",
+            "units": "M$/MT rolled steel",
+            "notes": "Converted from M EUR / MT 2010 to M CAD$ / MT 2022",
+            "data_source": "S4",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "cost": {
+              "parameter": "invest__steel_postprocessing"
+            }
+          }
+        },
+        {
+          "scenarios": "eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_DOF_NG_DRI"
+            ],
+            "vintage": [
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "units": "M$/MT DRI",
+            "notes": "Converted from M EUR / MT 2010 to M CAD$ / MT 2022",
+            "data_source": "S4",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "cost": {
+              "parameter": "invest__direct_reduced_iron"
+            }
+          }
+        },
+        {
+          "scenarios": "eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_EVRAZ_EAF"
+            ],
+            "vintage": [
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "SK",
+            "units": "M$ / MT crude steel",
+            "notes": "Converted from M EUR / MT 2010 to M CAD$ / MT 2022",
+            "data_source": "S4",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "cost": {
+              "parameter": "invest__electric_arc_furnace"
+            }
+          }
+        },
+        {
+          "scenarios": "eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_EVRAZ_PP"
+            ],
+            "vintage": [
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "SK",
+            "units": "M$/MT rolled steel",
+            "notes": "Converted from M EUR / MT 2010 to M CAD$ / MT 2022",
+            "data_source": "S4",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "cost": {
+              "parameter": "invest__steel_postprocessing"
+            }
+          }
+        },
+        {
+          "scenarios": "eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_GERDAU_EAF",
+              "I_IVACO_EAF"
+            ],
+            "vintage": [
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "units": "M$ / MT crude steel",
+            "notes": "Converted from M EUR / MT 2010 to M CAD$ / MT 2022",
+            "data_source": "S4",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "cost": {
+              "parameter": "invest__electric_arc_furnace"
+            }
+          }
+        },
+        {
+          "scenarios": "eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_TINTO_BOF"
+            ],
+            "vintage": [
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "QC",
+            "units": "M$/MT crude steel",
+            "notes": "Scaled to per MT of desired output, adjusted from USD 2010 to CAD 2022",
+            "data_source": "S1",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "cost": {
+              "parameter": "invest__basic_oxygen_furnace_alt"
+            }
+          }
+        },
+        {
+          "scenarios": "eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_TINTO_PP"
+            ],
+            "vintage": [
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "QC",
+            "units": "M$/MT rolled steel",
+            "notes": "Scaled to per MT of desired output, adjusted from USD 2010 to CAD 2022",
+            "data_source": "S1",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "cost": {
+              "parameter": "invest__steel_postprocessing"
+            }
+          }
+        },
+        {
+          "scenarios": "eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_TINTO_PPLANT"
+            ],
+            "vintage": [
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "QC",
+            "units": "M$/GW",
+            "notes": "Scaled to per MT of desired output, adjusted from USD 2010 to CAD 2022",
+            "data_source": "S1",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "cost": {
+              "parameter": "invest__on_site_powerplant"
+            }
+          }
+        }
+      ]
+    },
+    "cost_fixed": {
+      "defaults": {
+        "data_id": "${SCENARIO_DATA_ID}"
+      },
+      "rules": [
+        {
+          "scenarios": "all",
+          "axes": {
+            "tech": [
+              "I_ALG_CCS_90",
+              "I_DOF_CCS_90",
+              "I_GERDAU_CCS_90",
+              "I_IVACO_CCS_90",
+              "I_STELCO_CCS_90"
+            ],
+            "vintage": [
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ],
+            "period_policy": "from_vintage"
+          },
+          "values": {
+            "region": "ON",
+            "units": "M$/kTonne CO2",
+            "notes": "Assuming CCS for EAF and BOF routes have the same values",
+            "data_source": "S10",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "cost": {
+              "parameter": "fixed__carbon_capture_90_percent"
+            }
+          }
+        },
+        {
+          "scenarios": "all",
+          "axes": {
+            "tech": [
+              "I_ALG_CCS_99",
+              "I_DOF_CCS_99",
+              "I_GERDAU_CCS_99",
+              "I_IVACO_CCS_99",
+              "I_STELCO_CCS_99"
+            ],
+            "vintage": [
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ],
+            "period_policy": "from_vintage"
+          },
+          "values": {
+            "region": "ON",
+            "units": "M$/kTonne CO2",
+            "notes": "Assuming CCS for EAF and BOF routes have the same values",
+            "data_source": "S10",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "cost": {
+              "parameter": "fixed__carbon_capture_99_percent"
+            }
+          }
+        },
+        {
+          "scenarios": "all",
+          "axes": {
+            "tech": [
+              "I_AMM_CCS_90",
+              "I_TINTO_CCS_90"
+            ],
+            "vintage": [
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ],
+            "period_policy": "from_vintage"
+          },
+          "values": {
+            "region": "QC",
+            "units": "M$/kTonne CO2",
+            "notes": "Assuming CCS for EAF and BOF routes have the same values",
+            "data_source": "S10",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "cost": {
+              "parameter": "fixed__carbon_capture_90_percent"
+            }
+          }
+        },
+        {
+          "scenarios": "all",
+          "axes": {
+            "tech": [
+              "I_AMM_CCS_99",
+              "I_TINTO_CCS_99"
+            ],
+            "vintage": [
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ],
+            "period_policy": "from_vintage"
+          },
+          "values": {
+            "region": "QC",
+            "units": "M$/kTonne CO2",
+            "notes": "Assuming CCS for EAF and BOF routes have the same values",
+            "data_source": "S10",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "cost": {
+              "parameter": "fixed__carbon_capture_99_percent"
+            }
+          }
+        },
+        {
+          "scenarios": "all",
+          "axes": {
+            "tech": [
+              "I_EVRAZ_CCS_90"
+            ],
+            "vintage": [
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ],
+            "period_policy": "from_vintage"
+          },
+          "values": {
+            "region": "SK",
+            "units": "M$/kTonne CO2",
+            "notes": "Assuming CCS for EAF and BOF routes have the same values",
+            "data_source": "S10",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "cost": {
+              "parameter": "fixed__carbon_capture_90_percent"
+            }
+          }
+        },
+        {
+          "scenarios": "all",
+          "axes": {
+            "tech": [
+              "I_EVRAZ_CCS_99"
+            ],
+            "vintage": [
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ],
+            "period_policy": "from_vintage"
+          },
+          "values": {
+            "region": "SK",
+            "units": "M$/kTonne CO2",
+            "notes": "Assuming CCS for EAF and BOF routes have the same values",
+            "data_source": "S10",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "cost": {
+              "parameter": "fixed__carbon_capture_99_percent"
+            }
+          }
+        },
+        {
+          "scenarios": "basecase",
+          "axes": {
+            "tech": [
+              "I_ALG_BF",
+              "I_DOF_BF",
+              "I_STELCO_BF"
+            ],
+            "vintage": [
+              "2020",
+              "2030"
+            ],
+            "period_policy": "from_vintage"
+          },
+          "values": {
+            "region": "ON",
+            "units": "M$/MT pigiron",
+            "notes": "From the data source, the Fixed O&M was found to be 15% of CAPEX, this was applied evenly to each technology represented. Was adjusted from USD 2010 to CAD 2020",
+            "data_source": "S1",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "cost": {
+              "parameter": "fixed__blast_furnace_reference"
+            }
+          }
+        },
+        {
+          "scenarios": "basecase",
+          "axes": {
+            "tech": [
+              "I_ALG_BF",
+              "I_DOF_BF",
+              "I_STELCO_BF"
+            ],
+            "vintage": [
+              "2025",
+              "2035",
+              "2040",
+              "2045"
+            ],
+            "period_policy": "from_vintage"
+          },
+          "values": {
+            "region": "ON",
+            "units": "M$/MT pigiron",
+            "notes": "From the data source, the Fixed O&M was found to be 15% of CAPEX, this was applied evenly to each technology represented. Was adjusted from USD 2010 to CAD 2020",
+            "data_source": "S1",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "cost": {
+              "parameter": "fixed__blast_furnace_reference"
+            }
+          }
+        },
+        {
+          "scenarios": "basecase",
+          "axes": {
+            "tech": [
+              "I_ALG_BOF",
+              "I_DOF_BOF",
+              "I_STELCO_BOF"
+            ],
+            "vintage": [
+              "2020",
+              "2030"
+            ],
+            "period_policy": "from_vintage"
+          },
+          "values": {
+            "region": "ON",
+            "units": "M$/MT crude steel",
+            "notes": "From the data source, the Fixed O&M was found to be 15% of CAPEX, this was applied evenly to each technology represented. Was adjusted from USD 2010 to CAD 2020",
+            "data_source": "S1",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "cost": {
+              "parameter": "fixed__basic_oxygen_furnace"
+            }
+          }
+        },
+        {
+          "scenarios": "basecase",
+          "axes": {
+            "tech": [
+              "I_ALG_BOF",
+              "I_DOF_BOF",
+              "I_STELCO_BOF"
+            ],
+            "vintage": [
+              "2025",
+              "2035",
+              "2040",
+              "2045"
+            ],
+            "period_policy": "from_vintage"
+          },
+          "values": {
+            "region": "ON",
+            "units": "M$/MT crude steel",
+            "notes": "From the data source, the Fixed O&M was found to be 15% of CAPEX, this was applied evenly to each technology represented. Was adjusted from USD 2010 to CAD 2020",
+            "data_source": "S1",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "cost": {
+              "parameter": "fixed__basic_oxygen_furnace"
+            }
+          }
+        },
+        {
+          "scenarios": "basecase",
+          "axes": {
+            "tech": [
+              "I_ALG_CO",
+              "I_DOF_CO",
+              "I_STELCO_CO"
+            ],
+            "vintage": [
+              "2020",
+              "2030"
+            ],
+            "period_policy": "from_vintage"
+          },
+          "values": {
+            "region": "ON",
+            "units": "M$/MT coke",
+            "notes": "From the data source, the Fixed O&M was found to be 15% of CAPEX, this was applied evenly to each technology represented. Was adjusted from USD 2010 to CAD 2020",
+            "data_source": "S1",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "cost": {
+              "parameter": "fixed__coke_oven"
+            }
+          }
+        },
+        {
+          "scenarios": "basecase",
+          "axes": {
+            "tech": [
+              "I_ALG_CO",
+              "I_DOF_CO",
+              "I_STELCO_CO"
+            ],
+            "vintage": [
+              "2025",
+              "2035",
+              "2040",
+              "2045"
+            ],
+            "period_policy": "from_vintage"
+          },
+          "values": {
+            "region": "ON",
+            "units": "M$/MT coke",
+            "notes": "From the data source, the Fixed O&M was found to be 15% of CAPEX, this was applied evenly to each technology represented. Was adjusted from USD 2010 to CAD 2020",
+            "data_source": "S1",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "cost": {
+              "parameter": "fixed__coke_oven"
+            }
+          }
+        },
+        {
+          "scenarios": "basecase",
+          "axes": {
+            "tech": [
+              "I_ALG_EAF_PP",
+              "I_DOF_EAF_PP"
+            ],
+            "vintage": [
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ],
+            "period_policy": "from_vintage"
+          },
+          "values": {
+            "region": "ON",
+            "units": "M$/MT rolled steel",
+            "notes": "From the data source, the Fixed O&M was found to be 15% of CAPEX, this was applied evenly to each technology represented. Was adjusted from USD 2010 to CAD 2020",
+            "data_source": "S4",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "cost": {
+              "parameter": "fixed__steel_postprocessing"
+            }
+          }
+        },
+        {
+          "scenarios": "basecase",
+          "axes": {
+            "tech": [
+              "I_ALG_PP",
+              "I_DOF_PP",
+              "I_STELCO_PP"
+            ],
+            "vintage": [
+              "2020",
+              "2030"
+            ],
+            "period_policy": "from_vintage"
+          },
+          "values": {
+            "region": "ON",
+            "units": "M$/MT rolled steel",
+            "notes": "From the data source, the Fixed O&M was found to be 15% of CAPEX, this was applied evenly to each technology represented. Was adjusted from USD 2010 to CAD 2020",
+            "data_source": "S1",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "cost": {
+              "parameter": "fixed__steel_postprocessing"
+            }
+          }
+        },
+        {
+          "scenarios": "basecase",
+          "axes": {
+            "tech": [
+              "I_ALG_PP",
+              "I_DOF_PP",
+              "I_STELCO_PP"
+            ],
+            "vintage": [
+              "2025",
+              "2035",
+              "2040",
+              "2045"
+            ],
+            "period_policy": "from_vintage"
+          },
+          "values": {
+            "region": "ON",
+            "units": "M$/MT rolled steel",
+            "notes": "From the data source, the Fixed O&M was found to be 15% of CAPEX, this was applied evenly to each technology represented. Was adjusted from USD 2010 to CAD 2020",
+            "data_source": "S1",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "cost": {
+              "parameter": "fixed__steel_postprocessing"
+            }
+          }
+        },
+        {
+          "scenarios": "basecase",
+          "axes": {
+            "tech": [
+              "I_AMM_DRI"
+            ],
+            "vintage": [
+              "2020",
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ],
+            "period_policy": "from_vintage"
+          },
+          "values": {
+            "region": "QC",
+            "units": "M$/MT DRI",
+            "notes": "Converted from M EUR / MT 2010 to M CAD$ / MT 2020",
+            "data_source": "S4",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "cost": {
+              "parameter": "fixed__direct_reduced_iron"
+            }
+          }
+        },
+        {
+          "scenarios": "basecase",
+          "axes": {
+            "tech": [
+              "I_AMM_PP"
+            ],
+            "vintage": [
+              "2020",
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ],
+            "period_policy": "from_vintage"
+          },
+          "values": {
+            "region": "QC",
+            "units": "M$/MT rolled steel",
+            "notes": "From the data source, the Fixed O&M was found to be 15% of CAPEX, this was applied evenly to each technology represented. Was adjusted from USD 2010 to CAD 2020",
+            "data_source": "S4",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "cost": {
+              "parameter": "fixed__steel_postprocessing"
+            }
+          }
+        },
+        {
+          "scenarios": "basecase",
+          "axes": {
+            "tech": [
+              "I_DOF_EAF_PP"
+            ],
+            "vintage": [
+              "2020"
+            ],
+            "period_policy": "from_vintage"
+          },
+          "values": {
+            "region": "ON",
+            "units": "M$/MT rolled steel",
+            "notes": "From the data source, the Fixed O&M was found to be 15% of CAPEX, this was applied evenly to each technology represented. Was adjusted from USD 2010 to CAD 2020",
+            "data_source": "S4",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "cost": {
+              "parameter": "fixed__steel_postprocessing"
+            }
+          }
+        },
+        {
+          "scenarios": "basecase",
+          "axes": {
+            "tech": [
+              "I_DOF_NG_DRI"
+            ],
+            "vintage": [
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ],
+            "period_policy": "from_vintage"
+          },
+          "values": {
+            "region": "ON",
+            "units": "M$/MT DRI",
+            "notes": "Converted from M EUR / MT 2010 to M CAD$ / MT 2020",
+            "data_source": "S4",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "cost": {
+              "parameter": "fixed__direct_reduced_iron"
+            }
+          }
+        },
+        {
+          "scenarios": "basecase",
+          "axes": {
+            "tech": [
+              "I_EVRAZ_PP"
+            ],
+            "vintage": [
+              "2020",
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ],
+            "period_policy": "from_vintage"
+          },
+          "values": {
+            "region": "SK",
+            "units": "M$/ MT rolled steel",
+            "notes": "From the data source, the Fixed O&M was found to be 15% of CAPEX, this was applied evenly to each technology represented. Was adjusted from USD 2010 to CAD 2020",
+            "data_source": "S4",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "cost": {
+              "parameter": "fixed__steel_postprocessing"
+            }
+          }
+        },
+        {
+          "scenarios": "basecase",
+          "axes": {
+            "tech": [
+              "I_GERDAU_PP",
+              "I_IVACO_PP"
+            ],
+            "vintage": [
+              "2020",
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ],
+            "period_policy": "from_vintage"
+          },
+          "values": {
+            "region": "ON",
+            "units": "M$/ MT rolled steel",
+            "notes": "From the data source, the Fixed O&M was found to be 15% of CAPEX, this was applied evenly to each technology represented. Was adjusted from USD 2010 to CAD 2020",
+            "data_source": "S4",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "cost": {
+              "parameter": "fixed__steel_postprocessing"
+            }
+          }
+        },
+        {
+          "scenarios": "basecase",
+          "axes": {
+            "tech": [
+              "I_STELCO_PPLANT"
+            ],
+            "vintage": [
+              "2020"
+            ],
+            "period_policy": "from_vintage"
+          },
+          "values": {
+            "region": "ON",
+            "units": "M$/GW",
+            "notes": "From the data source, the Fixed O&M was found to be 15% of CAPEX, this was applied evenly to each technology represented. Was adjusted from USD 2010 to CAD 2020",
+            "data_source": "S1",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "cost": {
+              "parameter": "fixed__on_site_powerplant"
+            }
+          }
+        },
+        {
+          "scenarios": "basecase",
+          "axes": {
+            "tech": [
+              "I_STELCO_PPLANT"
+            ],
+            "vintage": [
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ],
+            "period_policy": "from_vintage"
+          },
+          "values": {
+            "region": "ON",
+            "units": "M$/GW",
+            "notes": "From the data source, the Fixed O&M was found to be 15% of CAPEX, this was applied evenly to each technology represented. Was adjusted from USD 2010 to CAD 2020",
+            "data_source": "S1",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "cost": {
+              "parameter": "fixed__on_site_powerplant"
+            }
+          }
+        },
+        {
+          "scenarios": "basecase",
+          "axes": {
+            "tech": [
+              "I_TINTO_BF"
+            ],
+            "vintage": [
+              "2020",
+              "2030"
+            ],
+            "period_policy": "from_vintage"
+          },
+          "values": {
+            "region": "QC",
+            "units": "M$/MT pigiron",
+            "notes": "From the data source, the Fixed O&M was found to be 15% of CAPEX, this was applied evenly to each technology represented. Was adjusted from USD 2010 to CAD 2020",
+            "data_source": "S1",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "cost": {
+              "parameter": "fixed__blast_furnace_reference"
+            }
+          }
+        },
+        {
+          "scenarios": "basecase",
+          "axes": {
+            "tech": [
+              "I_TINTO_BF"
+            ],
+            "vintage": [
+              "2025",
+              "2035",
+              "2040",
+              "2045"
+            ],
+            "period_policy": "from_vintage"
+          },
+          "values": {
+            "region": "QC",
+            "units": "M$/MT pigiron",
+            "notes": "From the data source, the Fixed O&M was found to be 15% of CAPEX, this was applied evenly to each technology represented. Was adjusted from USD 2010 to CAD 2020",
+            "data_source": "S1",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "cost": {
+              "parameter": "fixed__blast_furnace_reference"
+            }
+          }
+        },
+        {
+          "scenarios": "basecase",
+          "axes": {
+            "tech": [
+              "I_TINTO_BOF"
+            ],
+            "vintage": [
+              "2020",
+              "2030"
+            ],
+            "period_policy": "from_vintage"
+          },
+          "values": {
+            "region": "QC",
+            "units": "M$/MT crude steel",
+            "notes": "From the data source, the Fixed O&M was found to be 15% of CAPEX, this was applied evenly to each technology represented. Was adjusted from USD 2010 to CAD 2020",
+            "data_source": "S1",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "cost": {
+              "parameter": "fixed__basic_oxygen_furnace"
+            }
+          }
+        },
+        {
+          "scenarios": "basecase",
+          "axes": {
+            "tech": [
+              "I_TINTO_BOF"
+            ],
+            "vintage": [
+              "2025",
+              "2035",
+              "2040",
+              "2045"
+            ],
+            "period_policy": "from_vintage"
+          },
+          "values": {
+            "region": "QC",
+            "units": "M$/MT crude steel",
+            "notes": "From the data source, the Fixed O&M was found to be 15% of CAPEX, this was applied evenly to each technology represented. Was adjusted from USD 2010 to CAD 2020",
+            "data_source": "S1",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "cost": {
+              "parameter": "fixed__basic_oxygen_furnace"
+            }
+          }
+        },
+        {
+          "scenarios": "basecase",
+          "axes": {
+            "tech": [
+              "I_TINTO_CO"
+            ],
+            "vintage": [
+              "2020",
+              "2030"
+            ],
+            "period_policy": "from_vintage"
+          },
+          "values": {
+            "region": "QC",
+            "units": "M$/MT coke",
+            "notes": "From the data source, the Fixed O&M was found to be 15% of CAPEX, this was applied evenly to each technology represented. Was adjusted from USD 2010 to CAD 2020",
+            "data_source": "S1",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "cost": {
+              "parameter": "fixed__coke_oven"
+            }
+          }
+        },
+        {
+          "scenarios": "basecase",
+          "axes": {
+            "tech": [
+              "I_TINTO_CO"
+            ],
+            "vintage": [
+              "2025",
+              "2035",
+              "2040",
+              "2045"
+            ],
+            "period_policy": "from_vintage"
+          },
+          "values": {
+            "region": "QC",
+            "units": "M$/MT coke",
+            "notes": "From the data source, the Fixed O&M was found to be 15% of CAPEX, this was applied evenly to each technology represented. Was adjusted from USD 2010 to CAD 2020",
+            "data_source": "S1",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "cost": {
+              "parameter": "fixed__coke_oven"
+            }
+          }
+        },
+        {
+          "scenarios": "basecase",
+          "axes": {
+            "tech": [
+              "I_TINTO_PP"
+            ],
+            "vintage": [
+              "2020",
+              "2030"
+            ],
+            "period_policy": "from_vintage"
+          },
+          "values": {
+            "region": "QC",
+            "units": "M$/MT rolled steel",
+            "notes": "From the data source, the Fixed O&M was found to be 15% of CAPEX, this was applied evenly to each technology represented. Was adjusted from USD 2010 to CAD 2020",
+            "data_source": "S1",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "cost": {
+              "parameter": "fixed__steel_postprocessing"
+            }
+          }
+        },
+        {
+          "scenarios": "basecase",
+          "axes": {
+            "tech": [
+              "I_TINTO_PP"
+            ],
+            "vintage": [
+              "2025",
+              "2035",
+              "2040",
+              "2045"
+            ],
+            "period_policy": "from_vintage"
+          },
+          "values": {
+            "region": "QC",
+            "units": "M$/MT rolled steel",
+            "notes": "From the data source, the Fixed O&M was found to be 15% of CAPEX, this was applied evenly to each technology represented. Was adjusted from USD 2010 to CAD 2020",
+            "data_source": "S1",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "cost": {
+              "parameter": "fixed__steel_postprocessing"
+            }
+          }
+        },
+        {
+          "scenarios": "basecase",
+          "axes": {
+            "tech": [
+              "I_TINTO_PPLANT"
+            ],
+            "year_pairs": [
+              [
+                "2030",
+                "2045"
+              ]
+            ]
+          },
+          "values": {
+            "region": "QC",
+            "units": "M$/GW",
+            "notes": "From the data source, the Fixed O&M was found to be 15% of CAPEX, this was applied evenly to each technology represented. Was adjusted from USD 2010 to CAD 2020",
+            "data_source": "S1",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "cost": {
+              "parameter": "fixed__on_site_powerplant"
+            }
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_ALG_EAF",
+              "I_DOF_D_EAF",
+              "I_DOF_S_EAF"
+            ],
+            "vintage": [
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ],
+            "period_policy": "from_vintage"
+          },
+          "values": {
+            "region": "ON",
+            "units": "M$/MT crude steel",
+            "notes": "Converted from M EUR / MT 2010 to M CAD$ / MT 2022",
+            "data_source": "S4",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "cost": {
+              "parameter": "fixed__electric_arc_furnace"
+            }
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_ALG_PPLANT"
+            ],
+            "vintage": [
+              "2020"
+            ],
+            "period_policy": "from_vintage"
+          },
+          "values": {
+            "region": "ON",
+            "units": "M$/GW",
+            "notes": "From the data source, the Fixed O&M was found to be 15% of CAPEX, this was applied evenly to each technology represented",
+            "data_source": "S1",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "cost": {
+              "parameter": "fixed__on_site_powerplant"
+            }
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_ALG_PPLANT"
+            ],
+            "vintage": [
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ],
+            "period_policy": "from_vintage"
+          },
+          "values": {
+            "region": "ON",
+            "units": "M$/GW",
+            "notes": "From the data source, the Fixed O&M was found to be 15% of CAPEX, this was applied evenly to each technology represented",
+            "data_source": "S1",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "cost": {
+              "parameter": "fixed__on_site_powerplant"
+            }
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_AMM_EAF"
+            ],
+            "vintage": [
+              "2020",
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ],
+            "period_policy": "from_vintage"
+          },
+          "values": {
+            "region": "QC",
+            "units": "M$/MT crude steel",
+            "notes": "Converted from M EUR / MT 2010 to M CAD$ / MT 2022",
+            "data_source": "S4",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "cost": {
+              "parameter": "fixed__electric_arc_furnace"
+            }
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_DOF_PPLANT"
+            ],
+            "vintage": [
+              "2020"
+            ],
+            "period_policy": "from_vintage"
+          },
+          "values": {
+            "region": "ON",
+            "units": "M$/GW",
+            "notes": "From the data source, the Fixed O&M was found to be 15% of CAPEX, this was applied evenly to each technology represented. Was adjusted from USD 2010 to CAD 2022",
+            "data_source": "S1",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "cost": {
+              "parameter": "fixed__on_site_powerplant"
+            }
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_DOF_PPLANT"
+            ],
+            "vintage": [
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ],
+            "period_policy": "from_vintage"
+          },
+          "values": {
+            "region": "ON",
+            "units": "M$/GW",
+            "notes": "From the data source, the Fixed O&M was found to be 15% of CAPEX, this was applied evenly to each technology represented. Was adjusted from USD 2010 to CAD 2022",
+            "data_source": "S1",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "cost": {
+              "parameter": "fixed__on_site_powerplant"
+            }
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_DOF_S_EAF"
+            ],
+            "vintage": [
+              "2020"
+            ],
+            "period_policy": "from_vintage"
+          },
+          "values": {
+            "region": "ON",
+            "units": "M$/MT crude steel",
+            "notes": "Converted from M EUR / MT 2010 to M CAD$ / MT 2022",
+            "data_source": "S4",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "cost": {
+              "parameter": "fixed__electric_arc_furnace"
+            }
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_EVRAZ_EAF"
+            ],
+            "vintage": [
+              "2020",
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ],
+            "period_policy": "from_vintage"
+          },
+          "values": {
+            "region": "SK",
+            "units": "M$/ MT crude steel",
+            "notes": "Converted from M EUR / MT 2010 to M CAD$ / MT 2022",
+            "data_source": "S4",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "cost": {
+              "parameter": "fixed__electric_arc_furnace"
+            }
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_GERDAU_EAF",
+              "I_IVACO_EAF"
+            ],
+            "vintage": [
+              "2020",
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ],
+            "period_policy": "from_vintage"
+          },
+          "values": {
+            "region": "ON",
+            "units": "M$/ MT crude steel",
+            "notes": "Converted from M EUR / MT 2010 to M CAD$ / MT 2022",
+            "data_source": "S4",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "cost": {
+              "parameter": "fixed__electric_arc_furnace"
+            }
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_TINTO_PPLANT"
+            ],
+            "vintage": [
+              "2020"
+            ],
+            "period_policy": "from_vintage"
+          },
+          "values": {
+            "region": "QC",
+            "units": "M$/GW",
+            "notes": "From the data source, the Fixed O&M was found to be 15% of CAPEX, this was applied evenly to each technology represented. Was adjusted from USD 2010 to CAD 2022",
+            "data_source": "S1",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "cost": {
+              "parameter": "fixed__on_site_powerplant"
+            }
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_TINTO_PPLANT"
+            ],
+            "year_pairs": [
+              [
+                "2025",
+                "2025"
+              ],
+              [
+                "2025",
+                "2030"
+              ],
+              [
+                "2025",
+                "2035"
+              ],
+              [
+                "2025",
+                "2040"
+              ],
+              [
+                "2025",
+                "2045"
+              ],
+              [
+                "2030",
+                "2030"
+              ],
+              [
+                "2030",
+                "2035"
+              ],
+              [
+                "2030",
+                "2040"
+              ],
+              [
+                "2035",
+                "2035"
+              ],
+              [
+                "2035",
+                "2040"
+              ],
+              [
+                "2035",
+                "2045"
+              ],
+              [
+                "2040",
+                "2040"
+              ],
+              [
+                "2040",
+                "2045"
+              ],
+              [
+                "2045",
+                "2045"
+              ]
+            ]
+          },
+          "values": {
+            "region": "QC",
+            "units": "M$/GW",
+            "notes": "From the data source, the Fixed O&M was found to be 15% of CAPEX, this was applied evenly to each technology represented. Was adjusted from USD 2010 to CAD 2022",
+            "data_source": "S1",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "cost": {
+              "parameter": "fixed__on_site_powerplant"
+            }
+          }
+        },
+        {
+          "scenarios": "ccs",
+          "axes": {
+            "tech": [
+              "I_ALG_CCS_90",
+              "I_DOF_CCS_90",
+              "I_GERDAU_CCS_90",
+              "I_IVACO_CCS_90",
+              "I_STELCO_CCS_90"
+            ],
+            "vintage": [
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ],
+            "period_policy": "from_vintage"
+          },
+          "values": {
+            "region": "ON",
+            "units": "M$/kTonne CO2",
+            "notes": "Assuming CCS for EAF and BOF routes have the same values",
+            "data_source": "S6",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "cost": {
+              "parameter": "fixed__carbon_capture_90_percent"
+            }
+          }
+        },
+        {
+          "scenarios": "ccs",
+          "axes": {
+            "tech": [
+              "I_ALG_CCS_99",
+              "I_DOF_CCS_99",
+              "I_GERDAU_CCS_99",
+              "I_IVACO_CCS_99",
+              "I_STELCO_CCS_99"
+            ],
+            "vintage": [
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ],
+            "period_policy": "from_vintage"
+          },
+          "values": {
+            "region": "ON",
+            "units": "M$/kTonne CO2",
+            "notes": "Assuming CCS for EAF and BOF routes have the same values",
+            "data_source": "S6",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "cost": {
+              "parameter": "fixed__carbon_capture_99_percent"
+            }
+          }
+        },
+        {
+          "scenarios": "ccs",
+          "axes": {
+            "tech": [
+              "I_AMM_CCS_90",
+              "I_TINTO_CCS_90"
+            ],
+            "vintage": [
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ],
+            "period_policy": "from_vintage"
+          },
+          "values": {
+            "region": "QC",
+            "units": "M$/kTonne CO2",
+            "notes": "Assuming CCS for EAF and BOF routes have the same values",
+            "data_source": "S6",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "cost": {
+              "parameter": "fixed__carbon_capture_90_percent"
+            }
+          }
+        },
+        {
+          "scenarios": "ccs",
+          "axes": {
+            "tech": [
+              "I_AMM_CCS_99",
+              "I_TINTO_CCS_99"
+            ],
+            "vintage": [
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ],
+            "period_policy": "from_vintage"
+          },
+          "values": {
+            "region": "QC",
+            "units": "M$/kTonne CO2",
+            "notes": "Assuming CCS for EAF and BOF routes have the same values",
+            "data_source": "S6",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "cost": {
+              "parameter": "fixed__carbon_capture_99_percent"
+            }
+          }
+        },
+        {
+          "scenarios": "ccs",
+          "axes": {
+            "tech": [
+              "I_EVRAZ_CCS_90"
+            ],
+            "vintage": [
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ],
+            "period_policy": "from_vintage"
+          },
+          "values": {
+            "region": "SK",
+            "units": "M$/kTonne CO2",
+            "notes": "Assuming CCS for EAF and BOF routes have the same values",
+            "data_source": "S6",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "cost": {
+              "parameter": "fixed__carbon_capture_90_percent"
+            }
+          }
+        },
+        {
+          "scenarios": "ccs",
+          "axes": {
+            "tech": [
+              "I_EVRAZ_CCS_99"
+            ],
+            "vintage": [
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ],
+            "period_policy": "from_vintage"
+          },
+          "values": {
+            "region": "SK",
+            "units": "M$/kTonne CO2",
+            "notes": "Assuming CCS for EAF and BOF routes have the same values",
+            "data_source": "S6",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "cost": {
+              "parameter": "fixed__carbon_capture_99_percent"
+            }
+          }
+        },
+        {
+          "scenarios": "eaf|all",
+          "axes": {
+            "tech": [
+              "I_ALG_D_EAF",
+              "I_GERDAU_D_EAF",
+              "I_IVACO_D_EAF",
+              "I_STELCO_D_EAF",
+              "I_STELCO_S_EAF"
+            ],
+            "vintage": [
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ],
+            "period_policy": "from_vintage"
+          },
+          "values": {
+            "region": "ON",
+            "units": "M$/ MT crude steel",
+            "notes": "Converted from M EUR / MT 2010 to M CAD$ / MT 2022",
+            "data_source": "S4",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "cost": {
+              "parameter": "fixed__electric_arc_furnace"
+            }
+          }
+        },
+        {
+          "scenarios": "eaf|all",
+          "axes": {
+            "tech": [
+              "I_ALG_H2_DRI",
+              "I_ALG_NG_DRI",
+              "I_DOF_H2_DRI",
+              "I_GERDAU_H2_DRI",
+              "I_GERDAU_NG_DRI",
+              "I_IVACO_H2_DRI",
+              "I_IVACO_NG_DRI",
+              "I_STELCO_H2_DRI",
+              "I_STELCO_NG_DRI"
+            ],
+            "vintage": [
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ],
+            "period_policy": "from_vintage"
+          },
+          "values": {
+            "region": "ON",
+            "units": "M$/MT DRI",
+            "notes": "Converted from M EUR / MT 2010 to M CAD$ / MT 2022",
+            "data_source": "S4",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "cost": {
+              "parameter": "fixed__direct_reduced_iron"
+            }
+          }
+        },
+        {
+          "scenarios": "eaf|all",
+          "axes": {
+            "tech": [
+              "I_ALG_H2_ELEC",
+              "I_DOF_H2_ELEC",
+              "I_GERDAU_H2_ELEC",
+              "I_IVACO_H2_ELEC",
+              "I_STELCO_H2_ELEC"
+            ],
+            "vintage": [
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ],
+            "period_policy": "from_vintage"
+          },
+          "values": {
+            "region": "ON",
+            "units": "M$/ million m3 hydrogen",
+            "notes": "",
+            "data_source": "",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "cost": {
+              "parameter": "fixed__hydrogen_electrolyser"
+            }
+          }
+        },
+        {
+          "scenarios": "eaf|all",
+          "axes": {
+            "tech": [
+              "I_AMM_H2_DRI",
+              "I_TINTO_H2_DRI",
+              "I_TINTO_NG_DRI"
+            ],
+            "vintage": [
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ],
+            "period_policy": "from_vintage"
+          },
+          "values": {
+            "region": "QC",
+            "units": "M$/MT DRI",
+            "notes": "Converted from M EUR / MT 2010 to M CAD$ / MT 2022",
+            "data_source": "S4",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "cost": {
+              "parameter": "fixed__direct_reduced_iron"
+            }
+          }
+        },
+        {
+          "scenarios": "eaf|all",
+          "axes": {
+            "tech": [
+              "I_AMM_H2_ELEC",
+              "I_TINTO_H2_ELEC"
+            ],
+            "vintage": [
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ],
+            "period_policy": "from_vintage"
+          },
+          "values": {
+            "region": "QC",
+            "units": "M$/ million m3 hydrogen",
+            "notes": "",
+            "data_source": "",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "cost": {
+              "parameter": "fixed__hydrogen_electrolyser"
+            }
+          }
+        },
+        {
+          "scenarios": "eaf|all",
+          "axes": {
+            "tech": [
+              "I_AMM_S_EAF",
+              "I_TINTO_D_EAF",
+              "I_TINTO_S_EAF"
+            ],
+            "vintage": [
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ],
+            "period_policy": "from_vintage"
+          },
+          "values": {
+            "region": "QC",
+            "units": "M$/ MT crude steel",
+            "notes": "Converted from M EUR / MT 2010 to M CAD$ / MT 2022",
+            "data_source": "S4",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "cost": {
+              "parameter": "fixed__electric_arc_furnace"
+            }
+          }
+        },
+        {
+          "scenarios": "eaf|all",
+          "axes": {
+            "tech": [
+              "I_EVRAZ_D_EAF"
+            ],
+            "vintage": [
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ],
+            "period_policy": "from_vintage"
+          },
+          "values": {
+            "region": "SK",
+            "units": "M$/ MT crude steel",
+            "notes": "Converted from M EUR / MT 2010 to M CAD$ / MT 2022",
+            "data_source": "S4",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "cost": {
+              "parameter": "fixed__electric_arc_furnace"
+            }
+          }
+        },
+        {
+          "scenarios": "eaf|all",
+          "axes": {
+            "tech": [
+              "I_EVRAZ_H2_DRI",
+              "I_EVRAZ_NG_DRI"
+            ],
+            "vintage": [
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ],
+            "period_policy": "from_vintage"
+          },
+          "values": {
+            "region": "SK",
+            "units": "M$/MT DRI",
+            "notes": "Converted from M EUR / MT 2010 to M CAD$ / MT 2022",
+            "data_source": "S4",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "cost": {
+              "parameter": "fixed__direct_reduced_iron"
+            }
+          }
+        },
+        {
+          "scenarios": "eaf|all",
+          "axes": {
+            "tech": [
+              "I_EVRAZ_H2_ELEC"
+            ],
+            "vintage": [
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ],
+            "period_policy": "from_vintage"
+          },
+          "values": {
+            "region": "SK",
+            "units": "M$/ million m3 hydrogen",
+            "notes": "",
+            "data_source": "",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "cost": {
+              "parameter": "fixed__hydrogen_electrolyser"
+            }
+          }
+        },
+        {
+          "scenarios": "eaf|all",
+          "axes": {
+            "tech": [
+              "I_STELCO_EAF_PP"
+            ],
+            "vintage": [
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ],
+            "period_policy": "from_vintage"
+          },
+          "values": {
+            "region": "ON",
+            "units": "M$/MT rolled steel",
+            "notes": "From the data source, the Fixed O&M was found to be 15% of CAPEX, this was applied evenly to each technology represented. Was adjusted from USD 2010 to CAD 2022",
+            "data_source": "S1",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "cost": {
+              "parameter": "fixed__steel_postprocessing"
+            }
+          }
+        },
+        {
+          "scenarios": "eaf|all",
+          "axes": {
+            "tech": [
+              "I_TINTO_EAF_PP"
+            ],
+            "vintage": [
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ],
+            "period_policy": "from_vintage"
+          },
+          "values": {
+            "region": "QC",
+            "units": "M$/MT rolled steel",
+            "notes": "From the data source, the Fixed O&M was found to be 15% of CAPEX, this was applied evenly to each technology represented. Was adjusted from USD 2010 to CAD 2022",
+            "data_source": "S1",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "cost": {
+              "parameter": "fixed__steel_postprocessing"
+            }
+          }
+        },
+        {
+          "scenarios": "eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_ALG_BF"
+            ],
+            "vintage": [
+              "2020",
+              "2030"
+            ],
+            "period_policy": "from_vintage"
+          },
+          "values": {
+            "region": "ON",
+            "units": "M$/MT pigiron",
+            "notes": "From the data source, the Fixed O&M was found to be 15% of CAPEX, this was applied evenly to each technology represented",
+            "data_source": "S1",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "cost": {
+              "parameter": "fixed__blast_furnace_reference"
+            }
+          }
+        },
+        {
+          "scenarios": "eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_ALG_BF"
+            ],
+            "vintage": [
+              "2025",
+              "2035",
+              "2040",
+              "2045"
+            ],
+            "period_policy": "from_vintage"
+          },
+          "values": {
+            "region": "ON",
+            "units": "M$/MT pigiron",
+            "notes": "From the data source, the Fixed O&M was found to be 15% of CAPEX, this was applied evenly to each technology represented",
+            "data_source": "S1",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "cost": {
+              "parameter": "fixed__blast_furnace_reference"
+            }
+          }
+        },
+        {
+          "scenarios": "eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_ALG_BOF"
+            ],
+            "vintage": [
+              "2020",
+              "2030"
+            ],
+            "period_policy": "from_vintage"
+          },
+          "values": {
+            "region": "ON",
+            "units": "M$/MT crude steel",
+            "notes": "From the data source, the Fixed O&M was found to be 15% of CAPEX, this was applied evenly to each technology represented",
+            "data_source": "S1",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "cost": {
+              "parameter": "fixed__basic_oxygen_furnace"
+            }
+          }
+        },
+        {
+          "scenarios": "eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_ALG_BOF"
+            ],
+            "vintage": [
+              "2025",
+              "2035",
+              "2040",
+              "2045"
+            ],
+            "period_policy": "from_vintage"
+          },
+          "values": {
+            "region": "ON",
+            "units": "M$/MT crude steel",
+            "notes": "From the data source, the Fixed O&M was found to be 15% of CAPEX, this was applied evenly to each technology represented",
+            "data_source": "S1",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "cost": {
+              "parameter": "fixed__basic_oxygen_furnace"
+            }
+          }
+        },
+        {
+          "scenarios": "eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_ALG_CO"
+            ],
+            "vintage": [
+              "2020",
+              "2030"
+            ],
+            "period_policy": "from_vintage"
+          },
+          "values": {
+            "region": "ON",
+            "units": "M$/MT coke",
+            "notes": "From the data source, the Fixed O&M was found to be 15% of CAPEX, this was applied evenly to each technology represented",
+            "data_source": "S1",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "cost": {
+              "parameter": "fixed__coke_oven"
+            }
+          }
+        },
+        {
+          "scenarios": "eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_ALG_CO"
+            ],
+            "vintage": [
+              "2025",
+              "2035",
+              "2040",
+              "2045"
+            ],
+            "period_policy": "from_vintage"
+          },
+          "values": {
+            "region": "ON",
+            "units": "M$/MT coke",
+            "notes": "From the data source, the Fixed O&M was found to be 15% of CAPEX, this was applied evenly to each technology represented",
+            "data_source": "S1",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "cost": {
+              "parameter": "fixed__coke_oven"
+            }
+          }
+        },
+        {
+          "scenarios": "eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_ALG_EAF_PP",
+              "I_DOF_EAF_PP"
+            ],
+            "vintage": [
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ],
+            "period_policy": "from_vintage"
+          },
+          "values": {
+            "region": "ON",
+            "units": "M$/MT rolled steel",
+            "notes": "Converted from M EUR / MT 2010 to M CAD$ / MT 2022",
+            "data_source": "S4",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "cost": {
+              "parameter": "fixed__steel_postprocessing"
+            }
+          }
+        },
+        {
+          "scenarios": "eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_ALG_PP"
+            ],
+            "vintage": [
+              "2020",
+              "2030"
+            ],
+            "period_policy": "from_vintage"
+          },
+          "values": {
+            "region": "ON",
+            "units": "M$/MT rolled steel",
+            "notes": "From the data source, the Fixed O&M was found to be 15% of CAPEX, this was applied evenly to each technology represented",
+            "data_source": "S1",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "cost": {
+              "parameter": "fixed__steel_postprocessing"
+            }
+          }
+        },
+        {
+          "scenarios": "eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_ALG_PP"
+            ],
+            "vintage": [
+              "2025",
+              "2035",
+              "2040",
+              "2045"
+            ],
+            "period_policy": "from_vintage"
+          },
+          "values": {
+            "region": "ON",
+            "units": "M$/MT rolled steel",
+            "notes": "From the data source, the Fixed O&M was found to be 15% of CAPEX, this was applied evenly to each technology represented",
+            "data_source": "S1",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "cost": {
+              "parameter": "fixed__steel_postprocessing"
+            }
+          }
+        },
+        {
+          "scenarios": "eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_AMM_DRI"
+            ],
+            "vintage": [
+              "2020",
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ],
+            "period_policy": "from_vintage"
+          },
+          "values": {
+            "region": "QC",
+            "units": "M$/MT DRI",
+            "notes": "Converted from M EUR / MT 2010 to M CAD$ / MT 2022",
+            "data_source": "S4",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "cost": {
+              "parameter": "fixed__direct_reduced_iron"
+            }
+          }
+        },
+        {
+          "scenarios": "eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_AMM_PP"
+            ],
+            "vintage": [
+              "2020",
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ],
+            "period_policy": "from_vintage"
+          },
+          "values": {
+            "region": "QC",
+            "units": "M$/MT rolled steel",
+            "notes": "Converted from M EUR / MT 2010 to M CAD$ / MT 2022",
+            "data_source": "S4",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "cost": {
+              "parameter": "fixed__steel_postprocessing"
+            }
+          }
+        },
+        {
+          "scenarios": "eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_DOF_BF",
+              "I_STELCO_BF"
+            ],
+            "vintage": [
+              "2020",
+              "2030"
+            ],
+            "period_policy": "from_vintage"
+          },
+          "values": {
+            "region": "ON",
+            "units": "M$/MT pigiron",
+            "notes": "From the data source, the Fixed O&M was found to be 15% of CAPEX, this was applied evenly to each technology represented. Was adjusted from USD 2010 to CAD 2022",
+            "data_source": "S1",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "cost": {
+              "parameter": "fixed__blast_furnace_precision_variant"
+            }
+          }
+        },
+        {
+          "scenarios": "eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_DOF_BF",
+              "I_STELCO_BF"
+            ],
+            "vintage": [
+              "2025",
+              "2035",
+              "2040",
+              "2045"
+            ],
+            "period_policy": "from_vintage"
+          },
+          "values": {
+            "region": "ON",
+            "units": "M$/MT pigiron",
+            "notes": "From the data source, the Fixed O&M was found to be 15% of CAPEX, this was applied evenly to each technology represented. Was adjusted from USD 2010 to CAD 2022",
+            "data_source": "S1",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "cost": {
+              "parameter": "fixed__blast_furnace_precision_variant"
+            }
+          }
+        },
+        {
+          "scenarios": "eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_DOF_BOF",
+              "I_STELCO_BOF"
+            ],
+            "vintage": [
+              "2020",
+              "2030"
+            ],
+            "period_policy": "from_vintage"
+          },
+          "values": {
+            "region": "ON",
+            "units": "M$/MT crude steel",
+            "notes": "From the data source, the Fixed O&M was found to be 15% of CAPEX, this was applied evenly to each technology represented. Was adjusted from USD 2010 to CAD 2022",
+            "data_source": "S1",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "cost": {
+              "parameter": "fixed__basic_oxygen_furnace"
+            }
+          }
+        },
+        {
+          "scenarios": "eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_DOF_BOF",
+              "I_STELCO_BOF"
+            ],
+            "vintage": [
+              "2025",
+              "2035",
+              "2040",
+              "2045"
+            ],
+            "period_policy": "from_vintage"
+          },
+          "values": {
+            "region": "ON",
+            "units": "M$/MT crude steel",
+            "notes": "From the data source, the Fixed O&M was found to be 15% of CAPEX, this was applied evenly to each technology represented. Was adjusted from USD 2010 to CAD 2022",
+            "data_source": "S1",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "cost": {
+              "parameter": "fixed__basic_oxygen_furnace"
+            }
+          }
+        },
+        {
+          "scenarios": "eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_DOF_CO",
+              "I_STELCO_CO"
+            ],
+            "vintage": [
+              "2020",
+              "2030"
+            ],
+            "period_policy": "from_vintage"
+          },
+          "values": {
+            "region": "ON",
+            "units": "M$/MT coke",
+            "notes": "From the data source, the Fixed O&M was found to be 15% of CAPEX, this was applied evenly to each technology represented. Was adjusted from USD 2010 to CAD 2022",
+            "data_source": "S1",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "cost": {
+              "parameter": "fixed__coke_oven"
+            }
+          }
+        },
+        {
+          "scenarios": "eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_DOF_CO",
+              "I_STELCO_CO"
+            ],
+            "vintage": [
+              "2025",
+              "2035",
+              "2040",
+              "2045"
+            ],
+            "period_policy": "from_vintage"
+          },
+          "values": {
+            "region": "ON",
+            "units": "M$/MT coke",
+            "notes": "From the data source, the Fixed O&M was found to be 15% of CAPEX, this was applied evenly to each technology represented. Was adjusted from USD 2010 to CAD 2022",
+            "data_source": "S1",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "cost": {
+              "parameter": "fixed__coke_oven"
+            }
+          }
+        },
+        {
+          "scenarios": "eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_DOF_EAF_PP"
+            ],
+            "vintage": [
+              "2020"
+            ],
+            "period_policy": "from_vintage"
+          },
+          "values": {
+            "region": "ON",
+            "units": "M$/MT rolled steel",
+            "notes": "Converted from M EUR / MT 2010 to M CAD$ / MT 2022",
+            "data_source": "S4",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "cost": {
+              "parameter": "fixed__steel_postprocessing"
+            }
+          }
+        },
+        {
+          "scenarios": "eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_DOF_NG_DRI"
+            ],
+            "vintage": [
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ],
+            "period_policy": "from_vintage"
+          },
+          "values": {
+            "region": "ON",
+            "units": "M$/MT DRI",
+            "notes": "Converted from M EUR / MT 2010 to M CAD$ / MT 2022",
+            "data_source": "S4",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "cost": {
+              "parameter": "fixed__direct_reduced_iron"
+            }
+          }
+        },
+        {
+          "scenarios": "eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_DOF_PP",
+              "I_STELCO_PP"
+            ],
+            "vintage": [
+              "2020",
+              "2030"
+            ],
+            "period_policy": "from_vintage"
+          },
+          "values": {
+            "region": "ON",
+            "units": "M$/MT rolled steel",
+            "notes": "From the data source, the Fixed O&M was found to be 15% of CAPEX, this was applied evenly to each technology represented. Was adjusted from USD 2010 to CAD 2022",
+            "data_source": "S1",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "cost": {
+              "parameter": "fixed__steel_postprocessing"
+            }
+          }
+        },
+        {
+          "scenarios": "eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_DOF_PP",
+              "I_STELCO_PP"
+            ],
+            "vintage": [
+              "2025",
+              "2035",
+              "2040",
+              "2045"
+            ],
+            "period_policy": "from_vintage"
+          },
+          "values": {
+            "region": "ON",
+            "units": "M$/MT rolled steel",
+            "notes": "From the data source, the Fixed O&M was found to be 15% of CAPEX, this was applied evenly to each technology represented. Was adjusted from USD 2010 to CAD 2022",
+            "data_source": "S1",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "cost": {
+              "parameter": "fixed__steel_postprocessing"
+            }
+          }
+        },
+        {
+          "scenarios": "eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_EVRAZ_PP"
+            ],
+            "vintage": [
+              "2020",
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ],
+            "period_policy": "from_vintage"
+          },
+          "values": {
+            "region": "SK",
+            "units": "M$/ MT rolled steel",
+            "notes": "Converted from M EUR / MT 2010 to M CAD$ / MT 2022",
+            "data_source": "S4",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "cost": {
+              "parameter": "fixed__steel_postprocessing"
+            }
+          }
+        },
+        {
+          "scenarios": "eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_GERDAU_PP",
+              "I_IVACO_PP"
+            ],
+            "vintage": [
+              "2020",
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ],
+            "period_policy": "from_vintage"
+          },
+          "values": {
+            "region": "ON",
+            "units": "M$/ MT rolled steel",
+            "notes": "Converted from M EUR / MT 2010 to M CAD$ / MT 2022",
+            "data_source": "S4",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "cost": {
+              "parameter": "fixed__steel_postprocessing"
+            }
+          }
+        },
+        {
+          "scenarios": "eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_STELCO_PPLANT"
+            ],
+            "vintage": [
+              "2020"
+            ],
+            "period_policy": "from_vintage"
+          },
+          "values": {
+            "region": "ON",
+            "units": "M$/GW",
+            "notes": "From the data source, the Fixed O&M was found to be 15% of CAPEX, this was applied evenly to each technology represented. Was adjusted from USD 2010 to CAD 2022",
+            "data_source": "S1",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "cost": {
+              "parameter": "fixed__on_site_powerplant"
+            }
+          }
+        },
+        {
+          "scenarios": "eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_STELCO_PPLANT"
+            ],
+            "vintage": [
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ],
+            "period_policy": "from_vintage"
+          },
+          "values": {
+            "region": "ON",
+            "units": "M$/GW",
+            "notes": "From the data source, the Fixed O&M was found to be 15% of CAPEX, this was applied evenly to each technology represented. Was adjusted from USD 2010 to CAD 2022",
+            "data_source": "S1",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "cost": {
+              "parameter": "fixed__on_site_powerplant"
+            }
+          }
+        },
+        {
+          "scenarios": "eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_TINTO_BF"
+            ],
+            "vintage": [
+              "2020",
+              "2030"
+            ],
+            "period_policy": "from_vintage"
+          },
+          "values": {
+            "region": "QC",
+            "units": "M$/MT pigiron",
+            "notes": "From the data source, the Fixed O&M was found to be 15% of CAPEX, this was applied evenly to each technology represented. Was adjusted from USD 2010 to CAD 2022",
+            "data_source": "S1",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "cost": {
+              "parameter": "fixed__blast_furnace_precision_variant"
+            }
+          }
+        },
+        {
+          "scenarios": "eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_TINTO_BF"
+            ],
+            "vintage": [
+              "2025",
+              "2035",
+              "2040",
+              "2045"
+            ],
+            "period_policy": "from_vintage"
+          },
+          "values": {
+            "region": "QC",
+            "units": "M$/MT pigiron",
+            "notes": "From the data source, the Fixed O&M was found to be 15% of CAPEX, this was applied evenly to each technology represented. Was adjusted from USD 2010 to CAD 2022",
+            "data_source": "S1",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "cost": {
+              "parameter": "fixed__blast_furnace_precision_variant"
+            }
+          }
+        },
+        {
+          "scenarios": "eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_TINTO_BOF"
+            ],
+            "vintage": [
+              "2020",
+              "2030"
+            ],
+            "period_policy": "from_vintage"
+          },
+          "values": {
+            "region": "QC",
+            "units": "M$/MT crude steel",
+            "notes": "From the data source, the Fixed O&M was found to be 15% of CAPEX, this was applied evenly to each technology represented. Was adjusted from USD 2010 to CAD 2022",
+            "data_source": "S1",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "cost": {
+              "parameter": "fixed__basic_oxygen_furnace"
+            }
+          }
+        },
+        {
+          "scenarios": "eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_TINTO_BOF"
+            ],
+            "vintage": [
+              "2025",
+              "2035",
+              "2040",
+              "2045"
+            ],
+            "period_policy": "from_vintage"
+          },
+          "values": {
+            "region": "QC",
+            "units": "M$/MT crude steel",
+            "notes": "From the data source, the Fixed O&M was found to be 15% of CAPEX, this was applied evenly to each technology represented. Was adjusted from USD 2010 to CAD 2022",
+            "data_source": "S1",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "cost": {
+              "parameter": "fixed__basic_oxygen_furnace"
+            }
+          }
+        },
+        {
+          "scenarios": "eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_TINTO_CO"
+            ],
+            "vintage": [
+              "2020",
+              "2030"
+            ],
+            "period_policy": "from_vintage"
+          },
+          "values": {
+            "region": "QC",
+            "units": "M$/MT coke",
+            "notes": "From the data source, the Fixed O&M was found to be 15% of CAPEX, this was applied evenly to each technology represented. Was adjusted from USD 2010 to CAD 2022",
+            "data_source": "S1",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "cost": {
+              "parameter": "fixed__coke_oven"
+            }
+          }
+        },
+        {
+          "scenarios": "eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_TINTO_CO"
+            ],
+            "vintage": [
+              "2025",
+              "2035",
+              "2040",
+              "2045"
+            ],
+            "period_policy": "from_vintage"
+          },
+          "values": {
+            "region": "QC",
+            "units": "M$/MT coke",
+            "notes": "From the data source, the Fixed O&M was found to be 15% of CAPEX, this was applied evenly to each technology represented. Was adjusted from USD 2010 to CAD 2022",
+            "data_source": "S1",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "cost": {
+              "parameter": "fixed__coke_oven"
+            }
+          }
+        },
+        {
+          "scenarios": "eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_TINTO_PP"
+            ],
+            "vintage": [
+              "2020",
+              "2030"
+            ],
+            "period_policy": "from_vintage"
+          },
+          "values": {
+            "region": "QC",
+            "units": "M$/MT rolled steel",
+            "notes": "From the data source, the Fixed O&M was found to be 15% of CAPEX, this was applied evenly to each technology represented. Was adjusted from USD 2010 to CAD 2022",
+            "data_source": "S1",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "cost": {
+              "parameter": "fixed__steel_postprocessing"
+            }
+          }
+        },
+        {
+          "scenarios": "eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_TINTO_PP"
+            ],
+            "vintage": [
+              "2025",
+              "2035",
+              "2040",
+              "2045"
+            ],
+            "period_policy": "from_vintage"
+          },
+          "values": {
+            "region": "QC",
+            "units": "M$/MT rolled steel",
+            "notes": "From the data source, the Fixed O&M was found to be 15% of CAPEX, this was applied evenly to each technology represented. Was adjusted from USD 2010 to CAD 2022",
+            "data_source": "S1",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "cost": {
+              "parameter": "fixed__steel_postprocessing"
+            }
+          }
+        },
+        {
+          "scenarios": "eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_TINTO_PPLANT"
+            ],
+            "year_pairs": [
+              [
+                "2030",
+                "2045"
+              ]
+            ]
+          },
+          "values": {
+            "region": "QC",
+            "units": "M$/GW",
+            "notes": "From the data source, the Fixed O&M was found to be 15% of CAPEX, this was applied evenly to each technology represented. Was adjusted from USD 2010 to CAD 2022",
+            "data_source": "S1",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "cost": {
+              "parameter": "fixed__on_site_powerplant"
+            }
+          }
+        }
+      ]
+    },
+    "cost_variable": {
+      "defaults": {
+        "units": "M$/MT",
+        "data_id": "${SCENARIO_DATA_ID}"
+      },
+      "rules": [
+        {
+          "scenarios": "all",
+          "axes": {
+            "tech": [
+              "F_I_IRONORE"
+            ],
+            "vintage": [
+              "2025"
+            ],
+            "period_policy": "from_vintage"
+          },
+          "values": {
+            "region": "ON",
+            "notes": "Page 44, under Other Key Drivers, reports a 2025 average No. 1 busheling scrap price of US$424 per long ton.",
+            "data_source": null,
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "cost": {
+              "parameter": "variable__iron_ore_import_price"
+            }
+          }
+        },
+        {
+          "scenarios": "all",
+          "axes": {
+            "tech": [
+              "F_I_IRONPELLET"
+            ],
+            "vintage": [
+              "2025"
+            ],
+            "period_policy": "from_vintage"
+          },
+          "values": {
+            "region": "ON",
+            "notes": "Page 44, under Other Key Drivers, reports a 2025 average No. 1 busheling scrap price of US$424 per long ton.",
+            "data_source": "",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "cost": {
+              "parameter": "variable__iron_pellet_import_price"
+            }
+          }
+        },
+        {
+          "scenarios": "all",
+          "axes": {
+            "tech": [
+              "F_I_IRONPELLET"
+            ],
+            "vintage": [
+              "2025"
+            ],
+            "period_policy": "from_vintage"
+          },
+          "values": {
+            "region": "QC",
+            "notes": "The report's Iron Ore Company of Canada Operations section provides 2025 average benchmark prices of US$102/dry tonne for 62% Fe ore, US$115/dry tonne for 65% Fe ore, and US$30/dry tonne for the Atlantic blast-furnace pellet premium.",
+            "data_source": "",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "cost": {
+              "parameter": "variable__iron_pellet_import_price"
+            }
+          }
+        },
+        {
+          "scenarios": "all",
+          "axes": {
+            "tech": [
+              "F_I_SCRAP"
+            ],
+            "vintage": [
+              "2025"
+            ],
+            "period_policy": "from_vintage"
+          },
+          "values": {
+            "region": "ON",
+            "notes": "The report's Iron Ore Pellet Market section provides the following 2025 annual average prices and premiums",
+            "data_source": "",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "cost": {
+              "parameter": "variable__scrap_import_price"
+            }
+          }
+        },
+        {
+          "scenarios": "all",
+          "axes": {
+            "tech": [
+              "F_I_SCRAP"
+            ],
+            "vintage": [
+              "2025"
+            ],
+            "period_policy": "from_vintage"
+          },
+          "values": {
+            "region": "QC",
+            "notes": "The report's Iron Ore Pellet Market section provides the following 2025 annual average prices and premiums",
+            "data_source": "",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "cost": {
+              "parameter": "variable__scrap_import_price"
+            }
+          }
+        },
+        {
+          "scenarios": "basecase|eaf",
+          "axes": {
+            "tech": [
+              "F_I_EVRAZ_SCRAP"
+            ],
+            "vintage": [
+              "2025"
+            ],
+            "period_policy": "from_vintage"
+          },
+          "values": {
+            "region": "SK",
+            "notes": "Page 44, under Other Key Drivers, reports a 2025 average No. 1 busheling scrap price of US$424 per long ton.",
+            "data_source": null,
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "cost": {
+              "parameter": "variable__scrap_import_price"
+            }
+          }
+        },
+        {
+          "scenarios": "basecase|eaf",
+          "axes": {
+            "tech": [
+              "F_I_IRONPELLET"
+            ],
+            "vintage": [
+              "2025"
+            ],
+            "period_policy": "from_vintage"
+          },
+          "values": {
+            "region": "ON",
+            "notes": "The report's Iron Ore Pellet Market section provides the following 2025 annual average prices and premiums",
+            "data_source": null,
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "cost": {
+              "parameter": "variable__iron_pellet_import_price"
+            }
+          }
+        },
+        {
+          "scenarios": "basecase|eaf",
+          "axes": {
+            "tech": [
+              "F_I_IRONPELLET"
+            ],
+            "vintage": [
+              "2025"
+            ],
+            "period_policy": "from_vintage"
+          },
+          "values": {
+            "region": "QC",
+            "notes": "The report's Iron Ore Pellet Market section provides the following 2025 annual average prices and premiums",
+            "data_source": null,
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "cost": {
+              "parameter": "variable__iron_pellet_import_price"
+            }
+          }
+        },
+        {
+          "scenarios": "basecase|eaf",
+          "axes": {
+            "tech": [
+              "F_I_SCRAP"
+            ],
+            "vintage": [
+              "2025"
+            ],
+            "period_policy": "from_vintage"
+          },
+          "values": {
+            "region": "ON",
+            "notes": "Page 44, under Other Key Drivers, reports a 2025 average No. 1 busheling scrap price of US$424 per long ton.",
+            "data_source": null,
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "cost": {
+              "parameter": "variable__scrap_import_price"
+            }
+          }
+        },
+        {
+          "scenarios": "basecase|eaf",
+          "axes": {
+            "tech": [
+              "F_I_SCRAP"
+            ],
+            "vintage": [
+              "2025"
+            ],
+            "period_policy": "from_vintage"
+          },
+          "values": {
+            "region": "QC",
+            "notes": "Page 44, under Other Key Drivers, reports a 2025 average No. 1 busheling scrap price of US$424 per long ton.",
+            "data_source": null,
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "cost": {
+              "parameter": "variable__scrap_import_price"
+            }
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|all",
+          "axes": {
+            "tech": [
+              "I_IMP_MET_COAL"
+            ],
+            "year_pairs": [
+              [
+                "2025",
+                "2025"
+              ]
+            ]
+          },
+          "values": {
+            "region": "QC",
+            "notes": "Uses the AEO report and converted into M$/PJ 2020 CAD",
+            "data_source": null,
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "cost": {
+              "parameter": "variable__met_coal_price_04"
+            }
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|all",
+          "axes": {
+            "tech": [
+              "I_IMP_MET_COAL"
+            ],
+            "year_pairs": [
+              [
+                "2025",
+                "2030"
+              ]
+            ]
+          },
+          "values": {
+            "region": "QC",
+            "notes": "Uses the AEO report and converted into M$/PJ 2020 CAD",
+            "data_source": null,
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "cost": {
+              "parameter": "variable__met_coal_price_05"
+            }
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|all",
+          "axes": {
+            "tech": [
+              "I_IMP_MET_COAL"
+            ],
+            "year_pairs": [
+              [
+                "2025",
+                "2035"
+              ]
+            ]
+          },
+          "values": {
+            "region": "QC",
+            "notes": "Uses the AEO report and converted into M$/PJ 2020 CAD",
+            "data_source": null,
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "cost": {
+              "parameter": "variable__met_coal_price_03"
+            }
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|all",
+          "axes": {
+            "tech": [
+              "I_IMP_MET_COAL"
+            ],
+            "year_pairs": [
+              [
+                "2025",
+                "2040"
+              ]
+            ]
+          },
+          "values": {
+            "region": "QC",
+            "notes": "Uses the AEO report and converted into M$/PJ 2020 CAD",
+            "data_source": null,
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "cost": {
+              "parameter": "variable__met_coal_price_02"
+            }
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|all",
+          "axes": {
+            "tech": [
+              "I_IMP_MET_COAL"
+            ],
+            "year_pairs": [
+              [
+                "2025",
+                "2045"
+              ]
+            ]
+          },
+          "values": {
+            "region": "QC",
+            "notes": "Uses the AEO report and converted into M$/PJ 2020 CAD",
+            "data_source": null,
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "cost": {
+              "parameter": "variable__met_coal_price_01"
+            }
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs",
+          "axes": {
+            "tech": [
+              "F_I_IRONORE"
+            ],
+            "vintage": [
+              "2025"
+            ],
+            "period_policy": "from_vintage"
+          },
+          "values": {
+            "region": "ON",
+            "notes": "The report's Iron Ore Company of Canada Operations section provides 2025 average benchmark prices of US$102/dry tonne for 62% Fe ore, US$115/dry tonne for 65% Fe ore, and US$30/dry tonne for the Atlantic blast-furnace pellet premium.",
+            "data_source": null,
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "cost": {
+              "parameter": "variable__iron_ore_import_price"
+            }
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "F_I_IRONORE"
+            ],
+            "vintage": [
+              "2025"
+            ],
+            "period_policy": "from_vintage"
+          },
+          "values": {
+            "region": "QC",
+            "notes": "The report's Iron Ore Company of Canada Operations section provides 2025 average benchmark prices of US$102/dry tonne for 62% Fe ore, US$115/dry tonne for 65% Fe ore, and US$30/dry tonne for the Atlantic blast-furnace pellet premium.",
+            "data_source": null,
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "cost": {
+              "parameter": "variable__iron_ore_import_price"
+            }
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_IMP_MET_COAL"
+            ],
+            "year_pairs": [
+              [
+                "2025",
+                "2025"
+              ]
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "notes": "Uses the AEO report and converted into M$/PJ 2020 CAD",
+            "data_source": null,
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "cost": {
+              "parameter": "variable__met_coal_price_04"
+            }
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_IMP_MET_COAL"
+            ],
+            "year_pairs": [
+              [
+                "2025",
+                "2030"
+              ]
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "notes": "Uses the AEO report and converted into M$/PJ 2020 CAD",
+            "data_source": null,
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "cost": {
+              "parameter": "variable__met_coal_price_05"
+            }
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_IMP_MET_COAL"
+            ],
+            "year_pairs": [
+              [
+                "2025",
+                "2035"
+              ]
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "notes": "Uses the AEO report and converted into M$/PJ 2020 CAD",
+            "data_source": null,
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "cost": {
+              "parameter": "variable__met_coal_price_03"
+            }
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_IMP_MET_COAL"
+            ],
+            "year_pairs": [
+              [
+                "2025",
+                "2040"
+              ]
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "notes": "Uses the AEO report and converted into M$/PJ 2020 CAD",
+            "data_source": null,
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "cost": {
+              "parameter": "variable__met_coal_price_02"
+            }
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_IMP_MET_COAL"
+            ],
+            "year_pairs": [
+              [
+                "2025",
+                "2045"
+              ]
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "notes": "Uses the AEO report and converted into M$/PJ 2020 CAD",
+            "data_source": null,
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "cost": {
+              "parameter": "variable__met_coal_price_01"
+            }
+          }
+        },
+        {
+          "scenarios": "ccs",
+          "axes": {
+            "tech": [
+              "F_I_IRONPELLET"
+            ],
+            "vintage": [
+              "2025"
+            ],
+            "period_policy": "from_vintage"
+          },
+          "values": {
+            "region": "ON",
+            "notes": "The report's Iron Ore Pellet Market section provides the following 2025 annual average prices and premiums",
+            "data_source": "",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "cost": {
+              "parameter": "variable__iron_pellet_import_price"
+            }
+          }
+        },
+        {
+          "scenarios": "ccs",
+          "axes": {
+            "tech": [
+              "F_I_IRONPELLET"
+            ],
+            "vintage": [
+              "2025"
+            ],
+            "period_policy": "from_vintage"
+          },
+          "values": {
+            "region": "QC",
+            "notes": "The report's Iron Ore Pellet Market section provides the following 2025 annual average prices and premiums",
+            "data_source": "",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "cost": {
+              "parameter": "variable__iron_pellet_import_price"
+            }
+          }
+        },
+        {
+          "scenarios": "ccs",
+          "axes": {
+            "tech": [
+              "F_I_SCRAP"
+            ],
+            "vintage": [
+              "2025"
+            ],
+            "period_policy": "from_vintage"
+          },
+          "values": {
+            "region": "ON",
+            "notes": "Page 44, under Other Key Drivers, reports a 2025 average No. 1 busheling scrap price of US$424 per long ton.",
+            "data_source": "",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "cost": {
+              "parameter": "variable__scrap_import_price"
+            }
+          }
+        },
+        {
+          "scenarios": "ccs",
+          "axes": {
+            "tech": [
+              "F_I_SCRAP"
+            ],
+            "vintage": [
+              "2025"
+            ],
+            "period_policy": "from_vintage"
+          },
+          "values": {
+            "region": "QC",
+            "notes": "Page 44, under Other Key Drivers, reports a 2025 average No. 1 busheling scrap price of US$424 per long ton.",
+            "data_source": "",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "cost": {
+              "parameter": "variable__scrap_import_price"
+            }
+          }
+        },
+        {
+          "scenarios": "ccs",
+          "axes": {
+            "tech": [
+              "I_IMP_MET_COAL"
+            ],
+            "year_pairs": [
+              [
+                "2025",
+                "2025"
+              ]
+            ]
+          },
+          "values": {
+            "region": "QC",
+            "notes": "Uses the AEO report and converted into M$/PJ 2020 CAD",
+            "data_source": "",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "cost": {
+              "parameter": "variable__met_coal_price_04"
+            }
+          }
+        },
+        {
+          "scenarios": "ccs",
+          "axes": {
+            "tech": [
+              "I_IMP_MET_COAL"
+            ],
+            "year_pairs": [
+              [
+                "2025",
+                "2030"
+              ]
+            ]
+          },
+          "values": {
+            "region": "QC",
+            "notes": "Uses the AEO report and converted into M$/PJ 2020 CAD",
+            "data_source": "",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "cost": {
+              "parameter": "variable__met_coal_price_05"
+            }
+          }
+        },
+        {
+          "scenarios": "ccs",
+          "axes": {
+            "tech": [
+              "I_IMP_MET_COAL"
+            ],
+            "year_pairs": [
+              [
+                "2025",
+                "2035"
+              ]
+            ]
+          },
+          "values": {
+            "region": "QC",
+            "notes": "Uses the AEO report and converted into M$/PJ 2020 CAD",
+            "data_source": "",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "cost": {
+              "parameter": "variable__met_coal_price_03"
+            }
+          }
+        },
+        {
+          "scenarios": "ccs",
+          "axes": {
+            "tech": [
+              "I_IMP_MET_COAL"
+            ],
+            "year_pairs": [
+              [
+                "2025",
+                "2040"
+              ]
+            ]
+          },
+          "values": {
+            "region": "QC",
+            "notes": "Uses the AEO report and converted into M$/PJ 2020 CAD",
+            "data_source": "",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "cost": {
+              "parameter": "variable__met_coal_price_02"
+            }
+          }
+        },
+        {
+          "scenarios": "ccs",
+          "axes": {
+            "tech": [
+              "I_IMP_MET_COAL"
+            ],
+            "year_pairs": [
+              [
+                "2025",
+                "2045"
+              ]
+            ]
+          },
+          "values": {
+            "region": "QC",
+            "notes": "Uses the AEO report and converted into M$/PJ 2020 CAD",
+            "data_source": "",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "cost": {
+              "parameter": "variable__met_coal_price_01"
+            }
+          }
+        },
+        {
+          "scenarios": "ccs|all",
+          "axes": {
+            "tech": [
+              "F_I_EVRAZ_SCRAP"
+            ],
+            "vintage": [
+              "2025"
+            ],
+            "period_policy": "from_vintage"
+          },
+          "values": {
+            "region": "SK",
+            "notes": "Page 44, under Other Key Drivers, reports a 2025 average No. 1 busheling scrap price of US$424 per long ton.",
+            "data_source": "",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "cost": {
+              "parameter": "variable__scrap_import_price"
+            }
+          }
+        }
+      ]
+    }
+  }
+}

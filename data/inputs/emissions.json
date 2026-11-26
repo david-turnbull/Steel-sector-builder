@@ -1,0 +1,7224 @@
+{
+  "description": "Emissions and emissions limits.",
+  "tables": {
+    "emission_activity": {
+      "defaults": {
+        "data_id": "${SCENARIO_DATA_ID}"
+      },
+      "rules": [
+        {
+          "scenarios": "all",
+          "axes": {
+            "tech": [
+              "I_ALG_CCS_90",
+              "I_ALG_CCS_99",
+              "I_DOF_CCS_90",
+              "I_DOF_CCS_99",
+              "I_GERDAU_CCS_90",
+              "I_GERDAU_CCS_99",
+              "I_IVACO_CCS_90",
+              "I_IVACO_CCS_99",
+              "I_STELCO_CCS_90",
+              "I_STELCO_CCS_99"
+            ],
+            "vintage": [
+              "2020"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "emis_comm": "co2",
+            "input_comm": "I_elc",
+            "output_comm": "co2_ccs",
+            "units": "ktonnes CO2",
+            "notes": "",
+            "data_source": "",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__captured_co2_credit"
+            }
+          }
+        },
+        {
+          "scenarios": "all",
+          "axes": {
+            "tech": [
+              "I_ALG_CCS_90",
+              "I_ALG_CCS_99",
+              "I_DOF_CCS_90",
+              "I_DOF_CCS_99",
+              "I_GERDAU_CCS_90",
+              "I_GERDAU_CCS_99",
+              "I_IVACO_CCS_90",
+              "I_IVACO_CCS_99",
+              "I_STELCO_CCS_90",
+              "I_STELCO_CCS_99"
+            ],
+            "vintage": [
+              "2020"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "emis_comm": "co2",
+            "input_comm": "I_ng",
+            "output_comm": "co2_ccs",
+            "units": "ktonnes CO2",
+            "notes": "",
+            "data_source": "",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__captured_co2_credit"
+            }
+          }
+        },
+        {
+          "scenarios": "all",
+          "axes": {
+            "tech": [
+              "I_ALG_CCS_90",
+              "I_ALG_CCS_99",
+              "I_DOF_CCS_90",
+              "I_DOF_CCS_99",
+              "I_GERDAU_CCS_90",
+              "I_GERDAU_CCS_99",
+              "I_IVACO_CCS_90",
+              "I_IVACO_CCS_99",
+              "I_STELCO_CCS_90",
+              "I_STELCO_CCS_99"
+            ],
+            "vintage": [
+              "2020"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "emis_comm": "co2e",
+            "input_comm": "I_elc",
+            "output_comm": "co2_ccs",
+            "units": "ktonnes CO2",
+            "notes": "",
+            "data_source": "",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__captured_co2_credit"
+            }
+          }
+        },
+        {
+          "scenarios": "all",
+          "axes": {
+            "tech": [
+              "I_ALG_CCS_90",
+              "I_ALG_CCS_99",
+              "I_DOF_CCS_90",
+              "I_DOF_CCS_99",
+              "I_GERDAU_CCS_90",
+              "I_GERDAU_CCS_99",
+              "I_IVACO_CCS_90",
+              "I_IVACO_CCS_99",
+              "I_STELCO_CCS_90",
+              "I_STELCO_CCS_99"
+            ],
+            "vintage": [
+              "2020"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "emis_comm": "co2e",
+            "input_comm": "I_ng",
+            "output_comm": "co2_ccs",
+            "units": "ktonnes CO2",
+            "notes": "",
+            "data_source": "",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__captured_co2_credit"
+            }
+          }
+        },
+        {
+          "scenarios": "all",
+          "axes": {
+            "tech": [
+              "I_AMM_CCS_90",
+              "I_AMM_CCS_99",
+              "I_TINTO_CCS_90",
+              "I_TINTO_CCS_99"
+            ],
+            "vintage": [
+              "2020"
+            ]
+          },
+          "values": {
+            "region": "QC",
+            "emis_comm": "co2",
+            "input_comm": "I_ng",
+            "output_comm": "co2_ccs",
+            "units": "ktonnes CO2",
+            "notes": "",
+            "data_source": "",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__captured_co2_credit"
+            }
+          }
+        },
+        {
+          "scenarios": "all",
+          "axes": {
+            "tech": [
+              "I_AMM_CCS_90",
+              "I_AMM_CCS_99",
+              "I_TINTO_CCS_90",
+              "I_TINTO_CCS_99"
+            ],
+            "vintage": [
+              "2020"
+            ]
+          },
+          "values": {
+            "region": "QC",
+            "emis_comm": "co2e",
+            "input_comm": "I_elc",
+            "output_comm": "co2_ccs",
+            "units": "ktonnes CO2",
+            "notes": "",
+            "data_source": "",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__captured_co2_credit"
+            }
+          }
+        },
+        {
+          "scenarios": "all",
+          "axes": {
+            "tech": [
+              "I_AMM_CCS_90",
+              "I_AMM_CCS_99",
+              "I_TINTO_CCS_90",
+              "I_TINTO_CCS_99"
+            ],
+            "vintage": [
+              "2020"
+            ]
+          },
+          "values": {
+            "region": "QC",
+            "emis_comm": "co2e",
+            "input_comm": "I_ng",
+            "output_comm": "co2_ccs",
+            "units": "ktonnes CO2",
+            "notes": "",
+            "data_source": "",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__captured_co2_credit"
+            }
+          }
+        },
+        {
+          "scenarios": "all",
+          "axes": {
+            "tech": [
+              "I_AMM_CCS_90",
+              "I_TINTO_CCS_90",
+              "I_TINTO_CCS_99"
+            ],
+            "vintage": [
+              "2020"
+            ]
+          },
+          "values": {
+            "region": "QC",
+            "emis_comm": "co2",
+            "input_comm": "I_elc",
+            "output_comm": "co2_ccs",
+            "units": "ktonnes CO2",
+            "notes": "",
+            "data_source": "",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__captured_co2_credit"
+            }
+          }
+        },
+        {
+          "scenarios": "all",
+          "axes": {
+            "tech": [
+              "I_EVRAZ_CCS_90",
+              "I_EVRAZ_CCS_99"
+            ],
+            "vintage": [
+              "2020"
+            ]
+          },
+          "values": {
+            "region": "SK",
+            "emis_comm": "co2",
+            "input_comm": "I_elc",
+            "output_comm": "co2_ccs",
+            "units": "ktonnes CO2",
+            "notes": "",
+            "data_source": "",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__captured_co2_credit"
+            }
+          }
+        },
+        {
+          "scenarios": "all",
+          "axes": {
+            "tech": [
+              "I_EVRAZ_CCS_90",
+              "I_EVRAZ_CCS_99"
+            ],
+            "vintage": [
+              "2020"
+            ]
+          },
+          "values": {
+            "region": "SK",
+            "emis_comm": "co2",
+            "input_comm": "I_ng",
+            "output_comm": "co2_ccs",
+            "units": "ktonnes CO2",
+            "notes": "",
+            "data_source": "",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__captured_co2_credit"
+            }
+          }
+        },
+        {
+          "scenarios": "all",
+          "axes": {
+            "tech": [
+              "I_EVRAZ_CCS_90",
+              "I_EVRAZ_CCS_99"
+            ],
+            "vintage": [
+              "2020"
+            ]
+          },
+          "values": {
+            "region": "SK",
+            "emis_comm": "co2e",
+            "input_comm": "I_elc",
+            "output_comm": "co2_ccs",
+            "units": "ktonnes CO2",
+            "notes": "",
+            "data_source": "",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__captured_co2_credit"
+            }
+          }
+        },
+        {
+          "scenarios": "all",
+          "axes": {
+            "tech": [
+              "I_EVRAZ_CCS_90",
+              "I_EVRAZ_CCS_99"
+            ],
+            "vintage": [
+              "2020"
+            ]
+          },
+          "values": {
+            "region": "SK",
+            "emis_comm": "co2e",
+            "input_comm": "I_ng",
+            "output_comm": "co2_ccs",
+            "units": "ktonnes CO2",
+            "notes": "",
+            "data_source": "",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__captured_co2_credit"
+            }
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_ALG_BF"
+            ],
+            "vintage": [
+              "2020",
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "emis_comm": "co2",
+            "input_comm": "I_alg_bfgas",
+            "output_comm": "I_alg_pigiron",
+            "units": "ktonnes of CO2 / output",
+            "notes": "",
+            "data_source": "S1",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__blast_furnace"
+            }
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_ALG_BF"
+            ],
+            "vintage": [
+              "2020",
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "emis_comm": "co2",
+            "input_comm": "I_alg_coke",
+            "output_comm": "I_alg_pigiron",
+            "units": "ktonnes of CO2 / output",
+            "notes": "",
+            "data_source": "S1",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__blast_furnace"
+            }
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_ALG_BF"
+            ],
+            "vintage": [
+              "2020",
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "emis_comm": "co2",
+            "input_comm": "I_alg_elc",
+            "output_comm": "I_alg_pigiron",
+            "units": "ktonnes of CO2 / output",
+            "notes": "",
+            "data_source": "S1",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__blast_furnace"
+            }
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_ALG_BF"
+            ],
+            "vintage": [
+              "2020",
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "emis_comm": "co2",
+            "input_comm": "I_iron_pellet",
+            "output_comm": "I_alg_pigiron",
+            "units": "ktonnes of CO2 / output",
+            "notes": "",
+            "data_source": "S1",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__blast_furnace"
+            }
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_ALG_BF"
+            ],
+            "vintage": [
+              "2020",
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "emis_comm": "co2",
+            "input_comm": "I_ironore",
+            "output_comm": "I_alg_pigiron",
+            "units": "ktonnes of CO2 / output",
+            "notes": "",
+            "data_source": "S1",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__blast_furnace"
+            }
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_ALG_BF"
+            ],
+            "vintage": [
+              "2020",
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "emis_comm": "co2e",
+            "input_comm": "I_alg_bfgas",
+            "output_comm": "I_alg_pigiron",
+            "units": "ktonnes of CO2e / output",
+            "notes": "",
+            "data_source": "S1",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__blast_furnace"
+            }
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_ALG_BF"
+            ],
+            "vintage": [
+              "2020",
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "emis_comm": "co2e",
+            "input_comm": "I_alg_coke",
+            "output_comm": "I_alg_pigiron",
+            "units": "ktonnes of CO2e / output",
+            "notes": "",
+            "data_source": "S1",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__blast_furnace"
+            }
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_ALG_BF"
+            ],
+            "vintage": [
+              "2020",
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "emis_comm": "co2e",
+            "input_comm": "I_alg_elc",
+            "output_comm": "I_alg_pigiron",
+            "units": "ktonnes of CO2e / output",
+            "notes": "",
+            "data_source": "S1",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__blast_furnace"
+            }
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_ALG_BF"
+            ],
+            "vintage": [
+              "2020",
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "emis_comm": "co2e",
+            "input_comm": "I_iron_pellet",
+            "output_comm": "I_alg_pigiron",
+            "units": "ktonnes of CO2e / output",
+            "notes": "",
+            "data_source": "S1",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__blast_furnace"
+            }
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_ALG_BF"
+            ],
+            "vintage": [
+              "2020",
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "emis_comm": "co2e",
+            "input_comm": "I_ironore",
+            "output_comm": "I_alg_pigiron",
+            "units": "ktonnes of CO2e / output",
+            "notes": "",
+            "data_source": "S1",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__blast_furnace"
+            }
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_ALG_CO"
+            ],
+            "vintage": [
+              "2020",
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "emis_comm": "co2",
+            "input_comm": "I_alg_bfgas",
+            "output_comm": "I_alg_coke",
+            "units": "ktonnes of CO2 / output",
+            "notes": "",
+            "data_source": "S1",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__coke_oven"
+            }
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_ALG_CO"
+            ],
+            "vintage": [
+              "2020",
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "emis_comm": "co2",
+            "input_comm": "I_alg_cogas",
+            "output_comm": "I_alg_coke",
+            "units": "ktonnes of CO2 / output",
+            "notes": "",
+            "data_source": "S1",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__coke_oven"
+            }
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_ALG_CO"
+            ],
+            "vintage": [
+              "2020",
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "emis_comm": "co2",
+            "input_comm": "I_alg_elc",
+            "output_comm": "I_alg_coke",
+            "units": "ktonnes of CO2 / output",
+            "notes": "",
+            "data_source": "S1",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__coke_oven"
+            }
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_ALG_CO"
+            ],
+            "vintage": [
+              "2020",
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "emis_comm": "co2",
+            "input_comm": "I_met_coal",
+            "output_comm": "I_alg_coke",
+            "units": "ktonnes of CO2 / output",
+            "notes": "",
+            "data_source": "S1",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__coke_oven"
+            }
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_ALG_CO"
+            ],
+            "vintage": [
+              "2020",
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "emis_comm": "co2e",
+            "input_comm": "I_alg_bfgas",
+            "output_comm": "I_alg_coke",
+            "units": "ktonnes of CO2e / output",
+            "notes": "",
+            "data_source": "S1",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__coke_oven"
+            }
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_ALG_CO"
+            ],
+            "vintage": [
+              "2020",
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "emis_comm": "co2e",
+            "input_comm": "I_alg_cogas",
+            "output_comm": "I_alg_coke",
+            "units": "ktonnes of CO2e / output",
+            "notes": "",
+            "data_source": "S1",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__coke_oven"
+            }
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_ALG_CO"
+            ],
+            "vintage": [
+              "2020",
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "emis_comm": "co2e",
+            "input_comm": "I_alg_elc",
+            "output_comm": "I_alg_coke",
+            "units": "ktonnes of CO2e / output",
+            "notes": "",
+            "data_source": "S1",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__coke_oven"
+            }
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_ALG_CO"
+            ],
+            "vintage": [
+              "2020",
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "emis_comm": "co2e",
+            "input_comm": "I_met_coal",
+            "output_comm": "I_alg_coke",
+            "units": "ktonnes of CO2e / output",
+            "notes": "",
+            "data_source": "S1",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__coke_oven"
+            }
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_ALG_EAF"
+            ],
+            "vintage": [
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "emis_comm": "co2",
+            "input_comm": "I_alg_scrap",
+            "output_comm": "I_alg_eaf_crude_steel",
+            "units": "ktonnes of CO2 / output",
+            "notes": "",
+            "data_source": "S3",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__electric_arc_furnace"
+            }
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_ALG_EAF"
+            ],
+            "vintage": [
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "emis_comm": "co2",
+            "input_comm": "I_elc",
+            "output_comm": "I_alg_eaf_crude_steel",
+            "units": "ktonnes of CO2 / output",
+            "notes": "",
+            "data_source": "S3",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__electric_arc_furnace"
+            }
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_ALG_EAF"
+            ],
+            "vintage": [
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "emis_comm": "co2e",
+            "input_comm": "I_alg_scrap",
+            "output_comm": "I_alg_eaf_crude_steel",
+            "units": "ktonnes of CO2 / output",
+            "notes": "",
+            "data_source": "S3",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__electric_arc_furnace"
+            }
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_ALG_EAF"
+            ],
+            "vintage": [
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "emis_comm": "co2e",
+            "input_comm": "I_elc",
+            "output_comm": "I_alg_eaf_crude_steel",
+            "units": "ktonnes of CO2 / output",
+            "notes": "",
+            "data_source": "S3",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__electric_arc_furnace"
+            }
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_ALG_PPLANT"
+            ],
+            "vintage": [
+              "2020",
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "emis_comm": "co2",
+            "input_comm": "I_alg_bfgas",
+            "output_comm": "I_alg_elc",
+            "units": "ktonnes of CO2 / output",
+            "notes": "",
+            "data_source": "S1",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__on_site_powerplant"
+            }
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_ALG_PPLANT"
+            ],
+            "vintage": [
+              "2020",
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "emis_comm": "co2",
+            "input_comm": "I_alg_bof_gas",
+            "output_comm": "I_alg_elc",
+            "units": "ktonnes of CO2 / output",
+            "notes": "",
+            "data_source": "S1",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__on_site_powerplant"
+            }
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_ALG_PPLANT"
+            ],
+            "vintage": [
+              "2020",
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "emis_comm": "co2e",
+            "input_comm": "I_alg_bfgas",
+            "output_comm": "I_alg_elc",
+            "units": "ktonnes of CO2e / output",
+            "notes": "",
+            "data_source": "S1",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__on_site_powerplant"
+            }
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_ALG_PPLANT"
+            ],
+            "vintage": [
+              "2020",
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "emis_comm": "co2e",
+            "input_comm": "I_alg_bof_gas",
+            "output_comm": "I_alg_elc",
+            "units": "ktonnes of CO2e / output",
+            "notes": "",
+            "data_source": "S1",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__on_site_powerplant"
+            }
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_AMM_EAF"
+            ],
+            "vintage": [
+              "2020",
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "QC",
+            "emis_comm": "co2",
+            "input_comm": "I_amm_dri",
+            "output_comm": "I_amm_crude_steel",
+            "units": "ktonnes of CO2 / output",
+            "notes": "",
+            "data_source": "S1",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__electric_arc_furnace"
+            }
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_AMM_EAF"
+            ],
+            "vintage": [
+              "2020",
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "QC",
+            "emis_comm": "co2",
+            "input_comm": "I_elc",
+            "output_comm": "I_amm_crude_steel",
+            "units": "ktonnes of CO2 / output",
+            "notes": "",
+            "data_source": "S1",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__electric_arc_furnace"
+            }
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_AMM_EAF"
+            ],
+            "vintage": [
+              "2020",
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "QC",
+            "emis_comm": "co2e",
+            "input_comm": "I_amm_dri",
+            "output_comm": "I_amm_crude_steel",
+            "units": "ktonnes of CO2e / output",
+            "notes": "",
+            "data_source": "S1",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__electric_arc_furnace"
+            }
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_AMM_EAF"
+            ],
+            "vintage": [
+              "2020",
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "QC",
+            "emis_comm": "co2e",
+            "input_comm": "I_elc",
+            "output_comm": "I_amm_crude_steel",
+            "units": "ktonnes of CO2e / output",
+            "notes": "",
+            "data_source": "S1",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__electric_arc_furnace"
+            }
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_DOF_BF"
+            ],
+            "vintage": [
+              "2020",
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "emis_comm": "co2",
+            "input_comm": "I_dof_bfgas",
+            "output_comm": "I_dof_pigiron",
+            "units": "ktonnes of CO2 / output",
+            "notes": "",
+            "data_source": "S1",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__blast_furnace"
+            }
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_DOF_BF"
+            ],
+            "vintage": [
+              "2020",
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "emis_comm": "co2",
+            "input_comm": "I_dof_coke",
+            "output_comm": "I_dof_pigiron",
+            "units": "ktonnes of CO2 / output",
+            "notes": "",
+            "data_source": "S1",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__blast_furnace"
+            }
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_DOF_BF"
+            ],
+            "vintage": [
+              "2020",
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "emis_comm": "co2",
+            "input_comm": "I_dof_elc",
+            "output_comm": "I_dof_pigiron",
+            "units": "ktonnes of CO2 / output",
+            "notes": "",
+            "data_source": "S1",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__blast_furnace"
+            }
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_DOF_BF"
+            ],
+            "vintage": [
+              "2020",
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "emis_comm": "co2",
+            "input_comm": "I_iron_pellet",
+            "output_comm": "I_dof_pigiron",
+            "units": "ktonnes of CO2 / output",
+            "notes": "",
+            "data_source": "S1",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__blast_furnace"
+            }
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_DOF_BF"
+            ],
+            "vintage": [
+              "2020",
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "emis_comm": "co2",
+            "input_comm": "I_ironore",
+            "output_comm": "I_dof_pigiron",
+            "units": "ktonnes of CO2 / output",
+            "notes": "",
+            "data_source": "S1",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__blast_furnace"
+            }
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_DOF_BF"
+            ],
+            "vintage": [
+              "2020",
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "emis_comm": "co2e",
+            "input_comm": "I_dof_bfgas",
+            "output_comm": "I_dof_pigiron",
+            "units": "ktonnes of CO2e / output",
+            "notes": "",
+            "data_source": "S1",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__blast_furnace"
+            }
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_DOF_BF"
+            ],
+            "vintage": [
+              "2020",
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "emis_comm": "co2e",
+            "input_comm": "I_dof_coke",
+            "output_comm": "I_dof_pigiron",
+            "units": "ktonnes of CO2e / output",
+            "notes": "",
+            "data_source": "S1",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__blast_furnace"
+            }
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_DOF_BF"
+            ],
+            "vintage": [
+              "2020",
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "emis_comm": "co2e",
+            "input_comm": "I_dof_elc",
+            "output_comm": "I_dof_pigiron",
+            "units": "ktonnes of CO2e / output",
+            "notes": "",
+            "data_source": "S1",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__blast_furnace"
+            }
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_DOF_BF"
+            ],
+            "vintage": [
+              "2020",
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "emis_comm": "co2e",
+            "input_comm": "I_iron_pellet",
+            "output_comm": "I_dof_pigiron",
+            "units": "ktonnes of CO2e / output",
+            "notes": "",
+            "data_source": "S1",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__blast_furnace"
+            }
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_DOF_BF"
+            ],
+            "vintage": [
+              "2020",
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "emis_comm": "co2e",
+            "input_comm": "I_ironore",
+            "output_comm": "I_dof_pigiron",
+            "units": "ktonnes of CO2e / output",
+            "notes": "",
+            "data_source": "S1",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__blast_furnace"
+            }
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_DOF_CO"
+            ],
+            "vintage": [
+              "2020",
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "emis_comm": "co2",
+            "input_comm": "I_dof_bfgas",
+            "output_comm": "I_dof_coke",
+            "units": "ktonnes of CO2 / output",
+            "notes": "",
+            "data_source": "S1",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__coke_oven"
+            }
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_DOF_CO"
+            ],
+            "vintage": [
+              "2020",
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "emis_comm": "co2",
+            "input_comm": "I_dof_cogas",
+            "output_comm": "I_dof_coke",
+            "units": "ktonnes of CO2 / output",
+            "notes": "",
+            "data_source": "S1",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__coke_oven"
+            }
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_DOF_CO"
+            ],
+            "vintage": [
+              "2020",
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "emis_comm": "co2",
+            "input_comm": "I_dof_elc",
+            "output_comm": "I_dof_coke",
+            "units": "ktonnes of CO2 / output",
+            "notes": "",
+            "data_source": "S1",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__coke_oven"
+            }
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_DOF_CO"
+            ],
+            "vintage": [
+              "2020",
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "emis_comm": "co2",
+            "input_comm": "I_met_coal",
+            "output_comm": "I_dof_coke",
+            "units": "ktonnes of CO2 / output",
+            "notes": "",
+            "data_source": "S1",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__coke_oven"
+            }
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_DOF_CO"
+            ],
+            "vintage": [
+              "2020",
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "emis_comm": "co2e",
+            "input_comm": "I_dof_bfgas",
+            "output_comm": "I_dof_coke",
+            "units": "ktonnes of CO2e / output",
+            "notes": "",
+            "data_source": "S1",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__coke_oven"
+            }
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_DOF_CO"
+            ],
+            "vintage": [
+              "2020",
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "emis_comm": "co2e",
+            "input_comm": "I_dof_cogas",
+            "output_comm": "I_dof_coke",
+            "units": "ktonnes of CO2e / output",
+            "notes": "",
+            "data_source": "S1",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__coke_oven"
+            }
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_DOF_CO"
+            ],
+            "vintage": [
+              "2020",
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "emis_comm": "co2e",
+            "input_comm": "I_dof_elc",
+            "output_comm": "I_dof_coke",
+            "units": "ktonnes of CO2e / output",
+            "notes": "",
+            "data_source": "S1",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__coke_oven"
+            }
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_DOF_CO"
+            ],
+            "vintage": [
+              "2020",
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "emis_comm": "co2e",
+            "input_comm": "I_met_coal",
+            "output_comm": "I_dof_coke",
+            "units": "ktonnes of CO2e / output",
+            "notes": "",
+            "data_source": "S1",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__coke_oven"
+            }
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_DOF_D_EAF"
+            ],
+            "vintage": [
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "emis_comm": "co2",
+            "input_comm": "I_dof_dri",
+            "output_comm": "I_dof_eaf_crude_steel",
+            "units": "ktonnes of CO2 / output",
+            "notes": "",
+            "data_source": "S3",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__electric_arc_furnace"
+            }
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_DOF_D_EAF"
+            ],
+            "vintage": [
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "emis_comm": "co2",
+            "input_comm": "I_elc",
+            "output_comm": "I_dof_eaf_crude_steel",
+            "units": "ktonnes of CO2 / output",
+            "notes": "",
+            "data_source": "S3",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__electric_arc_furnace"
+            }
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_DOF_D_EAF"
+            ],
+            "vintage": [
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "emis_comm": "co2e",
+            "input_comm": "I_dof_dri",
+            "output_comm": "I_dof_eaf_crude_steel",
+            "units": "ktonnes of CO2 / output",
+            "notes": "",
+            "data_source": "S3",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__electric_arc_furnace"
+            }
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_DOF_D_EAF"
+            ],
+            "vintage": [
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "emis_comm": "co2e",
+            "input_comm": "I_elc",
+            "output_comm": "I_dof_eaf_crude_steel",
+            "units": "ktonnes of CO2 / output",
+            "notes": "",
+            "data_source": "S3",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__electric_arc_furnace"
+            }
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_DOF_PPLANT"
+            ],
+            "vintage": [
+              "2020",
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "emis_comm": "co2",
+            "input_comm": "I_dof_bfgas",
+            "output_comm": "I_dof_elc",
+            "units": "ktonnes of CO2 / output",
+            "notes": "",
+            "data_source": "S1",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__on_site_powerplant"
+            }
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_DOF_PPLANT"
+            ],
+            "vintage": [
+              "2020",
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "emis_comm": "co2",
+            "input_comm": "I_dof_bof_gas",
+            "output_comm": "I_dof_elc",
+            "units": "ktonnes of CO2 / output",
+            "notes": "",
+            "data_source": "S1",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__on_site_powerplant"
+            }
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_DOF_PPLANT"
+            ],
+            "vintage": [
+              "2020",
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "emis_comm": "co2e",
+            "input_comm": "I_dof_bfgas",
+            "output_comm": "I_dof_elc",
+            "units": "ktonnes of CO2e / output",
+            "notes": "",
+            "data_source": "S1",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__on_site_powerplant"
+            }
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_DOF_PPLANT"
+            ],
+            "vintage": [
+              "2020",
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "emis_comm": "co2e",
+            "input_comm": "I_dof_bof_gas",
+            "output_comm": "I_dof_elc",
+            "units": "ktonnes of CO2e / output",
+            "notes": "",
+            "data_source": "S1",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__on_site_powerplant"
+            }
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_DOF_S_EAF"
+            ],
+            "vintage": [
+              "2020",
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "emis_comm": "co2",
+            "input_comm": "I_dof_scrap",
+            "output_comm": "I_dof_eaf_crude_steel",
+            "units": "ktonnes of CO2 / output",
+            "notes": "",
+            "data_source": "S3",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__electric_arc_furnace"
+            }
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_DOF_S_EAF"
+            ],
+            "vintage": [
+              "2020",
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "emis_comm": "co2",
+            "input_comm": "I_elc",
+            "output_comm": "I_dof_eaf_crude_steel",
+            "units": "ktonnes of CO2 / output",
+            "notes": "",
+            "data_source": "S3",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__electric_arc_furnace"
+            }
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_DOF_S_EAF"
+            ],
+            "vintage": [
+              "2020",
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "emis_comm": "co2e",
+            "input_comm": "I_dof_scrap",
+            "output_comm": "I_dof_eaf_crude_steel",
+            "units": "ktonnes of CO2 / output",
+            "notes": "",
+            "data_source": "S3",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__electric_arc_furnace"
+            }
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_DOF_S_EAF"
+            ],
+            "vintage": [
+              "2020",
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "emis_comm": "co2e",
+            "input_comm": "I_elc",
+            "output_comm": "I_dof_eaf_crude_steel",
+            "units": "ktonnes of CO2 / output",
+            "notes": "",
+            "data_source": "S3",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__electric_arc_furnace"
+            }
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_EVRAZ_EAF"
+            ],
+            "vintage": [
+              "2020",
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "SK",
+            "emis_comm": "co2",
+            "input_comm": "I_elc",
+            "output_comm": "I_evraz_crude_steel",
+            "units": "ktonnes of CO2 / output",
+            "notes": "",
+            "data_source": "S1",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__electric_arc_furnace"
+            }
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_EVRAZ_EAF"
+            ],
+            "vintage": [
+              "2020",
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "SK",
+            "emis_comm": "co2",
+            "input_comm": "I_evraz_scrap",
+            "output_comm": "I_evraz_crude_steel",
+            "units": "ktonnes of CO2 / output",
+            "notes": "",
+            "data_source": "S1",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__electric_arc_furnace"
+            }
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_EVRAZ_EAF"
+            ],
+            "vintage": [
+              "2020",
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "SK",
+            "emis_comm": "co2e",
+            "input_comm": "I_elc",
+            "output_comm": "I_evraz_crude_steel",
+            "units": "ktonnes of CO2e / output",
+            "notes": "",
+            "data_source": "S1",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__electric_arc_furnace"
+            }
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_EVRAZ_EAF"
+            ],
+            "vintage": [
+              "2020",
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "SK",
+            "emis_comm": "co2e",
+            "input_comm": "I_evraz_scrap",
+            "output_comm": "I_evraz_crude_steel",
+            "units": "ktonnes of CO2e / output",
+            "notes": "",
+            "data_source": "S1",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__electric_arc_furnace"
+            }
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_GERDAU_EAF"
+            ],
+            "vintage": [
+              "2020",
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "emis_comm": "co2",
+            "input_comm": "I_elc",
+            "output_comm": "I_gerdau_crude_steel",
+            "units": "ktonnes of CO2 / output",
+            "notes": "",
+            "data_source": "S1",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__electric_arc_furnace"
+            }
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_GERDAU_EAF"
+            ],
+            "vintage": [
+              "2020",
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "emis_comm": "co2",
+            "input_comm": "I_gerdau_scrap",
+            "output_comm": "I_gerdau_crude_steel",
+            "units": "ktonnes of CO2 / output",
+            "notes": "",
+            "data_source": "S1",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__electric_arc_furnace"
+            }
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_GERDAU_EAF"
+            ],
+            "vintage": [
+              "2020",
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "emis_comm": "co2e",
+            "input_comm": "I_elc",
+            "output_comm": "I_gerdau_crude_steel",
+            "units": "ktonnes of CO2e / output",
+            "notes": "",
+            "data_source": "S1",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__electric_arc_furnace"
+            }
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_GERDAU_EAF"
+            ],
+            "vintage": [
+              "2020",
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "emis_comm": "co2e",
+            "input_comm": "I_gerdau_scrap",
+            "output_comm": "I_gerdau_crude_steel",
+            "units": "ktonnes of CO2e / output",
+            "notes": "",
+            "data_source": "S1",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__electric_arc_furnace"
+            }
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_IVACO_EAF"
+            ],
+            "vintage": [
+              "2020",
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "emis_comm": "co2",
+            "input_comm": "I_elc",
+            "output_comm": "I_ivaco_crude_steel",
+            "units": "ktonnes of CO2 / output",
+            "notes": "",
+            "data_source": "S1",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__electric_arc_furnace"
+            }
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_IVACO_EAF"
+            ],
+            "vintage": [
+              "2020",
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "emis_comm": "co2",
+            "input_comm": "I_ivaco_scrap",
+            "output_comm": "I_ivaco_crude_steel",
+            "units": "ktonnes of CO2 / output",
+            "notes": "",
+            "data_source": "S1",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__electric_arc_furnace"
+            }
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_IVACO_EAF"
+            ],
+            "vintage": [
+              "2020",
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "emis_comm": "co2e",
+            "input_comm": "I_elc",
+            "output_comm": "I_ivaco_crude_steel",
+            "units": "ktonnes of CO2e / output",
+            "notes": "",
+            "data_source": "S1",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__electric_arc_furnace"
+            }
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_IVACO_EAF"
+            ],
+            "vintage": [
+              "2020",
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "emis_comm": "co2e",
+            "input_comm": "I_ivaco_scrap",
+            "output_comm": "I_ivaco_crude_steel",
+            "units": "ktonnes of CO2e / output",
+            "notes": "",
+            "data_source": "S1",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__electric_arc_furnace"
+            }
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_STELCO_BF"
+            ],
+            "vintage": [
+              "2020",
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "emis_comm": "co2",
+            "input_comm": "I_iron_pellet",
+            "output_comm": "I_stelco_pigiron",
+            "units": "ktonnes of CO2 / output",
+            "notes": "",
+            "data_source": "S1",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__blast_furnace"
+            }
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_STELCO_BF"
+            ],
+            "vintage": [
+              "2020",
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "emis_comm": "co2",
+            "input_comm": "I_ironore",
+            "output_comm": "I_stelco_pigiron",
+            "units": "ktonnes of CO2 / output",
+            "notes": "",
+            "data_source": "S1",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__blast_furnace"
+            }
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_STELCO_BF"
+            ],
+            "vintage": [
+              "2020",
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "emis_comm": "co2",
+            "input_comm": "I_stelco_bfgas",
+            "output_comm": "I_stelco_pigiron",
+            "units": "ktonnes of CO2 / output",
+            "notes": "",
+            "data_source": "S1",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__blast_furnace"
+            }
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_STELCO_BF"
+            ],
+            "vintage": [
+              "2020",
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "emis_comm": "co2",
+            "input_comm": "I_stelco_coke",
+            "output_comm": "I_stelco_pigiron",
+            "units": "ktonnes of CO2 / output",
+            "notes": "",
+            "data_source": "S1",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__blast_furnace"
+            }
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_STELCO_BF"
+            ],
+            "vintage": [
+              "2020",
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "emis_comm": "co2",
+            "input_comm": "I_stelco_elc",
+            "output_comm": "I_stelco_pigiron",
+            "units": "ktonnes of CO2 / output",
+            "notes": "",
+            "data_source": "S1",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__blast_furnace"
+            }
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_STELCO_BF"
+            ],
+            "vintage": [
+              "2020",
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "emis_comm": "co2e",
+            "input_comm": "I_iron_pellet",
+            "output_comm": "I_stelco_pigiron",
+            "units": "ktonnes of CO2e / output",
+            "notes": "",
+            "data_source": "S1",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__blast_furnace"
+            }
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_STELCO_BF"
+            ],
+            "vintage": [
+              "2020",
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "emis_comm": "co2e",
+            "input_comm": "I_ironore",
+            "output_comm": "I_stelco_pigiron",
+            "units": "ktonnes of CO2e / output",
+            "notes": "",
+            "data_source": "S1",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__blast_furnace"
+            }
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_STELCO_BF"
+            ],
+            "vintage": [
+              "2020",
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "emis_comm": "co2e",
+            "input_comm": "I_stelco_bfgas",
+            "output_comm": "I_stelco_pigiron",
+            "units": "ktonnes of CO2e / output",
+            "notes": "",
+            "data_source": "S1",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__blast_furnace"
+            }
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_STELCO_BF"
+            ],
+            "vintage": [
+              "2020",
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "emis_comm": "co2e",
+            "input_comm": "I_stelco_coke",
+            "output_comm": "I_stelco_pigiron",
+            "units": "ktonnes of CO2e / output",
+            "notes": "",
+            "data_source": "S1",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__blast_furnace"
+            }
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_STELCO_BF"
+            ],
+            "vintage": [
+              "2020",
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "emis_comm": "co2e",
+            "input_comm": "I_stelco_elc",
+            "output_comm": "I_stelco_pigiron",
+            "units": "ktonnes of CO2e / output",
+            "notes": "",
+            "data_source": "S1",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__blast_furnace"
+            }
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_STELCO_CO"
+            ],
+            "vintage": [
+              "2020",
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "emis_comm": "co2",
+            "input_comm": "I_met_coal",
+            "output_comm": "I_stelco_cogas",
+            "units": "ktonnes of CO2 / output",
+            "notes": "",
+            "data_source": "S1",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__coke_oven"
+            }
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_STELCO_CO"
+            ],
+            "vintage": [
+              "2020",
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "emis_comm": "co2",
+            "input_comm": "I_stelco_bfgas",
+            "output_comm": "I_stelco_cogas",
+            "units": "ktonnes of CO2 / output",
+            "notes": "",
+            "data_source": "S1",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__coke_oven"
+            }
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_STELCO_CO"
+            ],
+            "vintage": [
+              "2020",
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "emis_comm": "co2",
+            "input_comm": "I_stelco_cogas",
+            "output_comm": "I_stelco_cogas",
+            "units": "ktonnes of CO2 / output",
+            "notes": "",
+            "data_source": "S1",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__coke_oven"
+            }
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_STELCO_CO"
+            ],
+            "vintage": [
+              "2020",
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "emis_comm": "co2",
+            "input_comm": "I_stelco_elc",
+            "output_comm": "I_stelco_cogas",
+            "units": "ktonnes of CO2 / output",
+            "notes": "",
+            "data_source": "S1",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__coke_oven"
+            }
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_STELCO_CO"
+            ],
+            "vintage": [
+              "2020",
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "emis_comm": "co2e",
+            "input_comm": "I_met_coal",
+            "output_comm": "I_stelco_cogas",
+            "units": "ktonnes of CO2e / output",
+            "notes": "",
+            "data_source": "S1",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__coke_oven"
+            }
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_STELCO_CO"
+            ],
+            "vintage": [
+              "2020",
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "emis_comm": "co2e",
+            "input_comm": "I_stelco_bfgas",
+            "output_comm": "I_stelco_cogas",
+            "units": "ktonnes of CO2e / output",
+            "notes": "",
+            "data_source": "S1",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__coke_oven"
+            }
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_STELCO_CO"
+            ],
+            "vintage": [
+              "2020",
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "emis_comm": "co2e",
+            "input_comm": "I_stelco_cogas",
+            "output_comm": "I_stelco_cogas",
+            "units": "ktonnes of CO2e / output",
+            "notes": "",
+            "data_source": "S1",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__coke_oven"
+            }
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_STELCO_CO"
+            ],
+            "vintage": [
+              "2020",
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "emis_comm": "co2e",
+            "input_comm": "I_stelco_elc",
+            "output_comm": "I_stelco_cogas",
+            "units": "ktonnes of CO2e / output",
+            "notes": "",
+            "data_source": "S1",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__coke_oven"
+            }
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_STELCO_PPLANT"
+            ],
+            "vintage": [
+              "2020",
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "emis_comm": "co2",
+            "input_comm": "I_stelco_bfgas",
+            "output_comm": "I_stelco_elc",
+            "units": "ktonnes of CO2 / output",
+            "notes": "",
+            "data_source": "S1",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__on_site_powerplant"
+            }
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_STELCO_PPLANT"
+            ],
+            "vintage": [
+              "2020",
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "emis_comm": "co2",
+            "input_comm": "I_stelco_bof_gas",
+            "output_comm": "I_stelco_elc",
+            "units": "ktonnes of CO2 / output",
+            "notes": "",
+            "data_source": "S1",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__on_site_powerplant"
+            }
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_STELCO_PPLANT"
+            ],
+            "vintage": [
+              "2020",
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "emis_comm": "co2e",
+            "input_comm": "I_stelco_bfgas",
+            "output_comm": "I_stelco_elc",
+            "units": "ktonnes of CO2e / output",
+            "notes": "",
+            "data_source": "S1",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__on_site_powerplant"
+            }
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_STELCO_PPLANT"
+            ],
+            "vintage": [
+              "2020",
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "emis_comm": "co2e",
+            "input_comm": "I_stelco_bof_gas",
+            "output_comm": "I_stelco_elc",
+            "units": "ktonnes of CO2e / output",
+            "notes": "",
+            "data_source": "S1",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__on_site_powerplant"
+            }
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_TINTO_BF"
+            ],
+            "vintage": [
+              "2020",
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "QC",
+            "emis_comm": "co2",
+            "input_comm": "I_iron_pellet",
+            "output_comm": "I_tinto_pigiron",
+            "units": "ktonnes of CO2 / output",
+            "notes": "",
+            "data_source": "S1",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__blast_furnace"
+            }
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_TINTO_BF"
+            ],
+            "vintage": [
+              "2020",
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "QC",
+            "emis_comm": "co2",
+            "input_comm": "I_ironore",
+            "output_comm": "I_tinto_pigiron",
+            "units": "ktonnes of CO2 / output",
+            "notes": "",
+            "data_source": "S1",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__blast_furnace"
+            }
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_TINTO_BF"
+            ],
+            "vintage": [
+              "2020",
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "QC",
+            "emis_comm": "co2",
+            "input_comm": "I_tinto_bfgas",
+            "output_comm": "I_tinto_pigiron",
+            "units": "ktonnes of CO2 / output",
+            "notes": "",
+            "data_source": "S1",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__blast_furnace"
+            }
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_TINTO_BF"
+            ],
+            "vintage": [
+              "2020",
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "QC",
+            "emis_comm": "co2",
+            "input_comm": "I_tinto_coke",
+            "output_comm": "I_tinto_pigiron",
+            "units": "ktonnes of CO2 / output",
+            "notes": "",
+            "data_source": "S1",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__blast_furnace"
+            }
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_TINTO_BF"
+            ],
+            "vintage": [
+              "2020",
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "QC",
+            "emis_comm": "co2",
+            "input_comm": "I_tinto_elc",
+            "output_comm": "I_tinto_pigiron",
+            "units": "ktonnes of CO2 / output",
+            "notes": "",
+            "data_source": "S1",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__blast_furnace"
+            }
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_TINTO_BF"
+            ],
+            "vintage": [
+              "2020",
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "QC",
+            "emis_comm": "co2e",
+            "input_comm": "I_iron_pellet",
+            "output_comm": "I_tinto_pigiron",
+            "units": "ktonnes of CO2e / output",
+            "notes": "",
+            "data_source": "S1",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__blast_furnace"
+            }
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_TINTO_BF"
+            ],
+            "vintage": [
+              "2020",
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "QC",
+            "emis_comm": "co2e",
+            "input_comm": "I_ironore",
+            "output_comm": "I_tinto_pigiron",
+            "units": "ktonnes of CO2e / output",
+            "notes": "",
+            "data_source": "S1",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__blast_furnace"
+            }
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_TINTO_BF"
+            ],
+            "vintage": [
+              "2020",
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "QC",
+            "emis_comm": "co2e",
+            "input_comm": "I_tinto_bfgas",
+            "output_comm": "I_tinto_pigiron",
+            "units": "ktonnes of CO2e / output",
+            "notes": "",
+            "data_source": "S1",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__blast_furnace"
+            }
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_TINTO_BF"
+            ],
+            "vintage": [
+              "2020",
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "QC",
+            "emis_comm": "co2e",
+            "input_comm": "I_tinto_coke",
+            "output_comm": "I_tinto_pigiron",
+            "units": "ktonnes of CO2e / output",
+            "notes": "",
+            "data_source": "S1",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__blast_furnace"
+            }
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_TINTO_BF"
+            ],
+            "vintage": [
+              "2020",
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "QC",
+            "emis_comm": "co2e",
+            "input_comm": "I_tinto_elc",
+            "output_comm": "I_tinto_pigiron",
+            "units": "ktonnes of CO2e / output",
+            "notes": "",
+            "data_source": "S1",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__blast_furnace"
+            }
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_TINTO_CO"
+            ],
+            "vintage": [
+              "2020",
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "QC",
+            "emis_comm": "co2",
+            "input_comm": "I_met_coal",
+            "output_comm": "I_tinto_cogas",
+            "units": "ktonnes of CO2 / output",
+            "notes": "",
+            "data_source": "S1",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__coke_oven"
+            }
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_TINTO_CO"
+            ],
+            "vintage": [
+              "2020",
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "QC",
+            "emis_comm": "co2",
+            "input_comm": "I_tinto_bfgas",
+            "output_comm": "I_tinto_cogas",
+            "units": "ktonnes of CO2 / output",
+            "notes": "",
+            "data_source": "S1",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__coke_oven"
+            }
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_TINTO_CO"
+            ],
+            "vintage": [
+              "2020",
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "QC",
+            "emis_comm": "co2",
+            "input_comm": "I_tinto_cogas",
+            "output_comm": "I_tinto_cogas",
+            "units": "ktonnes of CO2 / output",
+            "notes": "",
+            "data_source": "S1",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__coke_oven"
+            }
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_TINTO_CO"
+            ],
+            "vintage": [
+              "2020",
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "QC",
+            "emis_comm": "co2",
+            "input_comm": "I_tinto_elc",
+            "output_comm": "I_tinto_cogas",
+            "units": "ktonnes of CO2 / output",
+            "notes": "",
+            "data_source": "S1",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__coke_oven"
+            }
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_TINTO_CO"
+            ],
+            "vintage": [
+              "2020",
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "QC",
+            "emis_comm": "co2e",
+            "input_comm": "I_met_coal",
+            "output_comm": "I_tinto_cogas",
+            "units": "ktonnes of CO2e / output",
+            "notes": "",
+            "data_source": "S1",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__coke_oven"
+            }
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_TINTO_CO"
+            ],
+            "vintage": [
+              "2020",
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "QC",
+            "emis_comm": "co2e",
+            "input_comm": "I_tinto_bfgas",
+            "output_comm": "I_tinto_cogas",
+            "units": "ktonnes of CO2e / output",
+            "notes": "",
+            "data_source": "S1",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__coke_oven"
+            }
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_TINTO_CO"
+            ],
+            "vintage": [
+              "2020",
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "QC",
+            "emis_comm": "co2e",
+            "input_comm": "I_tinto_cogas",
+            "output_comm": "I_tinto_cogas",
+            "units": "ktonnes of CO2e / output",
+            "notes": "",
+            "data_source": "S1",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__coke_oven"
+            }
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_TINTO_CO"
+            ],
+            "vintage": [
+              "2020",
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "QC",
+            "emis_comm": "co2e",
+            "input_comm": "I_tinto_elc",
+            "output_comm": "I_tinto_cogas",
+            "units": "ktonnes of CO2e / output",
+            "notes": "",
+            "data_source": "S1",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__coke_oven"
+            }
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_TINTO_PPLANT"
+            ],
+            "vintage": [
+              "2020",
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "QC",
+            "emis_comm": "co2",
+            "input_comm": "I_tinto_bfgas",
+            "output_comm": "I_tinto_elc",
+            "units": "ktonnes of CO2 / output",
+            "notes": "",
+            "data_source": "S1",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__on_site_powerplant"
+            }
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_TINTO_PPLANT"
+            ],
+            "vintage": [
+              "2020",
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "QC",
+            "emis_comm": "co2",
+            "input_comm": "I_tinto_bof_gas",
+            "output_comm": "I_tinto_elc",
+            "units": "ktonnes of CO2 / output",
+            "notes": "",
+            "data_source": "S1",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__on_site_powerplant"
+            }
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_TINTO_PPLANT"
+            ],
+            "vintage": [
+              "2020",
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "QC",
+            "emis_comm": "co2e",
+            "input_comm": "I_tinto_bfgas",
+            "output_comm": "I_tinto_elc",
+            "units": "ktonnes of CO2e / output",
+            "notes": "",
+            "data_source": "S1",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__on_site_powerplant"
+            }
+          }
+        },
+        {
+          "scenarios": "basecase|eaf|ccs|all",
+          "axes": {
+            "tech": [
+              "I_TINTO_PPLANT"
+            ],
+            "vintage": [
+              "2020",
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "QC",
+            "emis_comm": "co2e",
+            "input_comm": "I_tinto_bof_gas",
+            "output_comm": "I_tinto_elc",
+            "units": "ktonnes of CO2e / output",
+            "notes": "",
+            "data_source": "S1",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__on_site_powerplant"
+            }
+          }
+        },
+        {
+          "scenarios": "ccs",
+          "axes": {
+            "tech": [
+              "I_ALG_CCS_90",
+              "I_ALG_CCS_99",
+              "I_DOF_CCS_90",
+              "I_DOF_CCS_99",
+              "I_GERDAU_CCS_90",
+              "I_GERDAU_CCS_99",
+              "I_IVACO_CCS_90",
+              "I_IVACO_CCS_99",
+              "I_STELCO_CCS_90",
+              "I_STELCO_CCS_99"
+            ],
+            "vintage": [
+              "2020"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "emis_comm": "co2",
+            "input_comm": "I_elc",
+            "output_comm": "co2_ccs",
+            "units": "ktonnes CO2",
+            "notes": null,
+            "data_source": null,
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__captured_co2_credit"
+            }
+          }
+        },
+        {
+          "scenarios": "ccs",
+          "axes": {
+            "tech": [
+              "I_ALG_CCS_90",
+              "I_ALG_CCS_99",
+              "I_DOF_CCS_90",
+              "I_DOF_CCS_99",
+              "I_GERDAU_CCS_90",
+              "I_GERDAU_CCS_99",
+              "I_IVACO_CCS_90",
+              "I_IVACO_CCS_99",
+              "I_STELCO_CCS_90",
+              "I_STELCO_CCS_99"
+            ],
+            "vintage": [
+              "2020"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "emis_comm": "co2",
+            "input_comm": "I_ng",
+            "output_comm": "co2_ccs",
+            "units": "ktonnes CO2",
+            "notes": null,
+            "data_source": null,
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__captured_co2_credit"
+            }
+          }
+        },
+        {
+          "scenarios": "ccs",
+          "axes": {
+            "tech": [
+              "I_ALG_CCS_90",
+              "I_ALG_CCS_99",
+              "I_DOF_CCS_90",
+              "I_DOF_CCS_99",
+              "I_GERDAU_CCS_90",
+              "I_GERDAU_CCS_99",
+              "I_IVACO_CCS_90",
+              "I_IVACO_CCS_99",
+              "I_STELCO_CCS_90",
+              "I_STELCO_CCS_99"
+            ],
+            "vintage": [
+              "2020"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "emis_comm": "co2e",
+            "input_comm": "I_elc",
+            "output_comm": "co2_ccs",
+            "units": "ktonnes CO2",
+            "notes": null,
+            "data_source": null,
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__captured_co2_credit"
+            }
+          }
+        },
+        {
+          "scenarios": "ccs",
+          "axes": {
+            "tech": [
+              "I_ALG_CCS_90",
+              "I_ALG_CCS_99",
+              "I_DOF_CCS_90",
+              "I_DOF_CCS_99",
+              "I_GERDAU_CCS_90",
+              "I_GERDAU_CCS_99",
+              "I_IVACO_CCS_90",
+              "I_IVACO_CCS_99",
+              "I_STELCO_CCS_90",
+              "I_STELCO_CCS_99"
+            ],
+            "vintage": [
+              "2020"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "emis_comm": "co2e",
+            "input_comm": "I_ng",
+            "output_comm": "co2_ccs",
+            "units": "ktonnes CO2",
+            "notes": null,
+            "data_source": null,
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__captured_co2_credit"
+            }
+          }
+        },
+        {
+          "scenarios": "ccs",
+          "axes": {
+            "tech": [
+              "I_ALG_EAF"
+            ],
+            "vintage": [
+              "2020"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "emis_comm": "co2",
+            "input_comm": "I_alg_scrap",
+            "output_comm": "I_alg_eaf_crude_steel",
+            "units": "ktonnes of CO2 / output",
+            "notes": null,
+            "data_source": "S3",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__electric_arc_furnace"
+            }
+          }
+        },
+        {
+          "scenarios": "ccs",
+          "axes": {
+            "tech": [
+              "I_ALG_EAF"
+            ],
+            "vintage": [
+              "2020"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "emis_comm": "co2",
+            "input_comm": "I_elc",
+            "output_comm": "I_alg_eaf_crude_steel",
+            "units": "ktonnes of CO2 / output",
+            "notes": null,
+            "data_source": "S3",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__electric_arc_furnace"
+            }
+          }
+        },
+        {
+          "scenarios": "ccs",
+          "axes": {
+            "tech": [
+              "I_ALG_EAF"
+            ],
+            "vintage": [
+              "2020"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "emis_comm": "co2e",
+            "input_comm": "I_alg_scrap",
+            "output_comm": "I_alg_eaf_crude_steel",
+            "units": "ktonnes of CO2 / output",
+            "notes": null,
+            "data_source": "S3",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__electric_arc_furnace"
+            }
+          }
+        },
+        {
+          "scenarios": "ccs",
+          "axes": {
+            "tech": [
+              "I_ALG_EAF"
+            ],
+            "vintage": [
+              "2020"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "emis_comm": "co2e",
+            "input_comm": "I_elc",
+            "output_comm": "I_alg_eaf_crude_steel",
+            "units": "ktonnes of CO2 / output",
+            "notes": null,
+            "data_source": "S3",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__electric_arc_furnace"
+            }
+          }
+        },
+        {
+          "scenarios": "ccs",
+          "axes": {
+            "tech": [
+              "I_AMM_CCS_90",
+              "I_AMM_CCS_99",
+              "I_TINTO_CCS_90",
+              "I_TINTO_CCS_99"
+            ],
+            "vintage": [
+              "2020"
+            ]
+          },
+          "values": {
+            "region": "QC",
+            "emis_comm": "co2",
+            "input_comm": "I_ng",
+            "output_comm": "co2_ccs",
+            "units": "ktonnes CO2",
+            "notes": null,
+            "data_source": null,
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__captured_co2_credit"
+            }
+          }
+        },
+        {
+          "scenarios": "ccs",
+          "axes": {
+            "tech": [
+              "I_AMM_CCS_90",
+              "I_AMM_CCS_99",
+              "I_TINTO_CCS_90",
+              "I_TINTO_CCS_99"
+            ],
+            "vintage": [
+              "2020"
+            ]
+          },
+          "values": {
+            "region": "QC",
+            "emis_comm": "co2e",
+            "input_comm": "I_elc",
+            "output_comm": "co2_ccs",
+            "units": "ktonnes CO2",
+            "notes": null,
+            "data_source": null,
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__captured_co2_credit"
+            }
+          }
+        },
+        {
+          "scenarios": "ccs",
+          "axes": {
+            "tech": [
+              "I_AMM_CCS_90",
+              "I_AMM_CCS_99",
+              "I_TINTO_CCS_90",
+              "I_TINTO_CCS_99"
+            ],
+            "vintage": [
+              "2020"
+            ]
+          },
+          "values": {
+            "region": "QC",
+            "emis_comm": "co2e",
+            "input_comm": "I_ng",
+            "output_comm": "co2_ccs",
+            "units": "ktonnes CO2",
+            "notes": null,
+            "data_source": null,
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__captured_co2_credit"
+            }
+          }
+        },
+        {
+          "scenarios": "ccs",
+          "axes": {
+            "tech": [
+              "I_AMM_CCS_90",
+              "I_TINTO_CCS_90",
+              "I_TINTO_CCS_99"
+            ],
+            "vintage": [
+              "2020"
+            ]
+          },
+          "values": {
+            "region": "QC",
+            "emis_comm": "co2",
+            "input_comm": "I_elc",
+            "output_comm": "co2_ccs",
+            "units": "ktonnes CO2",
+            "notes": null,
+            "data_source": null,
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__captured_co2_credit"
+            }
+          }
+        },
+        {
+          "scenarios": "ccs",
+          "axes": {
+            "tech": [
+              "I_DOF_D_EAF"
+            ],
+            "vintage": [
+              "2020"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "emis_comm": "co2",
+            "input_comm": "I_dof_dri",
+            "output_comm": "I_dof_eaf_crude_steel",
+            "units": "ktonnes of CO2 / output",
+            "notes": null,
+            "data_source": "S3",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__electric_arc_furnace"
+            }
+          }
+        },
+        {
+          "scenarios": "ccs",
+          "axes": {
+            "tech": [
+              "I_DOF_D_EAF"
+            ],
+            "vintage": [
+              "2020"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "emis_comm": "co2",
+            "input_comm": "I_elc",
+            "output_comm": "I_dof_eaf_crude_steel",
+            "units": "ktonnes of CO2 / output",
+            "notes": null,
+            "data_source": "S3",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__electric_arc_furnace"
+            }
+          }
+        },
+        {
+          "scenarios": "ccs",
+          "axes": {
+            "tech": [
+              "I_DOF_D_EAF"
+            ],
+            "vintage": [
+              "2020"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "emis_comm": "co2e",
+            "input_comm": "I_dof_dri",
+            "output_comm": "I_dof_eaf_crude_steel",
+            "units": "ktonnes of CO2 / output",
+            "notes": null,
+            "data_source": "S3",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__electric_arc_furnace"
+            }
+          }
+        },
+        {
+          "scenarios": "ccs",
+          "axes": {
+            "tech": [
+              "I_DOF_D_EAF"
+            ],
+            "vintage": [
+              "2020"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "emis_comm": "co2e",
+            "input_comm": "I_elc",
+            "output_comm": "I_dof_eaf_crude_steel",
+            "units": "ktonnes of CO2 / output",
+            "notes": null,
+            "data_source": "S3",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__electric_arc_furnace"
+            }
+          }
+        },
+        {
+          "scenarios": "ccs",
+          "axes": {
+            "tech": [
+              "I_EVRAZ_CCS_90",
+              "I_EVRAZ_CCS_99"
+            ],
+            "vintage": [
+              "2020"
+            ]
+          },
+          "values": {
+            "region": "SK",
+            "emis_comm": "co2",
+            "input_comm": "I_elc",
+            "output_comm": "co2_ccs",
+            "units": "ktonnes CO2",
+            "notes": null,
+            "data_source": null,
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__captured_co2_credit"
+            }
+          }
+        },
+        {
+          "scenarios": "ccs",
+          "axes": {
+            "tech": [
+              "I_EVRAZ_CCS_90",
+              "I_EVRAZ_CCS_99"
+            ],
+            "vintage": [
+              "2020"
+            ]
+          },
+          "values": {
+            "region": "SK",
+            "emis_comm": "co2",
+            "input_comm": "I_ng",
+            "output_comm": "co2_ccs",
+            "units": "ktonnes CO2",
+            "notes": null,
+            "data_source": null,
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__captured_co2_credit"
+            }
+          }
+        },
+        {
+          "scenarios": "ccs",
+          "axes": {
+            "tech": [
+              "I_EVRAZ_CCS_90",
+              "I_EVRAZ_CCS_99"
+            ],
+            "vintage": [
+              "2020"
+            ]
+          },
+          "values": {
+            "region": "SK",
+            "emis_comm": "co2e",
+            "input_comm": "I_elc",
+            "output_comm": "co2_ccs",
+            "units": "ktonnes CO2",
+            "notes": null,
+            "data_source": null,
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__captured_co2_credit"
+            }
+          }
+        },
+        {
+          "scenarios": "ccs",
+          "axes": {
+            "tech": [
+              "I_EVRAZ_CCS_90",
+              "I_EVRAZ_CCS_99"
+            ],
+            "vintage": [
+              "2020"
+            ]
+          },
+          "values": {
+            "region": "SK",
+            "emis_comm": "co2e",
+            "input_comm": "I_ng",
+            "output_comm": "co2_ccs",
+            "units": "ktonnes CO2",
+            "notes": null,
+            "data_source": null,
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__captured_co2_credit"
+            }
+          }
+        },
+        {
+          "scenarios": "ccs|all",
+          "axes": {
+            "tech": [
+              "I_ALG_CCS_90",
+              "I_ALG_CCS_99",
+              "I_DOF_CCS_90",
+              "I_DOF_CCS_99",
+              "I_GERDAU_CCS_90",
+              "I_GERDAU_CCS_99",
+              "I_IVACO_CCS_90",
+              "I_IVACO_CCS_99",
+              "I_STELCO_CCS_90",
+              "I_STELCO_CCS_99"
+            ],
+            "vintage": [
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "emis_comm": "co2",
+            "input_comm": "I_elc",
+            "output_comm": "co2_ccs",
+            "units": "ktonnes CO2",
+            "notes": "",
+            "data_source": "",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__captured_co2_credit"
+            }
+          }
+        },
+        {
+          "scenarios": "ccs|all",
+          "axes": {
+            "tech": [
+              "I_ALG_CCS_90",
+              "I_ALG_CCS_99",
+              "I_DOF_CCS_90",
+              "I_DOF_CCS_99",
+              "I_GERDAU_CCS_90",
+              "I_GERDAU_CCS_99",
+              "I_IVACO_CCS_90",
+              "I_IVACO_CCS_99",
+              "I_STELCO_CCS_90",
+              "I_STELCO_CCS_99"
+            ],
+            "vintage": [
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "emis_comm": "co2",
+            "input_comm": "I_ng",
+            "output_comm": "co2_ccs",
+            "units": "ktonnes CO2",
+            "notes": "",
+            "data_source": "",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__captured_co2_credit"
+            }
+          }
+        },
+        {
+          "scenarios": "ccs|all",
+          "axes": {
+            "tech": [
+              "I_ALG_CCS_90",
+              "I_ALG_CCS_99",
+              "I_DOF_CCS_90",
+              "I_DOF_CCS_99",
+              "I_GERDAU_CCS_90",
+              "I_GERDAU_CCS_99",
+              "I_IVACO_CCS_90",
+              "I_IVACO_CCS_99",
+              "I_STELCO_CCS_90",
+              "I_STELCO_CCS_99"
+            ],
+            "vintage": [
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "emis_comm": "co2e",
+            "input_comm": "I_elc",
+            "output_comm": "co2_ccs",
+            "units": "ktonnes CO2",
+            "notes": "",
+            "data_source": "",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__captured_co2_credit"
+            }
+          }
+        },
+        {
+          "scenarios": "ccs|all",
+          "axes": {
+            "tech": [
+              "I_ALG_CCS_90",
+              "I_ALG_CCS_99",
+              "I_DOF_CCS_90",
+              "I_DOF_CCS_99",
+              "I_GERDAU_CCS_90",
+              "I_GERDAU_CCS_99",
+              "I_IVACO_CCS_90",
+              "I_IVACO_CCS_99",
+              "I_STELCO_CCS_90",
+              "I_STELCO_CCS_99"
+            ],
+            "vintage": [
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "emis_comm": "co2e",
+            "input_comm": "I_ng",
+            "output_comm": "co2_ccs",
+            "units": "ktonnes CO2",
+            "notes": "",
+            "data_source": "",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__captured_co2_credit"
+            }
+          }
+        },
+        {
+          "scenarios": "ccs|all",
+          "axes": {
+            "tech": [
+              "I_AMM_CCS_90",
+              "I_AMM_CCS_99",
+              "I_TINTO_CCS_90",
+              "I_TINTO_CCS_99"
+            ],
+            "vintage": [
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "QC",
+            "emis_comm": "co2",
+            "input_comm": "I_ng",
+            "output_comm": "co2_ccs",
+            "units": "ktonnes CO2",
+            "notes": "",
+            "data_source": "",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__captured_co2_credit"
+            }
+          }
+        },
+        {
+          "scenarios": "ccs|all",
+          "axes": {
+            "tech": [
+              "I_AMM_CCS_90",
+              "I_AMM_CCS_99",
+              "I_TINTO_CCS_90",
+              "I_TINTO_CCS_99"
+            ],
+            "vintage": [
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "QC",
+            "emis_comm": "co2e",
+            "input_comm": "I_elc",
+            "output_comm": "co2_ccs",
+            "units": "ktonnes CO2",
+            "notes": "",
+            "data_source": "",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__captured_co2_credit"
+            }
+          }
+        },
+        {
+          "scenarios": "ccs|all",
+          "axes": {
+            "tech": [
+              "I_AMM_CCS_90",
+              "I_AMM_CCS_99",
+              "I_TINTO_CCS_90",
+              "I_TINTO_CCS_99"
+            ],
+            "vintage": [
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "QC",
+            "emis_comm": "co2e",
+            "input_comm": "I_ng",
+            "output_comm": "co2_ccs",
+            "units": "ktonnes CO2",
+            "notes": "",
+            "data_source": "",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__captured_co2_credit"
+            }
+          }
+        },
+        {
+          "scenarios": "ccs|all",
+          "axes": {
+            "tech": [
+              "I_AMM_CCS_90",
+              "I_TINTO_CCS_90",
+              "I_TINTO_CCS_99"
+            ],
+            "vintage": [
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "QC",
+            "emis_comm": "co2",
+            "input_comm": "I_elc",
+            "output_comm": "co2_ccs",
+            "units": "ktonnes CO2",
+            "notes": "",
+            "data_source": "",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__captured_co2_credit"
+            }
+          }
+        },
+        {
+          "scenarios": "ccs|all",
+          "axes": {
+            "tech": [
+              "I_EVRAZ_CCS_90",
+              "I_EVRAZ_CCS_99"
+            ],
+            "vintage": [
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "SK",
+            "emis_comm": "co2",
+            "input_comm": "I_elc",
+            "output_comm": "co2_ccs",
+            "units": "ktonnes CO2",
+            "notes": "",
+            "data_source": "",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__captured_co2_credit"
+            }
+          }
+        },
+        {
+          "scenarios": "ccs|all",
+          "axes": {
+            "tech": [
+              "I_EVRAZ_CCS_90",
+              "I_EVRAZ_CCS_99"
+            ],
+            "vintage": [
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "SK",
+            "emis_comm": "co2",
+            "input_comm": "I_ng",
+            "output_comm": "co2_ccs",
+            "units": "ktonnes CO2",
+            "notes": "",
+            "data_source": "",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__captured_co2_credit"
+            }
+          }
+        },
+        {
+          "scenarios": "ccs|all",
+          "axes": {
+            "tech": [
+              "I_EVRAZ_CCS_90",
+              "I_EVRAZ_CCS_99"
+            ],
+            "vintage": [
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "SK",
+            "emis_comm": "co2e",
+            "input_comm": "I_elc",
+            "output_comm": "co2_ccs",
+            "units": "ktonnes CO2",
+            "notes": "",
+            "data_source": "",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__captured_co2_credit"
+            }
+          }
+        },
+        {
+          "scenarios": "ccs|all",
+          "axes": {
+            "tech": [
+              "I_EVRAZ_CCS_90",
+              "I_EVRAZ_CCS_99"
+            ],
+            "vintage": [
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "SK",
+            "emis_comm": "co2e",
+            "input_comm": "I_ng",
+            "output_comm": "co2_ccs",
+            "units": "ktonnes CO2",
+            "notes": "",
+            "data_source": "",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__captured_co2_credit"
+            }
+          }
+        },
+        {
+          "scenarios": "eaf|all",
+          "axes": {
+            "tech": [
+              "I_ALG_D_EAF"
+            ],
+            "vintage": [
+              "2020"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "emis_comm": "co2",
+            "input_comm": "I_alg_dri",
+            "output_comm": "I_alg_eaf_crude_steel",
+            "units": "ktonnes of CO2 / output",
+            "notes": null,
+            "data_source": "S3",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__electric_arc_furnace"
+            }
+          }
+        },
+        {
+          "scenarios": "eaf|all",
+          "axes": {
+            "tech": [
+              "I_ALG_D_EAF"
+            ],
+            "vintage": [
+              "2020"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "emis_comm": "co2",
+            "input_comm": "I_elc",
+            "output_comm": "I_alg_eaf_crude_steel",
+            "units": "ktonnes of CO2 / output",
+            "notes": null,
+            "data_source": "S3",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__electric_arc_furnace"
+            }
+          }
+        },
+        {
+          "scenarios": "eaf|all",
+          "axes": {
+            "tech": [
+              "I_ALG_D_EAF"
+            ],
+            "vintage": [
+              "2020"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "emis_comm": "co2e",
+            "input_comm": "I_alg_dri",
+            "output_comm": "I_alg_eaf_crude_steel",
+            "units": "ktonnes of CO2 / output",
+            "notes": null,
+            "data_source": "S3",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__electric_arc_furnace"
+            }
+          }
+        },
+        {
+          "scenarios": "eaf|all",
+          "axes": {
+            "tech": [
+              "I_ALG_D_EAF"
+            ],
+            "vintage": [
+              "2020"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "emis_comm": "co2e",
+            "input_comm": "I_elc",
+            "output_comm": "I_alg_eaf_crude_steel",
+            "units": "ktonnes of CO2 / output",
+            "notes": null,
+            "data_source": "S3",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__electric_arc_furnace"
+            }
+          }
+        },
+        {
+          "scenarios": "eaf|all",
+          "axes": {
+            "tech": [
+              "I_ALG_D_EAF"
+            ],
+            "vintage": [
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "emis_comm": "co2",
+            "input_comm": "I_alg_dri",
+            "output_comm": "I_alg_eaf_crude_steel",
+            "units": "ktonnes of CO2 / output",
+            "notes": "",
+            "data_source": "S3",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__electric_arc_furnace"
+            }
+          }
+        },
+        {
+          "scenarios": "eaf|all",
+          "axes": {
+            "tech": [
+              "I_ALG_D_EAF"
+            ],
+            "vintage": [
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "emis_comm": "co2",
+            "input_comm": "I_elc",
+            "output_comm": "I_alg_eaf_crude_steel",
+            "units": "ktonnes of CO2 / output",
+            "notes": "",
+            "data_source": "S3",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__electric_arc_furnace"
+            }
+          }
+        },
+        {
+          "scenarios": "eaf|all",
+          "axes": {
+            "tech": [
+              "I_ALG_D_EAF"
+            ],
+            "vintage": [
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "emis_comm": "co2e",
+            "input_comm": "I_alg_dri",
+            "output_comm": "I_alg_eaf_crude_steel",
+            "units": "ktonnes of CO2 / output",
+            "notes": "",
+            "data_source": "S3",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__electric_arc_furnace"
+            }
+          }
+        },
+        {
+          "scenarios": "eaf|all",
+          "axes": {
+            "tech": [
+              "I_ALG_D_EAF"
+            ],
+            "vintage": [
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "emis_comm": "co2e",
+            "input_comm": "I_elc",
+            "output_comm": "I_alg_eaf_crude_steel",
+            "units": "ktonnes of CO2 / output",
+            "notes": "",
+            "data_source": "S3",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__electric_arc_furnace"
+            }
+          }
+        },
+        {
+          "scenarios": "eaf|all",
+          "axes": {
+            "tech": [
+              "I_AMM_S_EAF"
+            ],
+            "vintage": [
+              "2020"
+            ]
+          },
+          "values": {
+            "region": "QC",
+            "emis_comm": "co2",
+            "input_comm": "I_amm_scrap",
+            "output_comm": "I_amm_crude_steel",
+            "units": "ktonnes of CO2 / output",
+            "notes": null,
+            "data_source": "S3",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__electric_arc_furnace"
+            }
+          }
+        },
+        {
+          "scenarios": "eaf|all",
+          "axes": {
+            "tech": [
+              "I_AMM_S_EAF"
+            ],
+            "vintage": [
+              "2020"
+            ]
+          },
+          "values": {
+            "region": "QC",
+            "emis_comm": "co2",
+            "input_comm": "I_elc",
+            "output_comm": "I_amm_crude_steel",
+            "units": "ktonnes of CO2 / output",
+            "notes": null,
+            "data_source": "S3",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__electric_arc_furnace"
+            }
+          }
+        },
+        {
+          "scenarios": "eaf|all",
+          "axes": {
+            "tech": [
+              "I_AMM_S_EAF"
+            ],
+            "vintage": [
+              "2020"
+            ]
+          },
+          "values": {
+            "region": "QC",
+            "emis_comm": "co2e",
+            "input_comm": "I_amm_scrap",
+            "output_comm": "I_amm_crude_steel",
+            "units": "ktonnes of CO2 / output",
+            "notes": null,
+            "data_source": "S3",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__electric_arc_furnace"
+            }
+          }
+        },
+        {
+          "scenarios": "eaf|all",
+          "axes": {
+            "tech": [
+              "I_AMM_S_EAF"
+            ],
+            "vintage": [
+              "2020"
+            ]
+          },
+          "values": {
+            "region": "QC",
+            "emis_comm": "co2e",
+            "input_comm": "I_elc",
+            "output_comm": "I_amm_crude_steel",
+            "units": "ktonnes of CO2 / output",
+            "notes": null,
+            "data_source": "S3",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__electric_arc_furnace"
+            }
+          }
+        },
+        {
+          "scenarios": "eaf|all",
+          "axes": {
+            "tech": [
+              "I_AMM_S_EAF"
+            ],
+            "vintage": [
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "QC",
+            "emis_comm": "co2",
+            "input_comm": "I_amm_scrap",
+            "output_comm": "I_amm_crude_steel",
+            "units": "ktonnes of CO2 / output",
+            "notes": "",
+            "data_source": "S3",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__electric_arc_furnace"
+            }
+          }
+        },
+        {
+          "scenarios": "eaf|all",
+          "axes": {
+            "tech": [
+              "I_AMM_S_EAF"
+            ],
+            "vintage": [
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "QC",
+            "emis_comm": "co2",
+            "input_comm": "I_elc",
+            "output_comm": "I_amm_crude_steel",
+            "units": "ktonnes of CO2 / output",
+            "notes": "",
+            "data_source": "S3",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__electric_arc_furnace"
+            }
+          }
+        },
+        {
+          "scenarios": "eaf|all",
+          "axes": {
+            "tech": [
+              "I_AMM_S_EAF"
+            ],
+            "vintage": [
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "QC",
+            "emis_comm": "co2e",
+            "input_comm": "I_amm_scrap",
+            "output_comm": "I_amm_crude_steel",
+            "units": "ktonnes of CO2 / output",
+            "notes": "",
+            "data_source": "S3",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__electric_arc_furnace"
+            }
+          }
+        },
+        {
+          "scenarios": "eaf|all",
+          "axes": {
+            "tech": [
+              "I_AMM_S_EAF"
+            ],
+            "vintage": [
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "QC",
+            "emis_comm": "co2e",
+            "input_comm": "I_elc",
+            "output_comm": "I_amm_crude_steel",
+            "units": "ktonnes of CO2 / output",
+            "notes": "",
+            "data_source": "S3",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__electric_arc_furnace"
+            }
+          }
+        },
+        {
+          "scenarios": "eaf|all",
+          "axes": {
+            "tech": [
+              "I_EVRAZ_D_EAF"
+            ],
+            "vintage": [
+              "2020"
+            ]
+          },
+          "values": {
+            "region": "SK",
+            "emis_comm": "co2",
+            "input_comm": "I_elc",
+            "output_comm": "I_evraz_crude_steel",
+            "units": "ktonnes of CO2 / output",
+            "notes": null,
+            "data_source": "S3",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__electric_arc_furnace"
+            }
+          }
+        },
+        {
+          "scenarios": "eaf|all",
+          "axes": {
+            "tech": [
+              "I_EVRAZ_D_EAF"
+            ],
+            "vintage": [
+              "2020"
+            ]
+          },
+          "values": {
+            "region": "SK",
+            "emis_comm": "co2",
+            "input_comm": "I_evraz_dri",
+            "output_comm": "I_evraz_crude_steel",
+            "units": "ktonnes of CO2 / output",
+            "notes": null,
+            "data_source": "S3",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__electric_arc_furnace"
+            }
+          }
+        },
+        {
+          "scenarios": "eaf|all",
+          "axes": {
+            "tech": [
+              "I_EVRAZ_D_EAF"
+            ],
+            "vintage": [
+              "2020"
+            ]
+          },
+          "values": {
+            "region": "SK",
+            "emis_comm": "co2e",
+            "input_comm": "I_elc",
+            "output_comm": "I_evraz_crude_steel",
+            "units": "ktonnes of CO2 / output",
+            "notes": null,
+            "data_source": "S3",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__electric_arc_furnace"
+            }
+          }
+        },
+        {
+          "scenarios": "eaf|all",
+          "axes": {
+            "tech": [
+              "I_EVRAZ_D_EAF"
+            ],
+            "vintage": [
+              "2020"
+            ]
+          },
+          "values": {
+            "region": "SK",
+            "emis_comm": "co2e",
+            "input_comm": "I_evraz_dri",
+            "output_comm": "I_evraz_crude_steel",
+            "units": "ktonnes of CO2 / output",
+            "notes": null,
+            "data_source": "S3",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__electric_arc_furnace"
+            }
+          }
+        },
+        {
+          "scenarios": "eaf|all",
+          "axes": {
+            "tech": [
+              "I_EVRAZ_D_EAF"
+            ],
+            "vintage": [
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "SK",
+            "emis_comm": "co2",
+            "input_comm": "I_elc",
+            "output_comm": "I_evraz_crude_steel",
+            "units": "ktonnes of CO2 / output",
+            "notes": "",
+            "data_source": "S3",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__electric_arc_furnace"
+            }
+          }
+        },
+        {
+          "scenarios": "eaf|all",
+          "axes": {
+            "tech": [
+              "I_EVRAZ_D_EAF"
+            ],
+            "vintage": [
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "SK",
+            "emis_comm": "co2",
+            "input_comm": "I_evraz_dri",
+            "output_comm": "I_evraz_crude_steel",
+            "units": "ktonnes of CO2 / output",
+            "notes": "",
+            "data_source": "S3",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__electric_arc_furnace"
+            }
+          }
+        },
+        {
+          "scenarios": "eaf|all",
+          "axes": {
+            "tech": [
+              "I_EVRAZ_D_EAF"
+            ],
+            "vintage": [
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "SK",
+            "emis_comm": "co2e",
+            "input_comm": "I_elc",
+            "output_comm": "I_evraz_crude_steel",
+            "units": "ktonnes of CO2 / output",
+            "notes": "",
+            "data_source": "S3",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__electric_arc_furnace"
+            }
+          }
+        },
+        {
+          "scenarios": "eaf|all",
+          "axes": {
+            "tech": [
+              "I_EVRAZ_D_EAF"
+            ],
+            "vintage": [
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "SK",
+            "emis_comm": "co2e",
+            "input_comm": "I_evraz_dri",
+            "output_comm": "I_evraz_crude_steel",
+            "units": "ktonnes of CO2 / output",
+            "notes": "",
+            "data_source": "S3",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__electric_arc_furnace"
+            }
+          }
+        },
+        {
+          "scenarios": "eaf|all",
+          "axes": {
+            "tech": [
+              "I_GERDAU_D_EAF"
+            ],
+            "vintage": [
+              "2020"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "emis_comm": "co2",
+            "input_comm": "I_elc",
+            "output_comm": "I_gerdau_crude_steel",
+            "units": "ktonnes of CO2 / output",
+            "notes": null,
+            "data_source": "S3",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__electric_arc_furnace"
+            }
+          }
+        },
+        {
+          "scenarios": "eaf|all",
+          "axes": {
+            "tech": [
+              "I_GERDAU_D_EAF"
+            ],
+            "vintage": [
+              "2020"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "emis_comm": "co2",
+            "input_comm": "I_gerdau_dri",
+            "output_comm": "I_gerdau_crude_steel",
+            "units": "ktonnes of CO2 / output",
+            "notes": null,
+            "data_source": "S3",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__electric_arc_furnace"
+            }
+          }
+        },
+        {
+          "scenarios": "eaf|all",
+          "axes": {
+            "tech": [
+              "I_GERDAU_D_EAF"
+            ],
+            "vintage": [
+              "2020"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "emis_comm": "co2e",
+            "input_comm": "I_elc",
+            "output_comm": "I_gerdau_crude_steel",
+            "units": "ktonnes of CO2 / output",
+            "notes": null,
+            "data_source": "S3",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__electric_arc_furnace"
+            }
+          }
+        },
+        {
+          "scenarios": "eaf|all",
+          "axes": {
+            "tech": [
+              "I_GERDAU_D_EAF"
+            ],
+            "vintage": [
+              "2020"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "emis_comm": "co2e",
+            "input_comm": "I_gerdau_dri",
+            "output_comm": "I_gerdau_crude_steel",
+            "units": "ktonnes of CO2 / output",
+            "notes": null,
+            "data_source": "S3",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__electric_arc_furnace"
+            }
+          }
+        },
+        {
+          "scenarios": "eaf|all",
+          "axes": {
+            "tech": [
+              "I_GERDAU_D_EAF"
+            ],
+            "vintage": [
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "emis_comm": "co2",
+            "input_comm": "I_elc",
+            "output_comm": "I_gerdau_crude_steel",
+            "units": "ktonnes of CO2 / output",
+            "notes": "",
+            "data_source": "S3",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__electric_arc_furnace"
+            }
+          }
+        },
+        {
+          "scenarios": "eaf|all",
+          "axes": {
+            "tech": [
+              "I_GERDAU_D_EAF"
+            ],
+            "vintage": [
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "emis_comm": "co2",
+            "input_comm": "I_gerdau_dri",
+            "output_comm": "I_gerdau_crude_steel",
+            "units": "ktonnes of CO2 / output",
+            "notes": "",
+            "data_source": "S3",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__electric_arc_furnace"
+            }
+          }
+        },
+        {
+          "scenarios": "eaf|all",
+          "axes": {
+            "tech": [
+              "I_GERDAU_D_EAF"
+            ],
+            "vintage": [
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "emis_comm": "co2e",
+            "input_comm": "I_elc",
+            "output_comm": "I_gerdau_crude_steel",
+            "units": "ktonnes of CO2 / output",
+            "notes": "",
+            "data_source": "S3",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__electric_arc_furnace"
+            }
+          }
+        },
+        {
+          "scenarios": "eaf|all",
+          "axes": {
+            "tech": [
+              "I_GERDAU_D_EAF"
+            ],
+            "vintage": [
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "emis_comm": "co2e",
+            "input_comm": "I_gerdau_dri",
+            "output_comm": "I_gerdau_crude_steel",
+            "units": "ktonnes of CO2 / output",
+            "notes": "",
+            "data_source": "S3",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__electric_arc_furnace"
+            }
+          }
+        },
+        {
+          "scenarios": "eaf|all",
+          "axes": {
+            "tech": [
+              "I_IVACO_D_EAF"
+            ],
+            "vintage": [
+              "2020"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "emis_comm": "co2",
+            "input_comm": "I_elc",
+            "output_comm": "I_ivaco_crude_steel",
+            "units": "ktonnes of CO2 / output",
+            "notes": null,
+            "data_source": "S3",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__electric_arc_furnace"
+            }
+          }
+        },
+        {
+          "scenarios": "eaf|all",
+          "axes": {
+            "tech": [
+              "I_IVACO_D_EAF"
+            ],
+            "vintage": [
+              "2020"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "emis_comm": "co2",
+            "input_comm": "I_ivaco_dri",
+            "output_comm": "I_ivaco_crude_steel",
+            "units": "ktonnes of CO2 / output",
+            "notes": null,
+            "data_source": "S3",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__electric_arc_furnace"
+            }
+          }
+        },
+        {
+          "scenarios": "eaf|all",
+          "axes": {
+            "tech": [
+              "I_IVACO_D_EAF"
+            ],
+            "vintage": [
+              "2020"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "emis_comm": "co2e",
+            "input_comm": "I_elc",
+            "output_comm": "I_ivaco_crude_steel",
+            "units": "ktonnes of CO2 / output",
+            "notes": null,
+            "data_source": "S3",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__electric_arc_furnace"
+            }
+          }
+        },
+        {
+          "scenarios": "eaf|all",
+          "axes": {
+            "tech": [
+              "I_IVACO_D_EAF"
+            ],
+            "vintage": [
+              "2020"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "emis_comm": "co2e",
+            "input_comm": "I_ivaco_dri",
+            "output_comm": "I_ivaco_crude_steel",
+            "units": "ktonnes of CO2 / output",
+            "notes": null,
+            "data_source": "S3",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__electric_arc_furnace"
+            }
+          }
+        },
+        {
+          "scenarios": "eaf|all",
+          "axes": {
+            "tech": [
+              "I_IVACO_D_EAF"
+            ],
+            "vintage": [
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "emis_comm": "co2",
+            "input_comm": "I_elc",
+            "output_comm": "I_ivaco_crude_steel",
+            "units": "ktonnes of CO2 / output",
+            "notes": "",
+            "data_source": "S3",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__electric_arc_furnace"
+            }
+          }
+        },
+        {
+          "scenarios": "eaf|all",
+          "axes": {
+            "tech": [
+              "I_IVACO_D_EAF"
+            ],
+            "vintage": [
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "emis_comm": "co2",
+            "input_comm": "I_ivaco_dri",
+            "output_comm": "I_ivaco_crude_steel",
+            "units": "ktonnes of CO2 / output",
+            "notes": "",
+            "data_source": "S3",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__electric_arc_furnace"
+            }
+          }
+        },
+        {
+          "scenarios": "eaf|all",
+          "axes": {
+            "tech": [
+              "I_IVACO_D_EAF"
+            ],
+            "vintage": [
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "emis_comm": "co2e",
+            "input_comm": "I_elc",
+            "output_comm": "I_ivaco_crude_steel",
+            "units": "ktonnes of CO2 / output",
+            "notes": "",
+            "data_source": "S3",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__electric_arc_furnace"
+            }
+          }
+        },
+        {
+          "scenarios": "eaf|all",
+          "axes": {
+            "tech": [
+              "I_IVACO_D_EAF"
+            ],
+            "vintage": [
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "emis_comm": "co2e",
+            "input_comm": "I_ivaco_dri",
+            "output_comm": "I_ivaco_crude_steel",
+            "units": "ktonnes of CO2 / output",
+            "notes": "",
+            "data_source": "S3",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__electric_arc_furnace"
+            }
+          }
+        },
+        {
+          "scenarios": "eaf|all",
+          "axes": {
+            "tech": [
+              "I_STELCO_D_EAF",
+              "I_STELCO_S_EAF"
+            ],
+            "vintage": [
+              "2020"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "emis_comm": "co2",
+            "input_comm": "I_elc",
+            "output_comm": "I_stelco_eaf_crude_steel",
+            "units": "ktonnes of CO2 / output",
+            "notes": null,
+            "data_source": "S3",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__electric_arc_furnace"
+            }
+          }
+        },
+        {
+          "scenarios": "eaf|all",
+          "axes": {
+            "tech": [
+              "I_STELCO_D_EAF",
+              "I_STELCO_S_EAF"
+            ],
+            "vintage": [
+              "2020"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "emis_comm": "co2e",
+            "input_comm": "I_elc",
+            "output_comm": "I_stelco_eaf_crude_steel",
+            "units": "ktonnes of CO2 / output",
+            "notes": null,
+            "data_source": "S3",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__electric_arc_furnace"
+            }
+          }
+        },
+        {
+          "scenarios": "eaf|all",
+          "axes": {
+            "tech": [
+              "I_STELCO_D_EAF",
+              "I_STELCO_S_EAF"
+            ],
+            "vintage": [
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "emis_comm": "co2",
+            "input_comm": "I_elc",
+            "output_comm": "I_stelco_eaf_crude_steel",
+            "units": "ktonnes of CO2 / output",
+            "notes": "",
+            "data_source": "S3",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__electric_arc_furnace"
+            }
+          }
+        },
+        {
+          "scenarios": "eaf|all",
+          "axes": {
+            "tech": [
+              "I_STELCO_D_EAF",
+              "I_STELCO_S_EAF"
+            ],
+            "vintage": [
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "emis_comm": "co2e",
+            "input_comm": "I_elc",
+            "output_comm": "I_stelco_eaf_crude_steel",
+            "units": "ktonnes of CO2 / output",
+            "notes": "",
+            "data_source": "S3",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__electric_arc_furnace"
+            }
+          }
+        },
+        {
+          "scenarios": "eaf|all",
+          "axes": {
+            "tech": [
+              "I_STELCO_D_EAF"
+            ],
+            "vintage": [
+              "2020"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "emis_comm": "co2",
+            "input_comm": "I_stelco_dri",
+            "output_comm": "I_stelco_eaf_crude_steel",
+            "units": "ktonnes of CO2 / output",
+            "notes": null,
+            "data_source": "S3",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__electric_arc_furnace"
+            }
+          }
+        },
+        {
+          "scenarios": "eaf|all",
+          "axes": {
+            "tech": [
+              "I_STELCO_D_EAF"
+            ],
+            "vintage": [
+              "2020"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "emis_comm": "co2e",
+            "input_comm": "I_stelco_dri",
+            "output_comm": "I_stelco_eaf_crude_steel",
+            "units": "ktonnes of CO2 / output",
+            "notes": null,
+            "data_source": "S3",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__electric_arc_furnace"
+            }
+          }
+        },
+        {
+          "scenarios": "eaf|all",
+          "axes": {
+            "tech": [
+              "I_STELCO_D_EAF"
+            ],
+            "vintage": [
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "emis_comm": "co2",
+            "input_comm": "I_stelco_dri",
+            "output_comm": "I_stelco_eaf_crude_steel",
+            "units": "ktonnes of CO2 / output",
+            "notes": "",
+            "data_source": "S3",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__electric_arc_furnace"
+            }
+          }
+        },
+        {
+          "scenarios": "eaf|all",
+          "axes": {
+            "tech": [
+              "I_STELCO_D_EAF"
+            ],
+            "vintage": [
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "emis_comm": "co2e",
+            "input_comm": "I_stelco_dri",
+            "output_comm": "I_stelco_eaf_crude_steel",
+            "units": "ktonnes of CO2 / output",
+            "notes": "",
+            "data_source": "S3",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__electric_arc_furnace"
+            }
+          }
+        },
+        {
+          "scenarios": "eaf|all",
+          "axes": {
+            "tech": [
+              "I_STELCO_S_EAF"
+            ],
+            "vintage": [
+              "2020"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "emis_comm": "co2",
+            "input_comm": "I_stelco_scrap",
+            "output_comm": "I_stelco_eaf_crude_steel",
+            "units": "ktonnes of CO2 / output",
+            "notes": null,
+            "data_source": "S3",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__electric_arc_furnace"
+            }
+          }
+        },
+        {
+          "scenarios": "eaf|all",
+          "axes": {
+            "tech": [
+              "I_STELCO_S_EAF"
+            ],
+            "vintage": [
+              "2020"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "emis_comm": "co2e",
+            "input_comm": "I_stelco_scrap",
+            "output_comm": "I_stelco_eaf_crude_steel",
+            "units": "ktonnes of CO2 / output",
+            "notes": null,
+            "data_source": "S3",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__electric_arc_furnace"
+            }
+          }
+        },
+        {
+          "scenarios": "eaf|all",
+          "axes": {
+            "tech": [
+              "I_STELCO_S_EAF"
+            ],
+            "vintage": [
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "emis_comm": "co2",
+            "input_comm": "I_stelco_scrap",
+            "output_comm": "I_stelco_eaf_crude_steel",
+            "units": "ktonnes of CO2 / output",
+            "notes": "",
+            "data_source": "S3",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__electric_arc_furnace"
+            }
+          }
+        },
+        {
+          "scenarios": "eaf|all",
+          "axes": {
+            "tech": [
+              "I_STELCO_S_EAF"
+            ],
+            "vintage": [
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "ON",
+            "emis_comm": "co2e",
+            "input_comm": "I_stelco_scrap",
+            "output_comm": "I_stelco_eaf_crude_steel",
+            "units": "ktonnes of CO2 / output",
+            "notes": "",
+            "data_source": "S3",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__electric_arc_furnace"
+            }
+          }
+        },
+        {
+          "scenarios": "eaf|all",
+          "axes": {
+            "tech": [
+              "I_TINTO_D_EAF",
+              "I_TINTO_S_EAF"
+            ],
+            "vintage": [
+              "2020"
+            ]
+          },
+          "values": {
+            "region": "QC",
+            "emis_comm": "co2",
+            "input_comm": "I_elc",
+            "output_comm": "I_tinto_eaf_crude_steel",
+            "units": "ktonnes of CO2 / output",
+            "notes": null,
+            "data_source": "S3",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__electric_arc_furnace"
+            }
+          }
+        },
+        {
+          "scenarios": "eaf|all",
+          "axes": {
+            "tech": [
+              "I_TINTO_D_EAF",
+              "I_TINTO_S_EAF"
+            ],
+            "vintage": [
+              "2020"
+            ]
+          },
+          "values": {
+            "region": "QC",
+            "emis_comm": "co2e",
+            "input_comm": "I_elc",
+            "output_comm": "I_tinto_eaf_crude_steel",
+            "units": "ktonnes of CO2 / output",
+            "notes": null,
+            "data_source": "S3",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__electric_arc_furnace"
+            }
+          }
+        },
+        {
+          "scenarios": "eaf|all",
+          "axes": {
+            "tech": [
+              "I_TINTO_D_EAF",
+              "I_TINTO_S_EAF"
+            ],
+            "vintage": [
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "QC",
+            "emis_comm": "co2",
+            "input_comm": "I_elc",
+            "output_comm": "I_tinto_eaf_crude_steel",
+            "units": "ktonnes of CO2 / output",
+            "notes": "",
+            "data_source": "S3",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__electric_arc_furnace"
+            }
+          }
+        },
+        {
+          "scenarios": "eaf|all",
+          "axes": {
+            "tech": [
+              "I_TINTO_D_EAF",
+              "I_TINTO_S_EAF"
+            ],
+            "vintage": [
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "QC",
+            "emis_comm": "co2e",
+            "input_comm": "I_elc",
+            "output_comm": "I_tinto_eaf_crude_steel",
+            "units": "ktonnes of CO2 / output",
+            "notes": "",
+            "data_source": "S3",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__electric_arc_furnace"
+            }
+          }
+        },
+        {
+          "scenarios": "eaf|all",
+          "axes": {
+            "tech": [
+              "I_TINTO_D_EAF"
+            ],
+            "vintage": [
+              "2020"
+            ]
+          },
+          "values": {
+            "region": "QC",
+            "emis_comm": "co2",
+            "input_comm": "I_tinto_dri",
+            "output_comm": "I_tinto_eaf_crude_steel",
+            "units": "ktonnes of CO2 / output",
+            "notes": null,
+            "data_source": "S3",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__electric_arc_furnace"
+            }
+          }
+        },
+        {
+          "scenarios": "eaf|all",
+          "axes": {
+            "tech": [
+              "I_TINTO_D_EAF"
+            ],
+            "vintage": [
+              "2020"
+            ]
+          },
+          "values": {
+            "region": "QC",
+            "emis_comm": "co2e",
+            "input_comm": "I_tinto_dri",
+            "output_comm": "I_tinto_eaf_crude_steel",
+            "units": "ktonnes of CO2 / output",
+            "notes": null,
+            "data_source": "S3",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__electric_arc_furnace"
+            }
+          }
+        },
+        {
+          "scenarios": "eaf|all",
+          "axes": {
+            "tech": [
+              "I_TINTO_D_EAF"
+            ],
+            "vintage": [
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "QC",
+            "emis_comm": "co2",
+            "input_comm": "I_tinto_dri",
+            "output_comm": "I_tinto_eaf_crude_steel",
+            "units": "ktonnes of CO2 / output",
+            "notes": "",
+            "data_source": "S3",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__electric_arc_furnace"
+            }
+          }
+        },
+        {
+          "scenarios": "eaf|all",
+          "axes": {
+            "tech": [
+              "I_TINTO_D_EAF"
+            ],
+            "vintage": [
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "QC",
+            "emis_comm": "co2e",
+            "input_comm": "I_tinto_dri",
+            "output_comm": "I_tinto_eaf_crude_steel",
+            "units": "ktonnes of CO2 / output",
+            "notes": "",
+            "data_source": "S3",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__electric_arc_furnace"
+            }
+          }
+        },
+        {
+          "scenarios": "eaf|all",
+          "axes": {
+            "tech": [
+              "I_TINTO_S_EAF"
+            ],
+            "vintage": [
+              "2020"
+            ]
+          },
+          "values": {
+            "region": "QC",
+            "emis_comm": "co2",
+            "input_comm": "I_tinto_scrap",
+            "output_comm": "I_tinto_eaf_crude_steel",
+            "units": "ktonnes of CO2 / output",
+            "notes": null,
+            "data_source": "S3",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__electric_arc_furnace"
+            }
+          }
+        },
+        {
+          "scenarios": "eaf|all",
+          "axes": {
+            "tech": [
+              "I_TINTO_S_EAF"
+            ],
+            "vintage": [
+              "2020"
+            ]
+          },
+          "values": {
+            "region": "QC",
+            "emis_comm": "co2e",
+            "input_comm": "I_tinto_scrap",
+            "output_comm": "I_tinto_eaf_crude_steel",
+            "units": "ktonnes of CO2 / output",
+            "notes": null,
+            "data_source": "S3",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__electric_arc_furnace"
+            }
+          }
+        },
+        {
+          "scenarios": "eaf|all",
+          "axes": {
+            "tech": [
+              "I_TINTO_S_EAF"
+            ],
+            "vintage": [
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "QC",
+            "emis_comm": "co2",
+            "input_comm": "I_tinto_scrap",
+            "output_comm": "I_tinto_eaf_crude_steel",
+            "units": "ktonnes of CO2 / output",
+            "notes": "",
+            "data_source": "S3",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__electric_arc_furnace"
+            }
+          }
+        },
+        {
+          "scenarios": "eaf|all",
+          "axes": {
+            "tech": [
+              "I_TINTO_S_EAF"
+            ],
+            "vintage": [
+              "2025",
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {
+            "region": "QC",
+            "emis_comm": "co2e",
+            "input_comm": "I_tinto_scrap",
+            "output_comm": "I_tinto_eaf_crude_steel",
+            "units": "ktonnes of CO2 / output",
+            "notes": "",
+            "data_source": "S3",
+            "dq_cred": null,
+            "dq_geog": null,
+            "dq_struc": null,
+            "dq_tech": null,
+            "dq_time": null,
+            "activity": {
+              "parameter": "emission__electric_arc_furnace"
+            }
+          }
+        }
+      ]
+    },
+    "limit_emission": {
+      "defaults": {
+        "region": "ON",
+        "emis_comm": "co2",
+        "operator": "le",
+        "value": "7000.0",
+        "units": null,
+        "notes": null,
+        "data_source": null,
+        "dq_cred": null,
+        "dq_geog": null,
+        "dq_struc": null,
+        "dq_tech": null,
+        "dq_time": null,
+        "data_id": "STEELBASEHR001"
+      },
+      "rules": [
+        {
+          "scenarios": "ccs",
+          "axes": {
+            "period": [
+              "2030",
+              "2035",
+              "2040",
+              "2045"
+            ]
+          },
+          "values": {}
+        }
+      ]
+    }
+  }
+}

@@ -1,5 +1,5 @@
-direction,flow_id,amount,unit,source_sheet,source_cell,notes
-in,scrap,1.2012100000000001,t,Scrap-EAF,B8,Source workbook cached value; check heterogeneous units before physical interpretation
-in,elc,1.5008039999999998,GJ,Scrap-EAF,B9,Source workbook cached value; check heterogeneous units before physical interpretation
-out,steel,1.0426599999999999,t,Scrap-EAF,B13,CO2 from source row 15 is excluded from material output; keep emissions in emission_activity CSV
-out,slag,0.19214000000000001,t,Scrap-EAF,B14,CO2 from source row 15 is excluded from material output; keep emissions in emission_activity CSV
+direction,flow_id,amount,unit,notes
+in,scrap,1.2012100000000001,t,Editable steel process-flow assumption; mixed units need scientific review
+in,elc,1.5008039999999998,GJ,Editable steel process-flow assumption; mixed units need scientific review
+out,steel,1.0426599999999999,t,CO2 from source row 15 is excluded from material output; keep emissions in emission_activity CSV
+out,slag,0.19214000000000001,t,CO2 from source row 15 is excluded from material output; keep emissions in emission_activity CSV

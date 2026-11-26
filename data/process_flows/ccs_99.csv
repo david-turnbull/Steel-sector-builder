@@ -1,4 +1,4 @@
-direction,flow_id,amount,unit,source_sheet,source_cell,notes
-in,elc,0.00074370490886442792,PJ/kt CO2,CCS,G22,Source workbook cached value; check heterogeneous units before physical interpretation
-in,ng,0.0032655976872212476,PJ/kt CO2,CCS,G23,Source workbook cached value; check heterogeneous units before physical interpretation
-out,co2,0.98999999999999999,fraction,CCS,G27,Source workbook cached value; check heterogeneous units before physical interpretation
+direction,flow_id,amount,unit,notes
+in,elc,0.00074370490886442792,PJ/kt CO2,Editable steel process-flow assumption; mixed units need scientific review
+in,ng,0.0032655976872212476,PJ/kt CO2,Editable steel process-flow assumption; mixed units need scientific review
+out,co2,0.98999999999999999,fraction,Editable steel process-flow assumption; mixed units need scientific review

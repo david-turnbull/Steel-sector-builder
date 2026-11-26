@@ -1,2 +1,2 @@
-"""Reproducible CSV -> TEMOA Steel SQLite sector datasets."""
-__version__ = '0.1.0'
+"""Reproducible, editable steel-sector definitions -> TEMOA v4 SQLite databases."""
+__version__ = "0.4.0"

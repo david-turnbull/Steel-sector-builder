@@ -3,14 +3,14 @@
 **Model:** CANOE high-resolution steel sector (TEMOA schema v4)  
 **Status:** Prototype sector dataset; technical and scientific validation pending  
 **Implementation:** Standalone `Steel` sector, not yet integrated into the general industry-sector pipeline  
-**Source dataset:** `Steel-Updated.xlsx` and four supplied steel scenario SQLite databases  
+**Editable inputs:** Process-flow CSVs, internal model parameters and scenario rules in this package  
 **Last documentation review:** 26 November 2026
 
 ## 1. Scope and modelling approach
 
 This module represents steel production as a network of technologies that consume and produce commodities. It includes conventional blast-furnace/basic-oxygen-furnace steelmaking, electric-arc-furnace (EAF) routes, natural-gas and hydrogen direct reduction, site power generation, post-processing, and optional carbon capture and storage (CCS). Technology and commodity names follow the existing CANOE/TEMOA schema.
 
-The steel dataset is **separate from the general `Industry` sector** for now. Four alternative scenario databases are generated from a common library of process flows and scenario-specific records. This separation makes it possible to evaluate the steel network before linking it to the remainder of CANOE. It does not imply that energy supply, commodity imports or cross-sector interactions have been fully integrated or validated.
+The steel dataset is **separate from the general `Industry` sector** for now. Four alternative scenario databases are generated from a common library of process flows and shared model assumptions with explicit scenario membership. This separation makes it possible to evaluate the steel network before linking it to the remainder of CANOE. It does not imply that energy supply, commodity imports or cross-sector interactions have been fully integrated or validated.
 
 The principal production chains are:
 
@@ -46,7 +46,7 @@ Here `MT` is the label used in the source database. The demand figures are model
 
 ## 3. Model technologies
 
-The underlying source workbook is separated into **13 process-flow CSV definitions** (12 workbook-derived process variants plus one synthetic pass-through definition). The technology-to-process assignment is in `data/mappings/technology.csv`; the mapping from technology-specific commodity names to physical flows is in `data/mappings/commodity_bindings.csv`.
+The package contains **13 editable process-flow CSV definitions** (12 physical process variants and one synthetic pass-through definition). The technology-to-process assignment is in `data/mappings/technology.csv`; the mapping from technology-specific commodity names to physical flows is in `data/mappings/commodity_bindings.csv`.
 
 | Process / CSV | Main inputs | Main outputs | Source reference(s) |
 |---|---|---|---|
@@ -62,7 +62,7 @@ The underlying source workbook is separated into **13 process-flow CSV definitio
 | Electrolyser — `electrolyser.csv` | Electricity | Hydrogen | S7 |
 | 90% CCS — `ccs_90.csv` | Electricity, natural gas | Captured CO₂ stream, using a 0.90 capture fraction | S10 |
 | 99% CCS — `ccs_99.csv` | Electricity, natural gas | Captured CO₂ stream, using a 0.99 capture fraction | S10 |
-| Import / transfer — `pass_through.csv` | One generic input | One generic output | Builder convention; not taken from a workbook process sheet |
+| Import / transfer — `pass_through.csv` | One generic input | One generic output | Builder convention for import and transfer technologies |
 
 These are **shared process definitions**, not separate unique process intensities for every plant. Facility-specific technologies can be mapped to the same process, with different commodity aliases and scenario-specific costs, capacities and constraints.
 
@@ -104,13 +104,13 @@ When multiple alternative TEMOA commodity aliases represent **the same physical 
 
 The input proportions are approximately 0.286704 (DRI) and 0.713296 (electricity); output proportions are approximately 0.988491 (crude steel) and 0.011509 (slag).
 
-> **Important limitation:** The source workbook and builder sum numerical quantities with **different units** (tonnes, GJ, hydrogen volumes and, for CCS, energy-per-captured-CO₂ and capture fractions). Thus, these values follow the workbook's **model coefficient convention**; they should **not** be interpreted as dimensionless physical, mass-based or thermodynamic efficiencies. A later scientific revision should normalize onto a defined reference unit if physical efficiencies are required.
+> **Important limitation:** The current process-flow conventions sum numerical quantities with **different units** (tonnes, GJ, hydrogen volumes and, for CCS, energy-per-captured-CO₂ and capture fractions). Thus, these values follow the model's **numerical coefficient convention**; they should **not** be interpreted as dimensionless physical, mass-based or thermodynamic efficiencies. A later scientific revision should normalize onto a defined reference unit if physical efficiencies are required.
 
 The generated annual split constraints retain the **original SQLite `operator` values** (in these files, typically `ge`, meaning lower bounds). Computing a proportion does not automatically impose an equality constraint or change the existing feasible set in any other way. The generator also does not add missing split constraints or new input/output commodity pairs.
 
 ### Emissions handling
 
-The builder does not treat calculated CO₂ emissions as a further steelmaking material output. In particular, the `Scrap-EAF` workbook contains a separate CO₂ calculation that is **excluded** from the process-flow output numerator. Emissions coefficients reside in the scenario's `emission_activity.csv`; they are not recalculated from the process flows. The capture technologies and their represented captured-CO₂ streams are separate cases using `ccs_90.csv` and `ccs_99.csv`.
+The builder does not treat calculated CO₂ emissions as a further steelmaking material output. In particular, the scrap-EAF process has a separate CO₂ calculation that is **excluded** from the process-flow output numerator. Emissions coefficients reside in `data/inputs/emissions.json`; they are not recalculated from the process flows. The capture technologies and their represented captured-CO₂ streams are separate cases using `ccs_90.csv` and `ccs_99.csv`.
 
 ## 5. Scenarios and constraints
 
@@ -121,34 +121,35 @@ The builder does not treat calculated CO₂ emissions as a further steelmaking m
 | **CCS** | `CANOE_steel_ccs.sqlite` | Conventional routes plus 90% and 99% CCS options; no modelled H₂-DRI/electrolysis technology records. |
 | **All pathways** | `CANOE_steel_all.sqlite` | The combined technology option set, including EAF/DRI, hydrogen and CCS routes. |
 
-Scenario differences extend beyond the available technology list: the reference CSVs contain distinct investment/fixed/variable costs, existing capacity, capacity ceilings, activity shares, demand, emissions and other metadata. These are **independent datasets**. Changing a process flow updates every scenario using it; changing, for example, `data/scenarios/eaf/cost_invest.csv` does not update the other scenarios.
+Scenario differences extend beyond the available technology list: the editable model rules contain distinct investment/fixed/variable costs, existing capacity, capacity ceilings, activity shares, demand, emissions and other metadata. These are scenario-specific **row selections and assumptions** in purpose-based model definitions. Changing a process flow updates every scenario using it; changing a cost in `data/parameters/costs.json` and `data/inputs/economics.json` updates the scenarios named in that row's `scenarios` membership, while overrides use disjoint scenario masks.
 
 The supplied **CCS scenario alone** contains an explicit `limit_emission` constraint of `co2 <= 7000` for **Ontario** in **2030, 2035, 2040 and 2045**. The `units` field on these particular rows is blank/NULL, so the numerical limit should not be assigned a physical unit without further verification. The presence of CCS technologies in the **All pathways** case does **not** by itself mean it inherits the CCS case's emission cap.
 
-The uploaded `limit_activity_share` records also constrain the relative operation of particular facility/process groups (for example, Dofasco's BOF, scrap-EAF and DRI-EAF shares). Such constraints are **explicit scenario assumptions**, not automatically derived from the flow workbook. Inspect the scenario CSVs before interpreting a run as a technology-neutral optimization.
+The uploaded `limit_activity_share` records also constrain the relative operation of particular facility/process groups (for example, Dofasco's BOF, scrap-EAF and DRI-EAF shares). Such constraints are **explicit scenario assumptions**, not automatically derived from the process flows. Inspect the `scenarios` on input rules before interpreting a run as a technology-neutral optimization.
 
 ## 6. Costs, emissions, capacity and other assumptions
 
-These values are **retained from the supplied scenario databases** and are **not** regenerated from the flow workbook by the current builder:
+All assumptions are **internal editable inputs**, not external file lookups. The same numeric price or cost can be shared across numerous technologies, vintages and scenarios. Every applied record still carries its units and source attribution, and differences in scenario membership are explicit.
 
-| Input or assumption | Where to inspect/edit | Provenance or current treatment |
+| Assumption | Source inside this package | Treatment |
 |---|---|---|
-| Investment cost | `data/scenarios/<scenario>/cost_invest.csv` | Scenario records with unit and currency/basis notes; some entries say converted from 2010 EUR to 2022 CAD. |
-| Fixed and variable operating costs | `cost_fixed.csv`, `cost_variable.csv` | Scenario records; review individual `units`, `notes` and `data_source` fields. |
-| Existing steel capacity | `existing_capacity.csv` | 2020-vintage records; source catalogue notes Global Energy Monitor and some mass-balance extrapolation. |
-| Capacity-to-activity conversion | `capacity_to_activity.csv` | Explicit technology coefficients, including conversions scaled to output units. |
-| Demand | `demand.csv` | Fixed regional rolled-steel demand across 2025–2045, as described above. |
-| Emissions factors | `emission_activity.csv` | Original per-technology input/output/vintage emissions activity records; not flow-derived. |
-| Limits and group shares | `limit_capacity.csv`, `limit_activity.csv`, `limit_activity_share.csv`, and any `limit_emission.csv` | Scenario-defined constraints; absent files/tables may be empty. |
-| Units and source references | Each table's `units`, `notes`, `data_source`, `data_id` and DQI fields | Retained with existing data, not automatically reconciled or re-sourced. |
+| Investment, fixed and variable costs | `data/parameters/costs.json` (31 named values); `data/inputs/economics.json` (technology/year/scenario applicability) | The builder expands shared cost parameters over the specified technologies, vintages and periods. |
+| Process input/output quantities | `data/process_flows/*.csv` (13 processes) | Updated flows recalculate efficiency and annual commodity splits. |
+| Emission activity | `data/parameters/emissions.json` (5 numerical values); `data/inputs/emissions.json` (application) | Explicit assigned coefficients, **not** derived from process-flow ratios. |
+| Existing plant capacity | `data/inputs/operations.json` | Facility-specific 2020-vintage capacity and units where recorded. |
+| Capacity to activity | `data/inputs/operations.json` | Technology-specific activity conversion factors. |
+| Regional demand | `data/inputs/operations.json` | Fixed rolled-steel demand values over model periods. |
+| Capacity, activity, emission and group limits | `data/inputs/operations.json`, `data/inputs/emissions.json` | Explicit per-scenario assumptions; not inferred from flow definitions. |
+| Technology/commodity definitions | `data/inputs/entities.json` | Generated model records and labels. |
+| Network availability and commodity splits | `data/inputs/network.json`, `data/mappings/commodity_bindings.csv` | Arc combinations expanded from declared bindings, then coefficients calculated from flows. |
 
-The workbook reference export also contains entries marked **"Assuming to be 100"** for *scrap variable cost*, *iron pellets* and *iron ore price*, each annotated **"To be replaced by Ola"**. These are source-workbook placeholders, **not proof** that every current scenario CSV still uses 100. Current cost records may differ; review the active scenario tables individually before interpreting or publishing price assumptions.
+The individual cost rules retain the recorded unit labels and cost-basis notes. Some descriptions refer to conversion from a 2010 EUR or USD basis to a 2020/2022 CAD basis. These historical transformations are **not re-evaluated** when a user changes a cost parameter. The user must supply the value on the appropriate model basis.
 
-**Provenance review needed:** The source catalogue describes `S9` as an IEA-ETSAP technology-cost reference and `S4` as World Steel Association production statistics, but at least some investment-cost rows are labelled `data_source = S4`. Those row-level labels should be reconciled before a documentation or model release. The builder preserves the labels as supplied; it does not assume they are correct.
+**Scientific provenance caveat:** Recorded source IDs and technology costs may contain mismatches. For example, `S4` is described as a production-statistics source in model metadata, while some investment-cost rules are tagged `S4`. Review assignments against primary references before interpreting these as independently validated unit costs.
 
 ## 7. Data sources
 
-The following references come from the workbook's *Content and References* sheet and/or the SQLite `data_source` table. These are **recorded source attributions**, not a claim that all underlying numbers have been independently reproduced against the publications.
+The following references are recorded in the model's source metadata and technology notes. These are **recorded source attributions**, not a claim that all underlying numbers have been independently reproduced against the publications.
 
 | Code | Source recorded in the model | Intended use recorded in source metadata |
 |---|---|---|
@@ -160,59 +161,50 @@ The following references come from the workbook's *Content and References* sheet
 | **S6** | Rechberger et al. (2020), [*Green Hydrogen-Based Direct Reduction for Low-Carbon Steelmaking*](https://doi.org/10.1002/srin.202000110). | Onsite powerplant data. |
 | **S7** | Internal work of the Sleep group (unpublished in the supplied metadata). | Electrolyser assumptions; source metadata says publication information will be added later. |
 | **S8** | Azimi & van der Spek (2025); Nurdiawati et al. (2023); IEAGHG (2013). | Blast furnace, BOF and post-processing process data. |
-| **S9** | van Wortswinkel & Nijs (2010), [IEA-ETSAP *Iron and Steel* technology brief](https://iea-etsap.org/E-TechDS/PDF/I02-Iron&Steel-GS-AD-gct.pdf). | Technology costs in source catalogue. |
+| **S9** | van Wortswinkel & Nijs (2010), [IEA-ETSAP *Iron and Steel* technology brief](https://iea-etsap.org/E-TechDS/PDF/I02-Iron&Steel-GS-AD-gct.pdf). | Technology-cost attribution appearing in the model metadata. |
 | **S10** | Hughes et al. (2022), [NETL *Cost of Capturing CO₂ from Industrial Sources*, DOE/NETL-2022/3319](https://www.netl.doe.gov/projects/files/CostofCapturingCO2fromIndustrialSources_071522.pdf). | CCS assumptions. |
 
-Additional source notes in the supplied data include [Trading Economics' Canada steel production series](https://tradingeconomics.com/canada/steel-production) for demand, and the process-by-process attributions in `data/workbook_reference/reference_sources.csv`. See `data/workbook_reference/snapshots/` for the corresponding exported worksheet values. Source references stored in the scenario database are **not** guaranteed to identify every intermediate calculation or the precise workbook cell used.
+Additional model source notes include [Trading Economics' Canada steel production series](https://tradingeconomics.com/canada/steel-production) for demand. The recorded source IDs are retained for traceability, but have not all been independently checked against the underlying publications. Current source descriptions and per-rule attributions are editable in `data/inputs/model_settings.json` and the relevant sector input files.
 
-## 8. Data processing and reproduction
+## 8. Building and changing the dataset
 
-The Python builder separates **editable flow definitions** from **scenario-specific model records**:
+The **package itself is the editable source of truth**:
 
 ```text
-Steel-Updated.xlsx (reference workbook)
-        │
-        ├── data/process_flows/*.csv       # process flows, quantities and units
-        └── data/workbook_reference/*      # archived sheets, costs, source metadata
-
-Original scenario SQLite files
-        └── data/scenarios/{basecase,eaf,ccs,all}/*.csv
-
-Technology mappings + process flows + scenario table CSVs
-        │
-        └── steel_builder.build
-               ├── outputs/CANOE_steel_basecase.sqlite
-               ├── outputs/CANOE_steel_eaf.sqlite
-               ├── outputs/CANOE_steel_ccs.sqlite
-               └── outputs/CANOE_steel_all.sqlite
+data/parameters/costs.json + emissions.json + model.json
+    + data/process_flows/*.csv
+    + data/mappings/*.csv
+    + data/inputs/{entities,economics,emissions,network,operations,model_settings}.json
+    + data/scenarios/*.json
+                    |
+              Python builder
+                    |
+         TEMOA schema.sql (91 tables)
+                    |
+       CANOE_steel_{basecase,eaf,ccs,all}.sqlite
 ```
 
-Run from the package root:
+Run the following commands from the package root:
 
 ```bash
 python -m steel_builder.build
-# Or generate one case:
 python -m steel_builder.build --scenario ccs
+python -m unittest discover -s tests -v
+python -m steel_builder.verify_reference
 ```
 
-The generator recreates the existing **91-table schema**, preserves original non-derived records and table row counts, and **recalculates only** the values in `efficiency`, `limit_tech_input_split_annual`, and `limit_tech_output_split_annual`. It does not calculate technology investment costs, extrapolate emissions, add technologies, or construct commodity edges from scratch. It also does not silently convert units.
+The builder loads internal model definitions, expands shared rules into their target regions, technologies and time periods, then calculates every efficiency and split coefficient from the mapped physical flows. The SQLite databases are **outputs**, not manually maintained master files. Configuration and scientific assumptions can be edited independently.
 
-To change an existing technology's numerical flow assumptions, edit its mapped file in `data/process_flows/`. To create a new technology, also edit the appropriate scenario table CSVs and the explicit technology/commodity mapping files. Refer to the separate `README.md` for operational commands and developer-specific setup; this page describes the **model**, not the command-line interface.
+To introduce a new technology, edit `entities.json`, `mappings/technology.csv`, `mappings/commodity_bindings.csv`, `network.json`, and any applicable economics, operations or emissions records. Future technology families can reuse existing processes and cost profiles. The generator does **not yet invent a fully connected network, capacity constraints or scientifically meaningful cost profile solely from a new flow file**.
 
-## 9. Validation status and known limitations
+## 9. Validation status and limitations
 
-- **Structure:** The four regenerated databases pass SQLite `PRAGMA integrity_check`, preserve the 91 original table definitions and keep non-derived tables unchanged.
-- **Coefficient policy:** All technology efficiencies are now the flow-derived `sum(outputs)/sum(inputs)`. This changes **195 efficiency records in EAF** and **405 in All pathways**, relative to the uploaded reference databases, at a difference threshold of `1e-6`. Base case and CCS have no material changes at that threshold.
-- **Reference discrepancy:** The supplied EAF database contains 123 NG-DRI efficiency rows with an older value of approximately `0.287170233`; applying the NG-DRI flow rule produces approximately `0.441696113`. The generator now uses the flow-derived value.
-- **Referential integrity:** The uploaded reference databases contain pre-existing foreign-key violations (including later-year records despite `time_period` listing only 2020, and some missing quality labels). These are **not fixed** by rebuilding the coefficients. A passing `integrity_check` is not the same as a passing `foreign_key_check`.
-- **Model coverage:** Copper contamination, scrap-quality classes, dilution, and stock turnover/recycling dynamics are **not implemented** in this standalone flow-derived steel module. Any material-stock integration would require separate work.
-- **Scientific interpretation:** Mixed-unit efficiency arithmetic, possible inconsistencies in source labels, incomplete capacity provenance and placeholder cost assumptions require review.
-- **TEMOA solve:** An end-to-end TEMOA optimization/smoke test has **not** been reported for these regenerated databases. Solver feasibility, steel balances, technology choices, costs and emissions must be checked before merging or releasing the module.
+- **Regression:** The v0.4 generated contents of all 91 tables are identical in every scenario to the immediately preceding v0.3 flow-derived model baseline. This is a technical equivalence result, not an independent scientific validation.
+- **Efficiency policy:** All efficiencies use the aggregate `sum(outputs)/sum(inputs)` method, as agreed. Existing values in older databases that used per-input efficiencies are not brought forward.
+- **Physical interpretation:** The flow inputs mix mass, electricity, hydrogen volumes and CCS coefficients, so numerical flow efficiencies need unit-consistency review before physical interpretation. Alias handling also requires care when adding new commodity connections.
+- **Data quality:** Facility capacities, cost units, scenario constraints, provenance tags and source assumptions should be reviewed by domain experts. Cost values are editable but currency/unit conversions are not automated.
+- **Referential integrity:** Missing quality ratings (`dq_cred`, `dq_geog`, `dq_struc`, `dq_tech`, `dq_time`) are stored as SQL `NULL` (v0.5), eliminating data-quality foreign-key findings. Other legacy references, especially years in `time_period` and some data-source IDs, still have unresolved foreign-key inconsistencies. The builder reports them separately from SQLite's `integrity_check`.
+- **TEMOA:** The four rebuilt databases have not yet undergone full solver validation. They should be assessed for feasibility, material balances, costs, emissions and binding constraints before being treated as production-ready.
+- **Scope:** Copper contamination and scrap-quality stock/dilution modeling are not implemented here.
 
-### Recommended release checks
-
-1. Reconcile data-source tags, cost basis and any placeholder prices; document currency year for all relevant cost records.
-2. Validate conversion factors and physically meaningful flow units, especially electricity, hydrogen and CCS.
-3. Resolve existing foreign-key issues without silently changing calibrated model assumptions.
-4. Run and review a TEMOA solve for each scenario, including process choices, production balances, emissions and constraint binding.
-5. Record revisions to process and scenario CSVs alongside corresponding model results.
+This documentation is intended for model interpretation and review. For implementation details and guidance on adapting the approach to another sector, refer to `docs/sector_builder_development.md`.

@@ -1,8 +1,8 @@
-direction,flow_id,amount,unit,source_sheet,source_cell,notes
-in,iron_pellet,1.4718999999999998,t,Blast Furnace,B3,Source workbook cached value; check heterogeneous units before physical interpretation
-in,ironore,0.12529999999999999,t,Blast Furnace,B4,Source workbook cached value; check heterogeneous units before physical interpretation
-in,coke,0.3548,t,Blast Furnace,B5,Source workbook cached value; check heterogeneous units before physical interpretation
-in,elc,0.37331999999999999,GJ,Blast Furnace,B6,Source workbook cached value; check heterogeneous units before physical interpretation
-in,bfgas,0.62820000000000009,t,Blast Furnace,B7,Source workbook cached value; check heterogeneous units before physical interpretation
-out,pigiron,1,t,Blast Furnace,B11,Source workbook cached value; check heterogeneous units before physical interpretation
-out,bfgas,2.1431999999999998,t,Blast Furnace,B12,Source workbook cached value; check heterogeneous units before physical interpretation
+direction,flow_id,amount,unit,notes
+in,iron_pellet,1.4718999999999998,t,Editable steel process-flow assumption; mixed units need scientific review
+in,ironore,0.12529999999999999,t,Editable steel process-flow assumption; mixed units need scientific review
+in,coke,0.3548,t,Editable steel process-flow assumption; mixed units need scientific review
+in,elc,0.37331999999999999,GJ,Editable steel process-flow assumption; mixed units need scientific review
+in,bfgas,0.62820000000000009,t,Editable steel process-flow assumption; mixed units need scientific review
+out,pigiron,1,t,Editable steel process-flow assumption; mixed units need scientific review
+out,bfgas,2.1431999999999998,t,Editable steel process-flow assumption; mixed units need scientific review

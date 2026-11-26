@@ -1,2 +1,0 @@
-data_id,label,version,description,status,author,date,parent_id,changelog,notes
-STEELALLHR001,Steel High resolution - Contains info for all scenarios,v1.0.0,Contains high resolution steel sector for all of Canada,active,David Turnbull - david.turnbull1@ucalgary.ca,2026-10-08,STEELBASEHR001,inital release,\N

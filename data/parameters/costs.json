@@ -1,0 +1,300 @@
+{
+  "description": "Common editable numerical costs. Editing one value updates every matching cost rule and scenario; units and source notes remain attached to each rule in data/inputs/economics.json. Existing near-duplicate values are deliberately separate.",
+  "parameters": {
+    "fixed__basic_oxygen_furnace": {
+      "value": "23.44542961",
+      "description": "Fixed annual operating and maintenance cost — basic oxygen furnace",
+      "examples": [
+        "I_ALG_BOF",
+        "I_DOF_BOF",
+        "I_STELCO_BOF",
+        "I_TINTO_BOF"
+      ]
+    },
+    "fixed__blast_furnace_precision_variant": {
+      "value": "35.844618624",
+      "description": "Fixed annual operating and maintenance cost — blast furnace precision variant",
+      "examples": [
+        "I_DOF_BF",
+        "I_STELCO_BF",
+        "I_TINTO_BF"
+      ]
+    },
+    "fixed__blast_furnace_reference": {
+      "value": "35.8446186",
+      "description": "Fixed annual operating and maintenance cost — blast furnace reference",
+      "examples": [
+        "I_ALG_BF",
+        "I_DOF_BF",
+        "I_STELCO_BF",
+        "I_TINTO_BF"
+      ]
+    },
+    "fixed__carbon_capture_90_percent": {
+      "value": "0.028096264",
+      "description": "Fixed annual operating and maintenance cost — carbon capture 90 percent",
+      "examples": [
+        "I_ALG_CCS_90",
+        "I_DOF_CCS_90",
+        "I_GERDAU_CCS_90",
+        "I_AMM_CCS_90",
+        "I_TINTO_CCS_90"
+      ]
+    },
+    "fixed__carbon_capture_99_percent": {
+      "value": "0.027660528",
+      "description": "Fixed annual operating and maintenance cost — carbon capture 99 percent",
+      "examples": [
+        "I_ALG_CCS_99",
+        "I_DOF_CCS_99",
+        "I_GERDAU_CCS_99",
+        "I_AMM_CCS_99",
+        "I_TINTO_CCS_99"
+      ]
+    },
+    "fixed__coke_oven": {
+      "value": "52.88216854",
+      "description": "Fixed annual operating and maintenance cost — coke oven",
+      "examples": [
+        "I_ALG_CO",
+        "I_DOF_CO",
+        "I_STELCO_CO",
+        "I_TINTO_CO"
+      ]
+    },
+    "fixed__direct_reduced_iron": {
+      "value": "14.98328109",
+      "description": "Fixed annual operating and maintenance cost — direct reduced iron",
+      "examples": [
+        "I_AMM_DRI",
+        "I_DOF_NG_DRI",
+        "I_ALG_H2_DRI",
+        "I_ALG_NG_DRI",
+        "I_DOF_H2_DRI"
+      ]
+    },
+    "fixed__electric_arc_furnace": {
+      "value": "47.94649948",
+      "description": "Fixed annual operating and maintenance cost — electric arc furnace",
+      "examples": [
+        "I_ALG_EAF",
+        "I_DOF_D_EAF",
+        "I_DOF_S_EAF",
+        "I_AMM_EAF",
+        "I_EVRAZ_EAF"
+      ]
+    },
+    "fixed__hydrogen_electrolyser": {
+      "value": "0.042711063",
+      "description": "Fixed annual operating and maintenance cost — hydrogen electrolyser",
+      "examples": [
+        "I_ALG_H2_ELEC",
+        "I_DOF_H2_ELEC",
+        "I_GERDAU_H2_ELEC",
+        "I_AMM_H2_ELEC",
+        "I_TINTO_H2_ELEC"
+      ]
+    },
+    "fixed__on_site_powerplant": {
+      "value": "292.6966538",
+      "description": "Fixed annual operating and maintenance cost — on site powerplant",
+      "examples": [
+        "I_STELCO_PPLANT",
+        "I_TINTO_PPLANT",
+        "I_ALG_PPLANT",
+        "I_DOF_PPLANT"
+      ]
+    },
+    "fixed__steel_postprocessing": {
+      "value": "33.71238245",
+      "description": "Fixed annual operating and maintenance cost — steel postprocessing",
+      "examples": [
+        "I_ALG_EAF_PP",
+        "I_DOF_EAF_PP",
+        "I_ALG_PP",
+        "I_DOF_PP",
+        "I_STELCO_PP"
+      ]
+    },
+    "invest__basic_oxygen_furnace_alt": {
+      "value": "156.3028641",
+      "description": "Capital/investment cost — basic oxygen furnace alt",
+      "examples": [
+        "I_ALG_BOF",
+        "I_DOF_BOF",
+        "I_STELCO_BOF",
+        "I_TINTO_BOF"
+      ]
+    },
+    "invest__basic_oxygen_furnace_reference": {
+      "value": "181.9518381",
+      "description": "Capital/investment cost — basic oxygen furnace reference",
+      "examples": [
+        "I_ALG_BOF",
+        "I_DOF_BOF",
+        "I_STELCO_BOF",
+        "I_TINTO_BOF"
+      ]
+    },
+    "invest__blast_furnace": {
+      "value": "238.964124",
+      "description": "Capital/investment cost — blast furnace",
+      "examples": [
+        "I_ALG_BF",
+        "I_DOF_BF",
+        "I_STELCO_BF",
+        "I_TINTO_BF"
+      ]
+    },
+    "invest__blast_furnace_special": {
+      "value": "238.9641",
+      "description": "Capital/investment cost — blast furnace special",
+      "examples": [
+        "I_ALG_BF"
+      ]
+    },
+    "invest__carbon_capture_90_percent": {
+      "value": "0.449679667",
+      "description": "Capital/investment cost — carbon capture 90 percent",
+      "examples": [
+        "I_ALG_CCS_90",
+        "I_DOF_CCS_90",
+        "I_GERDAU_CCS_90",
+        "I_AMM_CCS_90",
+        "I_TINTO_CCS_90"
+      ]
+    },
+    "invest__carbon_capture_99_percent": {
+      "value": "0.453165556",
+      "description": "Capital/investment cost — carbon capture 99 percent",
+      "examples": [
+        "I_ALG_CCS_99",
+        "I_DOF_CCS_99",
+        "I_GERDAU_CCS_99",
+        "I_AMM_CCS_99",
+        "I_TINTO_CCS_99"
+      ]
+    },
+    "invest__coke_oven": {
+      "value": "352.5477903",
+      "description": "Capital/investment cost — coke oven",
+      "examples": [
+        "I_ALG_CO",
+        "I_DOF_CO",
+        "I_STELCO_CO",
+        "I_TINTO_CO"
+      ]
+    },
+    "invest__direct_reduced_iron": {
+      "value": "299.6656217",
+      "description": "Capital/investment cost — direct reduced iron",
+      "examples": [
+        "I_AMM_DRI",
+        "I_DOF_NG_DRI",
+        "I_ALG_H2_DRI",
+        "I_ALG_NG_DRI",
+        "I_DOF_H2_DRI"
+      ]
+    },
+    "invest__electric_arc_furnace": {
+      "value": "119.8662487",
+      "description": "Capital/investment cost — electric arc furnace",
+      "examples": [
+        "I_ALG_EAF",
+        "I_DOF_D_EAF",
+        "I_DOF_S_EAF",
+        "I_AMM_EAF",
+        "I_EVRAZ_EAF"
+      ]
+    },
+    "invest__hydrogen_electrolyser": {
+      "value": "0.035866084",
+      "description": "Capital/investment cost — hydrogen electrolyser",
+      "examples": [
+        "I_ALG_H2_ELEC",
+        "I_DOF_H2_ELEC",
+        "I_GERDAU_H2_ELEC",
+        "I_AMM_H2_ELEC",
+        "I_TINTO_H2_ELEC"
+      ]
+    },
+    "invest__on_site_powerplant": {
+      "value": "1951.311025",
+      "description": "Capital/investment cost — on site powerplant",
+      "examples": [
+        "I_ALG_PPLANT",
+        "I_DOF_PPLANT",
+        "I_STELCO_PPLANT",
+        "I_TINTO_PPLANT"
+      ]
+    },
+    "invest__steel_postprocessing": {
+      "value": "224.7492163",
+      "description": "Capital/investment cost — steel postprocessing",
+      "examples": [
+        "I_ALG_EAF_PP",
+        "I_DOF_EAF_PP",
+        "I_GERDAU_PP",
+        "I_ALG_PP",
+        "I_DOF_PP"
+      ]
+    },
+    "variable__iron_ore_import_price": {
+      "value": "119.0",
+      "description": "Variable operating or import cost — iron ore import price",
+      "examples": [
+        "F_I_IRONORE"
+      ]
+    },
+    "variable__iron_pellet_import_price": {
+      "value": "191.0",
+      "description": "Variable operating or import cost — iron pellet import price",
+      "examples": [
+        "F_I_IRONPELLET"
+      ]
+    },
+    "variable__met_coal_price_01": {
+      "value": "8.43148538461542",
+      "description": "Variable operating or import cost — met coal price 01",
+      "examples": [
+        "I_IMP_MET_COAL"
+      ]
+    },
+    "variable__met_coal_price_02": {
+      "value": "8.44048098195485",
+      "description": "Variable operating or import cost — met coal price 02",
+      "examples": [
+        "I_IMP_MET_COAL"
+      ]
+    },
+    "variable__met_coal_price_03": {
+      "value": "8.46068746815484",
+      "description": "Variable operating or import cost — met coal price 03",
+      "examples": [
+        "I_IMP_MET_COAL"
+      ]
+    },
+    "variable__met_coal_price_04": {
+      "value": "8.48036187770696",
+      "description": "Variable operating or import cost — met coal price 04",
+      "examples": [
+        "I_IMP_MET_COAL"
+      ]
+    },
+    "variable__met_coal_price_05": {
+      "value": "8.48995168378689",
+      "description": "Variable operating or import cost — met coal price 05",
+      "examples": [
+        "I_IMP_MET_COAL"
+      ]
+    },
+    "variable__scrap_import_price": {
+      "value": "457.0",
+      "description": "Variable operating or import cost — scrap import price",
+      "examples": [
+        "F_I_SCRAP",
+        "F_I_EVRAZ_SCRAP"
+      ]
+    }
+  }
+}
