@@ -1,0 +1,2 @@
+data_id,label,version,description,status,author,date,parent_id,changelog,notes
+STEELCCSHR001,Steel High resolution - CCS scenario,v1.0.0,Contains high resolution steel sector for all of Canada,active,David Turnbull - david.turnbull1@ucalgary.ca,2026-10-08,STEELBASEHR001,Adds in CCS,\N

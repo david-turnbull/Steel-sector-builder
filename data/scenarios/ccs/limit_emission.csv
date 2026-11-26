@@ -1,0 +1,5 @@
+region,period,emis_comm,operator,value,units,notes,data_source,dq_cred,dq_geog,dq_struc,dq_tech,dq_time,data_id
+ON,2030,co2,le,7000.0,\N,\N,\N,\N,\N,\N,\N,\N,STEELBASEHR001
+ON,2035,co2,le,7000.0,\N,\N,\N,\N,\N,\N,\N,\N,STEELBASEHR001
+ON,2040,co2,le,7000.0,\N,\N,\N,\N,\N,\N,\N,\N,STEELBASEHR001
+ON,2045,co2,le,7000.0,\N,\N,\N,\N,\N,\N,\N,\N,STEELBASEHR001

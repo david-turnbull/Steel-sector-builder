@@ -1,0 +1,2 @@
+data_id,label,version,description,status,author,date,parent_id,changelog,notes
+STEELBASEHR001,Steel High resolution - Base case ,v1.0.0,Contains high resolution steel sector for all of Canada,active,David Turnbull - david.turnbull1@ucalgary.ca,2026-10-08,\N,inital release,\N

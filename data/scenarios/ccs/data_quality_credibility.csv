@@ -1,0 +1,6 @@
+dq_cred,description
+1,Excellent - A trustworthy source backed by strong analysis or direct measurements.
+2,Good - Trustworthy source. Partly based on assumptions or imperfect analysis.
+3,"Acceptable - Acceptable source. May rely on many assumptions, shallow analysis, or rough measurement."
+4,Lacking - Questionable or unverified source. Poorly measured or weak analysis.
+5,Unacceptable - No or untrustworthy source. Unsupported assumption.

@@ -1,0 +1,6 @@
+dq_struc,description
+1,"Excellent - Excellent representation of the system, as good or better than other models."
+2,"Good - Well modelled, in line with what others are doing."
+3,Acceptable - Room for improved representation but works for now.
+4,"Lacking - Poorly represented, overly simplified."
+5,Unacceptable - Placeholder or dummy representation. Essentially not represented.

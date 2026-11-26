@@ -1,0 +1,6 @@
+dq_tech,description
+1,Excellent - For the modelled technology as represented. Directly applicable.
+2,Good - For the same general technology but not perfectly representative.
+3,Acceptable - For an analogous technology. Possibly a subset or general class. Roughly applicable.
+4,Lacking - Loosely representative. A niche subset or overbroad general class of the technology.
+5,Unacceptable - For a dissimilar or unknown technology. Unknown or poor applicability.
