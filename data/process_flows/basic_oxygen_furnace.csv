@@ -1,0 +1,9 @@
+direction,flow_id,amount,unit,source_sheet,source_cell,notes
+in,home_scrap,0.073099999999999998,t,Basic Oxygen Furnace,B4,Source workbook cached value; check heterogeneous units before physical interpretation
+in,scrap,0.1169,t,Basic Oxygen Furnace,B5,Source workbook cached value; check heterogeneous units before physical interpretation
+in,pigiron,0.90079999999999993,t,Basic Oxygen Furnace,B6,Source workbook cached value; check heterogeneous units before physical interpretation
+in,elc,0.25416,GJ,Basic Oxygen Furnace,B7,Source workbook cached value; check heterogeneous units before physical interpretation
+out,liq_steel,1,t,Basic Oxygen Furnace,B11,Source workbook cached value; check heterogeneous units before physical interpretation
+out,waste_slag,0.061099999999999995,t,Basic Oxygen Furnace,B12,Source workbook cached value; check heterogeneous units before physical interpretation
+out,export_slag,0.051999999999999998,t,Basic Oxygen Furnace,B13,Source workbook cached value; check heterogeneous units before physical interpretation
+out,bofgas,0.095699999999999993,t,Basic Oxygen Furnace,B14,Source workbook cached value; check heterogeneous units before physical interpretation

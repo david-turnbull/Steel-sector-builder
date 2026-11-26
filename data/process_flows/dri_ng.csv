@@ -1,0 +1,5 @@
+direction,flow_id,amount,unit,source_sheet,source_cell,notes
+in,iron_pellet,1.6100000000000001,t,DRI-NG,B4,Source workbook cached value; check heterogeneous units before physical interpretation
+in,ng,0.23999999999999999,t,DRI-NG,B5,Source workbook cached value; check heterogeneous units before physical interpretation
+in,elc,0.41399999999999998,GJ,DRI-NG,B6,Source workbook cached value; check heterogeneous units before physical interpretation
+out,dri,1,t,DRI-NG,B10,Source workbook cached value; check heterogeneous units before physical interpretation

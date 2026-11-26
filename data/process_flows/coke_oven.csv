@@ -1,0 +1,7 @@
+direction,flow_id,amount,unit,source_sheet,source_cell,notes
+in,coal,1.2851999999999999,t,Coke Oven,B4,Source workbook cached value; check heterogeneous units before physical interpretation
+in,cogas,0.0453,t,Coke Oven,B5,Source workbook cached value; check heterogeneous units before physical interpretation
+in,bfgas,0.59720000000000006,t,Coke Oven,B6,Source workbook cached value; check heterogeneous units before physical interpretation
+in,elc,0.126,GJ,Coke Oven,B7,Source workbook cached value; check heterogeneous units before physical interpretation
+out,cogas,0.18099999999999999,t,Coke Oven,B10,Source workbook cached value; check heterogeneous units before physical interpretation
+out,coke,1,t,Coke Oven,B11,Source workbook cached value; check heterogeneous units before physical interpretation

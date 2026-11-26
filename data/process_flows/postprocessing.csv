@@ -1,0 +1,5 @@
+direction,flow_id,amount,unit,source_sheet,source_cell,notes
+in,liq_steel,1.0862832,t,Postprocessing,B27,Source workbook cached value; check heterogeneous units before physical interpretation
+in,elc,0.41811040799999999,GJ,Postprocessing,B28,Source workbook cached value; check heterogeneous units before physical interpretation
+out,rolled_steel,1,t,Postprocessing,B32,Source workbook cached value; check heterogeneous units before physical interpretation
+out,home_scrap,0.069257079999999999,t,Postprocessing,B33,Source workbook cached value; check heterogeneous units before physical interpretation

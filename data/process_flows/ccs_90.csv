@@ -1,0 +1,4 @@
+direction,flow_id,amount,unit,source_sheet,source_cell,notes
+in,elc,0.00074449341508652379,PJ/kt CO2,CCS,C23,Source workbook cached value; check heterogeneous units before physical interpretation
+in,ng,0.0032709851868990883,PJ/kt CO2,CCS,C24,Source workbook cached value; check heterogeneous units before physical interpretation
+out,co2,0.90000000000000002,fraction,CCS,C28,Source workbook cached value; check heterogeneous units before physical interpretation

@@ -1,0 +1,3 @@
+direction,flow_id,amount,unit,source_sheet,source_cell,notes
+in,elc,12.186,GJ,Electrolyser,D5,Source workbook cached value; check heterogeneous units before physical interpretation
+out,h2,0.74099999999999999,thousands m3,Electrolyser,C9,Source workbook cached value; check heterogeneous units before physical interpretation

@@ -1,0 +1,4 @@
+direction,flow_id,amount,unit,source_sheet,source_cell,notes
+in,bfgas,0.0030699999999999998,t,Powerplant,C6,Source workbook cached value; check heterogeneous units before physical interpretation
+in,bofgas,0.00026000000000000003,t,Powerplant,C7,Source workbook cached value; check heterogeneous units before physical interpretation
+out,elc,0.0035999999999999999,GJ,Powerplant,E10,Source workbook cached value; check heterogeneous units before physical interpretation
