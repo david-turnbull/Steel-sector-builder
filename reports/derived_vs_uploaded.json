@@ -1,0 +1,146 @@
+{
+  "basecase": {
+    "source": "/mnt/data/CANOE_steel_basecase.sqlite",
+    "built": "outputs/CANOE_steel_basecase.sqlite",
+    "different_tables": {
+      "efficiency": {
+        "reference_rows": 1329,
+        "generated_rows": 1329,
+        "reference_only_rows": 1249,
+        "generated_only_rows": 1249,
+        "changed_columns": {
+          "efficiency": 1249
+        }
+      },
+      "limit_tech_input_split_annual": {
+        "reference_rows": 500,
+        "generated_rows": 500,
+        "reference_only_rows": 420,
+        "generated_only_rows": 420,
+        "changed_columns": {
+          "proportion": 420
+        }
+      },
+      "limit_tech_output_split_annual": {
+        "reference_rows": 330,
+        "generated_rows": 330,
+        "reference_only_rows": 290,
+        "generated_only_rows": 290,
+        "changed_columns": {
+          "proportion": 290
+        }
+      }
+    },
+    "same_tables": 88,
+    "source_foreign_key_errors": 9480,
+    "built_foreign_key_errors": 9480
+  },
+  "eaf": {
+    "source": "/mnt/data/CANOE_steel_eaf.sqlite",
+    "built": "outputs/CANOE_steel_eaf.sqlite",
+    "different_tables": {
+      "efficiency": {
+        "reference_rows": 1842,
+        "generated_rows": 1842,
+        "reference_only_rows": 1599,
+        "generated_only_rows": 1599,
+        "changed_columns": {
+          "efficiency": 1599
+        }
+      },
+      "limit_tech_input_split_annual": {
+        "reference_rows": 850,
+        "generated_rows": 850,
+        "reference_only_rows": 720,
+        "generated_only_rows": 720,
+        "changed_columns": {
+          "proportion": 720
+        }
+      },
+      "limit_tech_output_split_annual": {
+        "reference_rows": 440,
+        "generated_rows": 440,
+        "reference_only_rows": 400,
+        "generated_only_rows": 400,
+        "changed_columns": {
+          "proportion": 400
+        }
+      }
+    },
+    "same_tables": 88,
+    "source_foreign_key_errors": 18257,
+    "built_foreign_key_errors": 18257
+  },
+  "ccs": {
+    "source": "/mnt/data/CANOE_steel_ccs.sqlite",
+    "built": "outputs/CANOE_steel_ccs.sqlite",
+    "different_tables": {
+      "efficiency": {
+        "reference_rows": 1493,
+        "generated_rows": 1493,
+        "reference_only_rows": 1409,
+        "generated_only_rows": 1409,
+        "changed_columns": {
+          "efficiency": 1409
+        }
+      },
+      "limit_tech_input_split_annual": {
+        "reference_rows": 660,
+        "generated_rows": 660,
+        "reference_only_rows": 580,
+        "generated_only_rows": 580,
+        "changed_columns": {
+          "proportion": 580
+        }
+      },
+      "limit_tech_output_split_annual": {
+        "reference_rows": 330,
+        "generated_rows": 330,
+        "reference_only_rows": 290,
+        "generated_only_rows": 290,
+        "changed_columns": {
+          "proportion": 290
+        }
+      }
+    },
+    "same_tables": 88,
+    "source_foreign_key_errors": 16772,
+    "built_foreign_key_errors": 16772
+  },
+  "all": {
+    "source": "/mnt/data/CANOE_steel_all.sqlite",
+    "built": "outputs/CANOE_steel_all.sqlite",
+    "different_tables": {
+      "efficiency": {
+        "reference_rows": 2002,
+        "generated_rows": 2002,
+        "reference_only_rows": 1899,
+        "generated_only_rows": 1899,
+        "changed_columns": {
+          "efficiency": 1899
+        }
+      },
+      "limit_tech_input_split_annual": {
+        "reference_rows": 1010,
+        "generated_rows": 1010,
+        "reference_only_rows": 880,
+        "generated_only_rows": 880,
+        "changed_columns": {
+          "proportion": 880
+        }
+      },
+      "limit_tech_output_split_annual": {
+        "reference_rows": 440,
+        "generated_rows": 440,
+        "reference_only_rows": 400,
+        "generated_only_rows": 400,
+        "changed_columns": {
+          "proportion": 400
+        }
+      }
+    },
+    "same_tables": 88,
+    "source_foreign_key_errors": 25028,
+    "built_foreign_key_errors": 25028
+  }
+}

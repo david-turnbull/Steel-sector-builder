@@ -1,0 +1,81 @@
+{
+  "basecase": {
+    "efficiency_materially_changed_rows": 0,
+    "materially_changed_technologies": 0,
+    "largest_change": [
+      5.000000413701855e-10,
+      "I_TINTO_BOF",
+      0.898762788,
+      0.8987627885
+    ],
+    "by_technology": {}
+  },
+  "eaf": {
+    "efficiency_materially_changed_rows": 195,
+    "materially_changed_technologies": 11,
+    "largest_change": [
+      0.41101564119999995,
+      "I_IVACO_EAF",
+      0.868008092,
+      0.4569924508
+    ],
+    "by_technology": {
+      "I_AMM_DRI": 18,
+      "I_DOF_NG_DRI": 15,
+      "I_EVRAZ_EAF": 24,
+      "I_GERDAU_EAF": 24,
+      "I_IVACO_EAF": 24,
+      "I_ALG_NG_DRI": 15,
+      "I_EVRAZ_NG_DRI": 15,
+      "I_GERDAU_NG_DRI": 15,
+      "I_IVACO_NG_DRI": 15,
+      "I_STELCO_NG_DRI": 15,
+      "I_TINTO_NG_DRI": 15
+    }
+  },
+  "ccs": {
+    "efficiency_materially_changed_rows": 0,
+    "materially_changed_technologies": 0,
+    "largest_change": [
+      4.480000370676862e-08,
+      "I_TINTO_CCS_90",
+      224.1326848,
+      224.1326848448
+    ],
+    "by_technology": {}
+  },
+  "all": {
+    "efficiency_materially_changed_rows": 405,
+    "materially_changed_technologies": 22,
+    "largest_change": [
+      9.1362126248,
+      "I_TINTO_H2_DRI",
+      9.523809524,
+      0.3875968992
+    ],
+    "by_technology": {
+      "I_DOF_NG_DRI": 15,
+      "I_DOF_D_EAF": 20,
+      "I_ALG_H2_DRI": 20,
+      "I_ALG_NG_DRI": 15,
+      "I_ALG_D_EAF": 20,
+      "I_AMM_H2_DRI": 20,
+      "I_DOF_H2_DRI": 20,
+      "I_EVRAZ_D_EAF": 20,
+      "I_EVRAZ_H2_DRI": 20,
+      "I_EVRAZ_NG_DRI": 15,
+      "I_GERDAU_D_EAF": 20,
+      "I_GERDAU_NG_DRI": 15,
+      "I_GERDAU_H2_DRI": 20,
+      "I_IVACO_D_EAF": 20,
+      "I_IVACO_H2_DRI": 20,
+      "I_IVACO_NG_DRI": 15,
+      "I_STELCO_D_EAF": 20,
+      "I_STELCO_H2_DRI": 20,
+      "I_STELCO_NG_DRI": 15,
+      "I_TINTO_D_EAF": 20,
+      "I_TINTO_H2_DRI": 20,
+      "I_TINTO_NG_DRI": 15
+    }
+  }
+}
