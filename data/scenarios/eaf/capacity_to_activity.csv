@@ -1,0 +1,43 @@
+region,tech,c2a,units,notes,data_source,dq_cred,dq_geog,dq_struc,dq_tech,dq_time,data_id
+QC,I_AMM_PP,1.06925708,\N,Scaled to amount of output based on 1 MT of desired output,\N,\N,\N,\N,\N,\N,STEELBASEHR001
+QC,I_AMM_EAF,1.011643297,\N,Scaled to amount of output based on 1 MT of desired output,\N,\N,\N,\N,\N,\N,STEELBASEHR001
+ON,I_ALG_BF,3.602,\N,Scaled to amount of output based on 1 MT of desired output,\N,\N,\N,\N,\N,\N,STEELBASEHR001
+ON,I_ALG_BOF,1.2088,\N,Scaled to amount of output based on 1 MT of desired output,\N,\N,\N,\N,\N,\N,STEELBASEHR001
+ON,I_ALG_CO,1.181,\N,Scaled to amount of output based on 1 MT of desired output,\N,\N,\N,\N,\N,\N,STEELBASEHR001
+ON,I_ALG_PP,1.06925708,\N,Scaled to amount of output based on 1 MT of desired output,\N,\N,\N,\N,\N,\N,STEELBASEHR001
+ON,I_ALG_PPLANT,31.536,\N,PJ/GWy,\N,\N,\N,\N,\N,\N,STEELBASEHR001
+ON,I_ALG_EAF,1.2348,\N,Scaled to amount of output based on 1 MT of desired output,\N,\N,\N,\N,\N,\N,STEELBASEHR001
+ON,I_ALG_EAF_PP,1.06925708,\N,Scaled to amount of output based on 1 MT of desired output,\N,\N,\N,\N,\N,\N,STEELBASEHR001
+ON,I_DOF_BF,3.602,\N,Scaled to amount of output based on 1 MT of desired output,\N,\N,\N,\N,\N,\N,STEELBASEHR001
+ON,I_DOF_BOF,1.2088,\N,Scaled to amount of output based on 1 MT of desired output,\N,\N,\N,\N,\N,\N,STEELBASEHR001
+ON,I_DOF_CO,1.181,\N,Scaled to amount of output based on 1 MT of desired output,\N,\N,\N,\N,\N,\N,STEELBASEHR001
+ON,I_DOF_PP,1.06925708,\N,Scaled to amount of output based on 1 MT of desired output,\N,\N,\N,\N,\N,\N,STEELBASEHR001
+ON,I_DOF_PPLANT,31.536,\N,PJ/GWy,\N,\N,\N,\N,\N,\N,STEELBASEHR001
+ON,I_DOF_S_EAF,1.2348,\N,Scaled to amount of output based on 1 MT of desired output,\N,\N,\N,\N,\N,\N,STEELBASEHR001
+ON,I_DOF_EAF_PP,1.06925708,\N,Scaled to amount of output based on 1 MT of desired output,\N,\N,\N,\N,\N,\N,STEELBASEHR001
+ON,I_DOF_D_EAF,1.011643297,\N,Scaled to amount of output based on 1 MT of desired output,\N,\N,\N,\N,\N,\N,STEELBASEHR001
+SK,I_EVRAZ_EAF,1.2348,\N,Scaled to amount of output based on 1 MT of desired output,\N,\N,\N,\N,\N,\N,STEELBASEHR001
+SK,I_EVRAZ_PP,1.06925708,\N,Scaled to amount of output based on 1 MT of desired output,\N,\N,\N,\N,\N,\N,STEELBASEHR001
+ON,I_GERDAU_EAF,1.2348,\N,Scaled to amount of output based on 1 MT of desired output,\N,\N,\N,\N,\N,\N,STEELBASEHR001
+ON,I_GERDAU_PP,1.06925708,\N,Scaled to amount of output based on 1 MT of desired output,\N,\N,\N,\N,\N,\N,STEELBASEHR001
+ON,I_IVACO_EAF,1.2348,\N,Scaled to amount of output based on 1 MT of desired output,\N,\N,\N,\N,\N,\N,STEELBASEHR001
+ON,I_IVACO_PP,1.06925708,\N,Scaled to amount of output based on 1 MT of desired output,\N,\N,\N,\N,\N,\N,STEELBASEHR001
+ON,I_STELCO_BF,3.602,\N,Scaled to amount of output based on 1 MT of desired output,\N,\N,\N,\N,\N,\N,STEELBASEHR001
+ON,I_STELCO_BOF,1.2088,\N,Scaled to amount of output based on 1 MT of desired output,\N,\N,\N,\N,\N,\N,STEELBASEHR001
+ON,I_STELCO_CO,1.181,\N,Scaled to amount of output based on 1 MT of desired output,\N,\N,\N,\N,\N,\N,STEELBASEHR001
+ON,I_STELCO_PP,1.06925708,\N,Scaled to amount of output based on 1 MT of desired output,\N,\N,\N,\N,\N,\N,STEELBASEHR001
+ON,I_STELCO_PPLANT,31.536,\N,PJ/GWy,\N,\N,\N,\N,\N,\N,STEELBASEHR001
+QC,I_TINTO_BF,3.602,\N,Scaled to amount of output based on 1 MT of desired output,\N,\N,\N,\N,\N,\N,STEELBASEHR001
+QC,I_TINTO_BOF,1.2088,\N,Scaled to amount of output based on 1 MT of desired output,\N,\N,\N,\N,\N,\N,STEELBASEHR001
+QC,I_TINTO_CO,1.181,\N,Scaled to amount of output based on 1 MT of desired output,\N,\N,\N,\N,\N,\N,STEELBASEHR001
+QC,I_TINTO_PP,1.06925708,\N,Scaled to amount of output based on 1 MT of desired output,\N,\N,\N,\N,\N,\N,STEELBASEHR001
+QC,I_TINTO_PPLANT,31.536,\N,PJ/GWy,\N,\N,\N,\N,\N,\N,STEELBASEHR001
+QC,I_AMM_S_EAF,1.2348,\N,Scaled to amount of output based on 1 MT of desired output,\N,\N,\N,\N,\N,\N,STEELBASEHR001
+QC,I_TINTO_D_EAF,1.011643297,\N,Scaled to amount of output based on 1 MT of desired output,\N,\N,\N,\N,\N,\N,STEELBASEHR001
+QC,I_TINTO_S_EAF,1.2348,\N,Scaled to amount of output based on 1 MT of desired output,\N,\N,\N,\N,\N,\N,STEELBASEHR001
+ON,I_IVACO_D_EAF,1.011643297,\N,Scaled to amount of output based on 1 MT of desired output,\N,\N,\N,\N,\N,\N,STEELBASEHR001
+ON,I_GERDAU_D_EAF,1.011643297,\N,Scaled to amount of output based on 1 MT of desired output,\N,\N,\N,\N,\N,\N,STEELBASEHR001
+SK,I_EVRAZ_D_EAF,1.011643297,\N,Scaled to amount of output based on 1 MT of desired output,\N,\N,\N,\N,\N,\N,STEELBASEHR001
+ON,I_ALG_D_EAF,1.011643297,\N,Scaled to amount of output based on 1 MT of desired output,\N,\N,\N,\N,\N,\N,STEELBASEHR001
+ON,I_STELCO_D_EAF,1.011643297,\N,Scaled to amount of output based on 1 MT of desired output,\N,\N,\N,\N,\N,\N,STEELBASEHR001
+ON,I_STELCO_S_EAF,1.2348,\N,Scaled to amount of output based on 1 MT of desired output,\N,\N,\N,\N,\N,\N,STEELBASEHR001

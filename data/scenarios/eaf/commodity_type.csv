@@ -1,0 +1,9 @@
+label,description
+s,source commodity
+a,annual commodity
+p,physical commodity
+d,demand commodity
+e,emissions commodity
+w,waste commodity
+wa,waste annual commodity
+wp,waste physical commodity

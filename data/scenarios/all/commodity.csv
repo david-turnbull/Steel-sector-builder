@@ -1,0 +1,86 @@
+name,flag,description,units,data_id
+I_amm_scrap,wa,Scrap being made within the AM Montreal site,\N,STEELALLHR001
+I_ethos,s,Supply for industry specific commodities,\N,STEELALLHR001
+I_rolled_steel,d,End demand of rolled steel ,\N,STEELALLHR001
+I_amm_dri,a,Direct reduced iron (DRI) that was produced on the AM Montreal site,\N,STEELALLHR001
+I_amm_crude_steel,a,Crude steel made on the AM Montreal site,\N,STEELALLHR001
+I_amm_slag,w,Slag that was produced on the AM Montreal site,\N,STEELALLHR001
+I_iron_pellet,a,Commercial grade iron pellets (assumed same quality for DRI and BF >60% iron content),\N,STEELALLHR001
+I_alg_cogas,wa,Coke oven gas generated at the Algoma site,\N,STEELALLHR001
+I_alg_pigiron,wa,Pigiron generated at the Algoma site,\N,STEELALLHR001
+I_alg_coke,a,Coke generated at the algoma site,\N,STEELALLHR001
+I_alg_crude_steel,wa,Crude steel generated through a BOF furnace at the Algoma site,\N,STEELALLHR001
+I_alg_scrap,a,Merchant scrap being used by the Algoma site,\N,STEELALLHR001
+F_iron_pellet,a,The fuel sector representation of iron pellets,\N,STEELALLHR001
+F_ironore,a,Fuel sector representation of iron ore,\N,STEELALLHR001
+I_ironore,a,"Ironore used by Blast Furnaces, assumed to be a lower quality than iron pellets",\N,STEELALLHR001
+F_scrap,a,Fuel sector representation of merchant scrap,\N,STEELALLHR001
+I_alg_homescrap,wa,Scrap produced on site at the Algoma site,\N,STEELALLHR001
+I_alg_wasteslag,w,Slag to be sent to waste processing from Algoma site,\N,STEELALLHR001
+I_alg_slag,w,Slag to be exported produced at the Algoma site,\N,STEELALLHR001
+I_alg_bfgas,wa,Blast Furnace gas produced at the Algoma site,\N,STEELALLHR001
+I_alg_bof_gas,wa,Basic oxygen furnace gas produced at the Algoma site,\N,STEELALLHR001
+I_alg_eaf_crude_steel,a,Crude steel produced through electric arc furnace at the algoma site,\N,STEELALLHR001
+I_alg_elc,a,Electricity produced at the Algoma site,\N,STEELALLHR001
+I_dof_cogas,wa,Coke Oven gas generated at the AM Dofasco site,\N,STEELALLHR001
+I_dof_pigiron,wa,Pigiron  generated at the AM Dofasco site,\N,STEELALLHR001
+I_dof_coke,a,Coke generated at the AM Dofasco site,\N,STEELALLHR001
+I_dof_crude_steel,wa,Crude steel from a basic oxygen furnace generated at the AM Dofasco site,\N,STEELALLHR001
+I_dof_scrap,a,Merchant scrap being used by the AM Dofasco site,\N,STEELALLHR001
+I_dof_homescrap,wa,Homescrap generated at the AM Dofasco site,\N,STEELALLHR001
+I_dof_wasteslag,w,Slag to be sent to waste generated at the AM Dofasco site,\N,STEELALLHR001
+I_dof_slag,w,Slag to be exported generated at the AM Dofasco site,\N,STEELALLHR001
+I_dof_bfgas,wa,Blast furnace gas generated at the AM Dofasco site,\N,STEELALLHR001
+I_dof_bof_gas,wa,Basic oxygen furnace gas generated at the AM Dofasco site,\N,STEELALLHR001
+I_dof_eaf_crude_steel,a,Crude steel from an electric arc furnace generated at the AM Dofasco site,\N,STEELALLHR001
+I_dof_dri,a,Direct reduced iron (DRI) generated at the AM Dofasco site,\N,STEELALLHR001
+I_evraz_scrap,a,Merchant scrap at the Evraz site,\N,STEELALLHR001
+I_evraz_crude_steel,a,Crude steel generated at the Evraz site,\N,STEELALLHR001
+I_evraz_slag,w,Slag that was generated at the Evraz site,\N,STEELALLHR001
+I_gerdau_scrap,a,Merchant scrap at the Gerdau site,\N,STEELALLHR001
+I_gerdau_crude_steel,a,Crude steel generated at the Gerdau site,\N,STEELALLHR001
+I_gerdau_slag,w,Slag that was generated at the Gerdau site,\N,STEELALLHR001
+I_ivaco_scrap,a,Merchant scrap at the Ivaco site,\N,STEELALLHR001
+I_ivaco_crude_steel,a,Crude steel generated at the Ivaco site,\N,STEELALLHR001
+I_ivaco_slag,w,Slag generated at the Ivaco site,\N,STEELALLHR001
+I_stelco_cogas,wa,Coke oven gas generated at the Stelco site,\N,STEELALLHR001
+I_stelco_pigiron,wa,Pigiron generated at the Stelco site,\N,STEELALLHR001
+I_stelco_coke,a,Coke generated at the Stelco site,\N,STEELALLHR001
+I_stelco_crude_steel,wa,Crude steel generated at the Stelco site,\N,STEELALLHR001
+I_stelco_scrap,a,Merchant scrap being used at the Stelco site,\N,STEELALLHR001
+I_stelco_homescrap,wa,Home scrap generated at the Stelco site,\N,STEELALLHR001
+I_stelco_wasteslag,w,Slag to be sent to waste generated at the Stelco site,\N,STEELALLHR001
+I_stelco_slag,w,Slag to be exported generated at the Stelco site,\N,STEELALLHR001
+I_stelco_bfgas,wa,Blast furnace gas generated at the Stelco site,\N,STEELALLHR001
+I_stelco_bof_gas,wa,Basic oxygen furnace gas generated at the Stelco site,\N,STEELALLHR001
+I_stelco_elc,a,Electricity generated at the Stelco site,\N,STEELALLHR001
+I_tinto_cogas,wa,Coke oven gas generated at the Rio Tinto site,\N,STEELALLHR001
+I_tinto_pigiron,wa,Pigiron generated at the Rio Tinto site,\N,STEELALLHR001
+I_tinto_coke,a,Coke generated at the Rio Tinto site,\N,STEELALLHR001
+I_tinto_crude_steel,wa,Crude steel generated at the Rio Tinto site,\N,STEELALLHR001
+I_tinto_scrap,a,Merchant scrap used at the Rio Tinto site,\N,STEELALLHR001
+I_tinto_homescrap,wa,Home scrap generated at the Rio Tinto site,\N,STEELALLHR001
+I_tinto_wasteslag,w,Slag to be sent to waste generated at the Rio Tinto site,\N,STEELALLHR001
+I_tinto_slag,w,Slag to be exported generated at the Rio Tinto site,\N,STEELALLHR001
+I_tinto_bfgas,wa,Blast Furnace gas generated at the Rio Tinto site,\N,STEELALLHR001
+I_tinto_bof_gas,wa,Basic oxygen furnace gas generated at the Rio Tinto site,\N,STEELALLHR001
+I_tinto_elc,a,Electricity generated at the Rio Tinto site,\N,STEELALLHR001
+I_dof_elc,a,Electricity generated at the AM Dofasco site,\N,STEELALLHR001
+I_ivaco_dri,a,Direct reduced iron (DRI) that was produced on the Ivaco site,\N,STEELALLHR001
+I_gerdau_dri,a,Direct reduced iron (DRI)  that was produced on the Gerdau site,\N,STEELALLHR001
+I_stelco_dri,a,Direct reduced iron (DRI)  that was produced on the Stelco Site,\N,STEELALLHR001
+I_tinto_dri,a,Direct reduced iron (DRI)  that was produced on the Rio Tinto site,\N,STEELALLHR001
+I_evraz_dri,a,Direct reduced iron (DRI)  that was produced on the Evraz site,\N,STEELALLHR001
+I_alg_dri,a,Direct reduced iron (DRI)  that was produced on the Algoma site,\N,STEELALLHR001
+I_dof_h2,a,Hydrogen produced on the Dofasco site,\N,STEELALLHR001
+I_alg_h2,a,Hydrogen produced on the Algoma site,\N,STEELALLHR001
+I_gerdau_h2,a,Hydrogen produced on the Gerdau site,\N,STEELALLHR001
+I_ivaco_h2,a,Hydrogen produced on the Ivaco site,\N,STEELALLHR001
+I_amm_h2,a,Hydrogen produced on the  AM Montreal site,\N,STEELALLHR001
+I_tinto_h2,a,Hydrogen produced on the Rio Tinto Site,\N,STEELALLHR001
+I_stelco_h2,a,Hydrogen produced on the Stelco site,\N,STEELALLHR001
+I_evraz_h2,a,Hydrogen produced on the Evraz site,\N,STEELALLHR001
+I_stelco_eaf_crude_steel,a,Crude steel from the EAF route produced at the Stelco site,\N,STEELALLHR001
+I_tinto_eaf_crude_steel,a,Crude steel from the EAF route produced at the Rio Tinto Site,\N,STEELALLHR001
+I_met_coal,a,Metallurgical Coal,\N,STEELALLHR001
+co2_ccs,w,CO2 being captured,\N,STEELALLHR001
