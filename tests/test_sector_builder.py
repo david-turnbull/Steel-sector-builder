@@ -147,10 +147,82 @@ class SectorBuilderTests(unittest.TestCase):
         self.assertEqual({(x['vintage'],x['period']) for x in rows},
             {('2020','2025'),('2020','2030'),('2020','2035'),('2030','2030'),('2030','2035')})
 
+    def test_limit_table_counts_and_legacy_values(self):
+        """All supplied limit tables are preserved with no new scenario constraints."""
+        expected={'basecase':(80,90,15,0,500,330),
+                  'eaf':(0,40,15,0,850,440),
+                  'ccs':(0,40,15,4,660,330),
+                  'all':(0,40,15,0,1010,440)}
+        for scenario,counts in expected.items():
+            with tempfile.TemporaryDirectory() as d:
+                db=Path(d)/'sector.sqlite';report=build_one(DATA,scenario,db)
+                self.assertEqual(report['limit_validation']['populated_tables'], 5 if scenario in ('basecase','ccs') else 4)
+                with closing(sqlite3.connect(db)) as c:
+                    values=tuple(c.execute(f'SELECT COUNT(*) FROM {table}').fetchone()[0]
+                         for table in ('limit_activity','limit_capacity','limit_activity_share',
+                                       'limit_emission','limit_tech_input_split_annual',
+                                       'limit_tech_output_split_annual'))
+                    self.assertEqual(values,counts)
+
+    def test_activity_bounds_follow_editable_capacity_and_ratio(self):
+        with tempfile.TemporaryDirectory() as d:
+            data=Path(d)/'data';clone(data)
+            path=data/'inputs/limits.json';config=json.loads(path.read_text())
+            for rule in config['tables']['limit_capacity']['rules']:
+                if 'I_ALG_EAF_PP' in rule.get('axes',{}).get('tech_or_group',[]):
+                    rule['values']['capacity']='4.0'
+                    break
+            else: self.fail('Algoma finishing capacity bound missing')
+            write_json(path,config)
+            param_file=data/'parameters/limits.json';params=json.loads(param_file.read_text())
+            params['parameters']['activity_min_capacity_ratio__algoma']['value']='0.7'
+            params['parameters']['activity_max_capacity_ratio__algoma']['value']='0.8'
+            write_json(param_file,params)
+            db=Path(d)/'modified.sqlite';build_one(data,'basecase',db)
+            with closing(sqlite3.connect(db)) as c:
+                for op,expected in (('ge',2.8),('le',3.2)):
+                    result=c.execute("SELECT activity FROM limit_activity WHERE tech_or_group='I_ALG_EAF_PP' AND period=2035 AND operator=?",(op,)).fetchone()[0]
+                    self.assertAlmostEqual(result,expected)
+                self.assertAlmostEqual(c.execute("SELECT activity FROM limit_activity WHERE tech_or_group='I_AMM_PP' AND period=2035 AND operator='ge'").fetchone()[0],2.052973594)
+                self.assertEqual(c.execute('SELECT COUNT(*) FROM limit_activity').fetchone()[0],80)
+
+    def test_invalid_activity_constraints_fail_safely(self):
+        with tempfile.TemporaryDirectory() as d:
+            data=Path(d)/'data';clone(data)
+            db=Path(d)/'good.sqlite';db.write_bytes(b'last-good-content')
+            param_file=data/'parameters/limits.json';params=json.loads(param_file.read_text())
+            params['parameters']['activity_min_capacity_ratio__algoma']['value']='0.99'
+            params['parameters']['activity_max_capacity_ratio__algoma']['value']='0.8'
+            write_json(param_file,params)
+            with self.assertRaisesRegex(ValueError,'conflicting activity/capacity bounds'):
+                build_one(data,'basecase',db)
+            self.assertEqual(db.read_bytes(),b'last-good-content')
+
+    def test_missing_capacity_constraint_fails_explicitly(self):
+        with tempfile.TemporaryDirectory() as d:
+            data=Path(d)/'data';clone(data)
+            file=data/'inputs/limits.json';config=json.loads(file.read_text())
+            for rule in config['tables']['limit_capacity']['rules']:
+                if 'I_ALG_EAF_PP' in rule.get('axes',{}).get('tech_or_group',[]):
+                    rule['values']['operator']='le'
+                    break
+            write_json(file,config)
+            with self.assertRaisesRegex(ValueError,'expected exactly one capacity constraint'):
+                build_one(data,'basecase',Path(d)/'bad.sqlite')
+
+    def test_limits_are_authoritative_not_duplicated_in_other_inputs(self):
+        limit_tables={name for name in json.loads((DATA/'inputs/limits.json').read_text())['tables']}
+        self.assertEqual(limit_tables,{
+            'limit_activity','limit_capacity','limit_activity_share','limit_emission',
+            'limit_tech_input_split_annual','limit_tech_output_split_annual'})
+        for path in (DATA/'inputs').glob('*.json'):
+            if path.name=='limits.json':continue
+            self.assertFalse(any(t.startswith('limit_') for t in json.loads(path.read_text())['tables']))
+
     def test_no_external_model_inputs_or_table_catalog(self):
         self.assertFalse((DATA/'catalog').exists())
         self.assertFalse((DATA/'workbook_reference').exists())
-        self.assertEqual(len(list((DATA/'inputs').glob('*.json'))),6)
+        self.assertEqual(len(list((DATA/'inputs').glob('*.json'))),7)
         for folder in ('data','steel_builder','docs'):
             for path in (ROOT/folder).rglob('*'):
                 if path.is_file() and path.suffix in ('.py','.json','.md','.csv'):

@@ -1,0 +1,29 @@
+{
+  "description": "Editable bounds for derived activity limits. Ratios are based on patterns in the uploaded steel-sector limits and should be scientifically reviewed.",
+  "parameters": {
+    "activity_min_capacity_ratio__standard": {
+      "value": "0.855405663988",
+      "description": "Observed base-case min activity / equal-capacity bound for standard finishing group. This is a numeric pattern in model data, not an independently validated utilization rate.",
+      "units": "activity units per constrained-capacity unit",
+      "basis": "Calculated from basecase 2025 limits; applies to all modeled periods. Adjust after scientific review."
+    },
+    "activity_max_capacity_ratio__standard": {
+      "value": "0.9088685181",
+      "description": "Observed base-case max activity / equal-capacity bound for standard finishing group. This is a numeric pattern in model data, not an independently validated utilization rate.",
+      "units": "activity units per constrained-capacity unit",
+      "basis": "Calculated from basecase 2025 limits; applies to all modeled periods. Adjust after scientific review."
+    },
+    "activity_min_capacity_ratio__algoma": {
+      "value": "0.739810304054",
+      "description": "Observed base-case min activity / equal-capacity bound for algoma finishing group. This is a numeric pattern in model data, not an independently validated utilization rate.",
+      "units": "activity units per constrained-capacity unit",
+      "basis": "Calculated from basecase 2025 limits; applies to all modeled periods. Adjust after scientific review."
+    },
+    "activity_max_capacity_ratio__algoma": {
+      "value": "0.786048448108",
+      "description": "Observed base-case max activity / equal-capacity bound for algoma finishing group. This is a numeric pattern in model data, not an independently validated utilization rate.",
+      "units": "activity units per constrained-capacity unit",
+      "basis": "Calculated from basecase 2025 limits; applies to all modeled periods. Adjust after scientific review."
+    }
+  }
+}

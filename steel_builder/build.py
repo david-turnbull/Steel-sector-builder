@@ -11,6 +11,7 @@ from collections import defaultdict
 from pathlib import Path
 from .model import load_model
 from .flows import load_process_flows, computed
+from .limits import validate_limits
 
 SCENARIOS=['basecase','eaf','ccs','all']
 
@@ -99,6 +100,7 @@ def build_one(data:Path,scenario:str,output:Path, *, enforce_reference_counts:bo
         conn=load_model(data,scenario,tmp)
         try:
             report=derive(conn,data,scenario)
+            report['limit_validation']=validate_limits(conn)
             integrity=conn.execute('PRAGMA integrity_check').fetchone()[0]
             if integrity!='ok':raise ValueError(f'SQLite integrity check failed: {integrity}')
             report['scenario']=scenario

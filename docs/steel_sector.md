@@ -139,7 +139,7 @@ All assumptions are **internal editable inputs**, not external file lookups. The
 | Existing plant capacity | `data/inputs/operations.json` | Facility-specific 2020-vintage capacity and units where recorded. |
 | Capacity to activity | `data/inputs/operations.json` | Technology-specific activity conversion factors. |
 | Regional demand | `data/inputs/operations.json` | Fixed rolled-steel demand values over model periods. |
-| Capacity, activity, emission and group limits | `data/inputs/operations.json`, `data/inputs/emissions.json` | Explicit per-scenario assumptions; not inferred from flow definitions. |
+| Capacity, activity, emission and group limits | `data/inputs/limits.json`, `data/parameters/limits.json` | Scenario rules; base-case activity bounds reference equal-capacity constraints. Ratios reflect an observed model pattern, not validated utilization factors. |
 | Technology/commodity definitions | `data/inputs/entities.json` | Generated model records and labels. |
 | Network availability and commodity splits | `data/inputs/network.json`, `data/mappings/commodity_bindings.csv` | Arc combinations expanded from declared bindings, then coefficients calculated from flows. |
 
@@ -208,3 +208,7 @@ To introduce a new technology, edit `entities.json`, `mappings/technology.csv`, 
 - **Scope:** Copper contamination and scrap-quality stock/dilution modeling are not implemented here.
 
 This documentation is intended for model interpretation and review. For implementation details and guidance on adapting the approach to another sector, refer to `docs/sector_builder_development.md`.
+
+### Editable scenario limits (v0.6)
+
+All populated TEMOA `limit_*` definitions are in `data/inputs/limits.json`. Base-case `limit_activity` values are calculated by multiplying matching equality (`e`) `limit_capacity` records by one of four editable ratios, selected for the seven standard finishing technologies or `I_ALG_EAF_PP`, separately for the minimum (`ge`) and maximum (`le`) activity. This reproduces the supplied limits without introducing new constraints. No activity limit is introduced for the EAF, CCS or All scenarios. The 15 activity-share rows in every scenario remain explicit facility-group requirements; the four Ontario CO₂ limits apply only to CCS. The two annual commodity-split tables are derived from physical process flows; all other `limit_*` tables are intentionally empty. See `docs/limits.md` for editing details.

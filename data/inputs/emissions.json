@@ -7188,37 +7188,6 @@
           }
         }
       ]
-    },
-    "limit_emission": {
-      "defaults": {
-        "region": "ON",
-        "emis_comm": "co2",
-        "operator": "le",
-        "value": "7000.0",
-        "units": null,
-        "notes": null,
-        "data_source": null,
-        "dq_cred": null,
-        "dq_geog": null,
-        "dq_struc": null,
-        "dq_tech": null,
-        "dq_time": null,
-        "data_id": "STEELBASEHR001"
-      },
-      "rules": [
-        {
-          "scenarios": "ccs",
-          "axes": {
-            "period": [
-              "2030",
-              "2035",
-              "2040",
-              "2045"
-            ]
-          },
-          "values": {}
-        }
-      ]
     }
   }
 }

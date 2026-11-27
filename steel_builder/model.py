@@ -131,7 +131,7 @@ def load_model(data:Path,scenario:str,destination:Path) -> sqlite3.Connection:
         if not model_periods or len(set(model_periods))!=len(model_periods) or not all(y.isdecimal() for y in model_periods):
             raise ValueError('Invalid operating_periods in parameters/model.json')
         parameters={}
-        for kind in ('costs','emissions'):
+        for kind in ('costs','emissions','limits'):
             path=data/'parameters'/f'{kind}.json'
             for key,entry in json.loads(path.read_text(encoding='utf-8'))['parameters'].items():
                 if key in parameters:raise ValueError(f'Duplicate parameter {key}')
@@ -162,7 +162,32 @@ def load_model(data:Path,scenario:str,destination:Path) -> sqlite3.Connection:
                         normalize_data_quality(table, row)
                         if set(row)!=set(columns):
                             raise ValueError(f'{path.name}:{table} rule {idx}: invalid fields; missing {set(columns)-set(row)}; extra {set(row)-set(columns)}')
-                        batch.append(tuple(config['data_id'] if row[c]=='${SCENARIO_DATA_ID}' else row[c] for c in columns))
+                        # Resolve scenario data ID before looking up an equal-capacity bound.
+                        row={c:(config['data_id'] if value=='${SCENARIO_DATA_ID}' else value)
+                             for c,value in row.items()}
+                        for field,value in list(row.items()):
+                            if isinstance(value,dict) and set(value)=={'capacity_multiplier'}:
+                                if table!='limit_activity' or field!='activity':
+                                    raise ValueError('capacity_multiplier is only supported for limit_activity.activity')
+                                settings=value['capacity_multiplier']
+                                factor_name=settings['parameter']
+                                if factor_name not in parameters:
+                                    raise ValueError(f'{table}: undefined model parameter {factor_name}')
+                                factor=float(parameters[factor_name])
+                                if not (0<=factor< float('inf')):
+                                    raise ValueError(f'Invalid capacity multiplier {factor_name}: {factor}')
+                                cap_rows=conn.execute('SELECT capacity FROM limit_capacity WHERE region=? AND period=? AND tech_or_group=? AND operator=? AND data_id=?',
+                                    (row['region'],row['period'],row['tech_or_group'],
+                                     settings.get('capacity_operator','e'),row['data_id'])).fetchall()
+                                if len(cap_rows)!=1:
+                                    raise ValueError(f'{table}: expected exactly one capacity constraint for '
+                                        f"{row['region']}/{row['period']}/{row['tech_or_group']}"
+                                        f' but found {len(cap_rows)}')
+                                capacity=float(cap_rows[0][0])
+                                if capacity<0 or not capacity<float('inf'):
+                                    raise ValueError(f'Invalid base capacity {capacity}')
+                                row[field]=round(capacity*factor,9)
+                        batch.append(tuple(row[c] for c in columns))
                 if batch:conn.executemany(query,batch)
         essential={'technology','commodity','efficiency','cost_invest','cost_fixed'}
         if not essential<=seen:raise ValueError(f'Missing required model definitions: {essential-seen}')

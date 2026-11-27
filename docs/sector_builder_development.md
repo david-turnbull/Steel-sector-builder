@@ -12,7 +12,7 @@ The steel implementation separates:
 1. **Physical process definitions:** `data/process_flows/` CSVs (amount, direction and unit).
 2. **Commodity topology:** `data/mappings/technology.csv` and `commodity_bindings.csv`.
 3. **Shared numerical parameters:** `data/parameters/costs.json`, `emissions.json`, and global model periods.
-4. **Source/model rules:** six `data/inputs/*.json` files grouped by purpose, not by individual SQL table.
+4. **Source/model rules:** seven `data/inputs/*.json` files grouped by purpose, not by individual SQL table.
 5. **Scenarios:** four small configurations plus rule-level scenario membership.
 6. **TEMOA schema and output:** a version-controlled `data/schema.sql`; generated SQLite is an artifact.
 
@@ -51,6 +51,7 @@ sector-builder/
 │   │   ├── economics.json
 │   │   ├── emissions.json
 │   │   ├── operations.json
+│   │   ├── limits.json
 │   │   ├── network.json
 │   │   ├── entities.json
 │   │   └── model_settings.json
@@ -147,3 +148,9 @@ A failed build should not replace a previously working SQLite output. The builde
 **Not yet automated:** Scientific design of new processes from scratch; a full constraint-complete topology inferred solely from flow CSVs; unit conversions across incompatible commodities; automatic validation of source publications; physical mass/energy balance checks; TEMOA solver execution and performance evaluation.
 
 This distinction matters: v0.4 is a substantially more maintainable steel-sector **model builder**, not a universal one-click TEMOA sector authoring system.
+
+## Limit-constraint integration (v0.6)
+
+Limits are modeled as reusable rules in `data/inputs/limits.json`, not copied as 91-table SQLite snapshots. The dedicated file owns all populated `limit_*` tables. Base-case `limit_activity` is an optional derived rule type: `activity = matching_equal_capacity * named_factor` where `matching_equal_capacity` is a `limit_capacity` record with the same region, period, technology/group and scenario data ID. If the referenced record is missing, the builder refuses to generate a database. To build a future sector with independent activity bounds, author a literal activity rather than a `capacity_multiplier` object. 
+
+For future sectors, first inspect populated limit tables in the source model and identify which are physical conversions, binding policy constraints, group-share requirements, capacity ceilings, or period-specific constraints. Move shared ratios to `data/parameters/limits.json`, but only after establishing that the values do in fact share one assumption. Do **not** automatically infer a physical relationship simply because the source numbers happen to correlate. The current four ratios are an observed pattern used to preserve steel's existing data. All other limit tables remain empty unless explicitly populated by source rules.
